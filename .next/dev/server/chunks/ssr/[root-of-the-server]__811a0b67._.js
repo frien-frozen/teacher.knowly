@@ -198,25 +198,43 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Footer$2e$tsx_
 ;
 ;
 const metadata = {
-    title: "KNOWLY | Quality Education.",
-    description: "Free Cambridge & Pearson education for Uzbekistan. Master global standards with simple Uzbek explanations. 100% Free.",
+    title: "Knowly | Become a Teacher",
+    description: "Apply to become a verified Knowly educator and help bring world-class Cambridge & Pearson education to every student in Uzbekistan.",
     keywords: [
+        "knowly",
+        "teacher",
         "education",
         "uzbekistan",
         "cambridge",
-        "pearson",
-        "free learning",
-        "video lessons",
         "igcse",
-        "a-levels"
+        "a-levels",
+        "pearson",
+        "o'qituvchi"
     ],
+    metadataBase: new URL("https://teacher.knowly.uz"),
     openGraph: {
-        title: "KNOWLY | Free Quality Education",
-        description: "Master global standards in your mother tongue.",
-        url: "https://knowly.uz",
-        siteName: "KNOWLY",
+        title: "Knowly | Become a Teacher",
+        description: "Apply to become a verified Knowly educator and bring world-class education to every student in Uzbekistan.",
+        url: "https://teacher.knowly.uz",
+        siteName: "Knowly for Teachers",
         locale: "uz_UZ",
-        type: "website"
+        type: "website",
+        images: [
+            {
+                url: "/logos/knowly-full.png",
+                width: 1200,
+                height: 630,
+                alt: "Knowly"
+            }
+        ]
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Knowly | Become a Teacher",
+        description: "Apply to join the Knowly educator network.",
+        images: [
+            "/logos/knowly-full.png"
+        ]
     }
 };
 function RootLayout({ children }) {
@@ -233,34 +251,34 @@ function RootLayout({ children }) {
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Header$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                             fileName: "[project]/app/layout.tsx",
-                            lineNumber: 51,
+                            lineNumber: 59,
                             columnNumber: 13
                         }, this),
                         children,
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Footer$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                             fileName: "[project]/app/layout.tsx",
-                            lineNumber: 53,
+                            lineNumber: 61,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/layout.tsx",
-                    lineNumber: 50,
+                    lineNumber: 58,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/layout.tsx",
-                lineNumber: 49,
+                lineNumber: 57,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/app/layout.tsx",
-            lineNumber: 46,
+            lineNumber: 54,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/app/layout.tsx",
-        lineNumber: 45,
+        lineNumber: 53,
         columnNumber: 5
     }, this));
 }

@@ -22,16 +22,24 @@ const jakarta = Plus_Jakarta_Sans({
 
 // Professional SEO Metadata
 export const metadata: Metadata = {
-  title: "KNOWLY | Quality Education.",
-  description: "Free Cambridge & Pearson education for Uzbekistan. Master global standards with simple Uzbek explanations. 100% Free.",
-  keywords: ["education", "uzbekistan", "cambridge", "pearson", "free learning", "video lessons", "igcse", "a-levels"],
+  title: "Knowly | Become a Teacher",
+  description: "Apply to become a verified Knowly educator and help bring world-class Cambridge & Pearson education to every student in Uzbekistan.",
+  keywords: ["knowly", "teacher", "education", "uzbekistan", "cambridge", "igcse", "a-levels", "pearson", "o'qituvchi"],
+  metadataBase: new URL("https://teacher.knowly.uz"),
   openGraph: {
-    title: "KNOWLY | Free Quality Education",
-    description: "Master global standards in your mother tongue.",
-    url: "https://knowly.uz",
-    siteName: "KNOWLY",
+    title: "Knowly | Become a Teacher",
+    description: "Apply to become a verified Knowly educator and bring world-class education to every student in Uzbekistan.",
+    url: "https://teacher.knowly.uz",
+    siteName: "Knowly for Teachers",
     locale: "uz_UZ",
     type: "website",
+    images: [{ url: "/logos/knowly-full.png", width: 1200, height: 630, alt: "Knowly" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Knowly | Become a Teacher",
+    description: "Apply to join the Knowly educator network.",
+    images: ["/logos/knowly-full.png"],
   },
 };
 

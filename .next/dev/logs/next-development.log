@@ -889,3 +889,4 @@ https://nextjs.org/docs/messages/module-not-found
 [30:49:10.538] Server  LOG     ✓ Compiled in 39ms
 [30:49:26.790] Server  LOG     ✓ Compiled in 43ms
 [30:49:26.872] Browser ERROR   A component is changing an uncontrolled input to be controlled. This is likely caused by the value changing from undefined to a defined value, which should not happen. Decide between using a controlled or uncontrolled input element for the lifetime of the component. More info: https://react.dev/link/controlled-components
+[30:56:22.822] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
