@@ -1,0 +1,49 @@
+/* Google Fonts - Nunito for the Candy-Tech aesthetic */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap');
+
+@import "tailwindcss";
+
+/* Custom CSS Variables */
+:root {
+  /* Candy-Tech Color Palette */
+  --brand-red: #D92D20;
+  --brand-yellow: #FDB022;
+  --surface-white: #FFFFFF;
+  --background-gray: #F2F4F7;
+  --text-dark: #101828;
+  --text-white: #FFFFFF;
+  --border-gray: #E5E7EB;
+
+  /* Shadows for 3D effects */
+  --shadow-red: #B91C1C;
+  --shadow-yellow: #D97706;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background-gray);
+  color: var(--text-dark);
+  font-family: 'Nunito', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom Animations */
+@keyframes bounce-slow {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-bounce-slow {
+  animation: bounce-slow 3s ease-in-out infinite;
+}

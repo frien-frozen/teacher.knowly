@@ -1,0 +1,75 @@
+{
+    "header": {
+        "nav": {
+            "curriculums": "Curriculums",
+            "mission": "Our Mission",
+            "teachers": "Teachers"
+        },
+        "cta": "Get Started",
+        "language": {
+            "uz": "O'zb",
+            "en": "Eng"
+        }
+    },
+    "hero": {
+        "headline": {
+            "main": "Cambridge Education.",
+            "highlight": "Native Tongue."
+        },
+        "subheadline": "World-Class Knowledge — In Your Language",
+        "search": {
+            "placeholder": "Search for a topic...",
+            "examples": [
+                "Search: IGCSE Physics...",
+                "Search: Algebra...",
+                "Search: Biology...",
+                "Search: Chemistry..."
+            ]
+        },
+        "cta": "Start Learning Now"
+    },
+    "bentoGrid": {
+        "title": "Choose Your Curriculum",
+        "cards": {
+            "igcse": {
+                "title": "Cambridge IGCSE",
+                "description": "Internationally recognized program for ages 14-16",
+                "badge": "Most Popular",
+                "subjects": "40+ subjects"
+            },
+            "aLevels": {
+                "title": "Cambridge A-Levels",
+                "description": "The gold standard for university preparation",
+                "badge": "University",
+                "subjects": "25+ subjects"
+            },
+            "edexcel": {
+                "title": "Pearson Edexcel",
+                "description": "Based on the UK national curriculum",
+                "subjects": "30+ subjects"
+            },
+            "lowerSecondary": {
+                "title": "Lower Secondary",
+                "description": "Foundation for ages 11-14",
+                "subjects": "Core subjects"
+            }
+        }
+    },
+    "magicTranslation": {
+        "title": "We Translate Logic",
+        "subtitle": "Not Just Words",
+        "english": {
+            "title": "Complex English",
+            "example": "The mitochondria is the powerhouse of the cell, responsible for producing ATP through cellular respiration."
+        },
+        "uzbek": {
+            "title": "Clear Uzbek",
+            "example": "Mitochondria is the cell's energy factory. It produces ATP (energy) through the breathing process."
+        },
+        "bulbText": "Knowledge Light"
+    },
+    "footer": {
+        "tagline": "Bringing Cambridge & Pearson education to Uzbekistan's youth",
+        "copyright": "© 2026 KNOWLY. All rights reserved."
+    }
+}

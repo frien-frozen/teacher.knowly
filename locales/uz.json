@@ -1,0 +1,75 @@
+{
+  "header": {
+    "nav": {
+      "curriculums": "O'quv Dasturlari",
+      "mission": "Missiyamiz",
+      "teachers": "Ustozlar"
+    },
+    "cta": "Boshlash",
+    "language": {
+      "uz": "O'zb",
+      "en": "Eng"
+    }
+  },
+  "hero": {
+    "headline": {
+      "main": "Cambridge Ta'limi.",
+      "highlight": "Ona Tilida."
+    },
+    "subheadline": "Dunyo Bilimlari — Ona Tilida",
+    "search": {
+      "placeholder": "Mavzuni qidiring...",
+      "examples": [
+        "Qidirish: IGCSE Fizika...",
+        "Qidirish: Algebra...",
+        "Qidirish: Biologiya...",
+        "Qidirish: Kimyo..."
+      ]
+    },
+    "cta": "Hoziroq Boshlash"
+  },
+  "bentoGrid": {
+    "title": "O'quv Dasturlarini Tanlang",
+    "cards": {
+      "igcse": {
+        "title": "Cambridge IGCSE",
+        "description": "14-16 yosh o'quvchilar uchun xalqaro tan olingan dastur",
+        "badge": "Eng Mashhur",
+        "subjects": "40+ fan"
+      },
+      "aLevels": {
+        "title": "Cambridge A-Levels",
+        "description": "Universitetga tayyorgarlik ko'rish uchun eng yaxshi tanlov",
+        "badge": "Universitet",
+        "subjects": "25+ fan"
+      },
+      "edexcel": {
+        "title": "Pearson Edexcel",
+        "description": "Britaniya milliy o'quv dasturi asosida",
+        "subjects": "30+ fan"
+      },
+      "lowerSecondary": {
+        "title": "Lower Secondary",
+        "description": "11-14 yosh o'quvchilar uchun poydevor",
+        "subjects": "Asosiy fanlar"
+      }
+    }
+  },
+  "magicTranslation": {
+    "title": "Biz Mantiqni Tarjima Qilamiz",
+    "subtitle": "Faqat So'zlarni Emas",
+    "english": {
+      "title": "Murakkab Inglizcha",
+      "example": "The mitochondria is the powerhouse of the cell, responsible for producing ATP through cellular respiration."
+    },
+    "uzbek": {
+      "title": "Tushunarli O'zbekcha",
+      "example": "Mitoxondriya — hujayraning energiya zavodi. U nafas olish jarayonida ATP (energiya) ishlab chiqaradi."
+    },
+    "bulbText": "Bilim Nuri"
+  },
+  "footer": {
+    "tagline": "Cambridge va Pearson ta'limini O'zbekiston yoshlariga yetkazamiz",
+    "copyright": "© 2026 KNOWLY. Barcha huquqlar himoyalangan."
+  }
+}
