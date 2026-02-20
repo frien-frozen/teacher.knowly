@@ -141,72 +141,75 @@ export default function ApplyPage() {
             </div>
 
             {/* 2. RIGHT SIDE — Independently Scrollable */}
-            <div className="w-full lg:w-7/12 h-full bg-white relative flex flex-col items-center overflow-y-auto">
+            <div className="w-full lg:w-7/12 h-full bg-white relative overflow-y-auto">
 
                 {/* Back Button */}
-                <div className="absolute top-6 left-6 md:top-8 md:left-8 w-full z-20">
-                    <button onClick={() => push('/')} className="flex items-center gap-3 text-gray-400 font-bold text-sm hover:text-[#101828] transition-colors w-fit">
-                        <ArrowLeft className="w-5 h-5" />
+                <div className="absolute top-4 left-4 md:top-8 md:left-8 z-20">
+                    <button onClick={() => push('/')} className="flex items-center gap-2 text-gray-500 font-bold text-sm hover:text-[#101828] transition-all bg-white/90 backdrop-blur-md px-4 py-2.5 rounded-full border border-gray-100 shadow-sm hover:shadow-md w-fit">
+                        <ArrowLeft className="w-4 h-4" />
                         {t.back}
                     </button>
                 </div>
 
-                {/* Inner Centered Container */}
-                <div className="w-full max-w-[520px] mx-auto py-24 px-6 mt-auto mb-auto flex flex-col justify-center min-h-full">
+                {/* Safe Centering Wrapper */}
+                <div className="min-h-full w-full flex flex-col px-6 pt-24 pb-12">
+                    <div className="w-full max-w-[520px] mx-auto my-auto">
 
-                    {isSuccess ? (
-                        <div className="text-center">
-                            <motion.div initial={{ scale: 0.8, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} transition={{ duration: 0.5 }} className="w-24 h-24 bg-green-50 rounded-full flex items-center justify-center mx-auto mb-8 relative">
-                                <div className="absolute inset-0 rounded-full bg-green-100 animate-ping opacity-50"></div>
-                                <svg className="w-12 h-12 text-green-600 relative z-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
-                                    <motion.path variants={checkVariants} initial="hidden" animate="visible" d="M20 6L9 17l-5-5" />
-                                </svg>
-                            </motion.div>
-                            <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3 }}>
-                                <h2 className="text-3xl font-extrabold text-[#101828] mb-4">{t.success.title}</h2>
-                                <p className="text-gray-500 text-base font-medium mb-10 leading-relaxed max-w-sm mx-auto">{t.success.desc}</p>
-                            </motion.div>
-                            <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.5 }}>
-                                <button onClick={() => push('/')} className="bg-[#101828] text-white px-10 py-4 rounded-xl font-bold text-base shadow-xl hover:bg-black hover:scale-105 active:scale-95 transition-all">
-                                    {t.success.home}
-                                </button>
-                            </motion.div>
-                        </div>
-                    ) : (
-                        <div className="w-full">
-                            <div className="mb-10">
-                                <h2 className="text-3xl md:text-4xl font-extrabold text-[#101828] mb-2 tracking-tight">{t.form.title}</h2>
-                                <p className="text-gray-500 font-bold text-base">{t.form.subtitle}</p>
-                            </div>
-
-                            <form onSubmit={handleSubmit} className="space-y-6">
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                    <InputField label={t.form.name} type="text" required placeholder={t.form.placeName} />
-                                    <InputField label={t.form.email} type="email" required placeholder={t.form.placeEmail} />
-                                </div>
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                    <InputField label={t.form.phone} type="tel" required placeholder={t.form.placePhone} />
-                                    <InputField label={t.form.linkedin} type="url" placeholder={t.form.placeLinkedin} />
-                                </div>
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                    <SelectField label={t.form.curriculum} required placeholder={t.form.placeCurriculum} options={CURRICULUMS} />
-                                    <SelectField label={t.form.subject} required placeholder={t.form.placeSubject} options={currentSubjects} />
-                                </div>
-                                <div className="space-y-2">
-                                    <label className="block text-[10px] font-extrabold text-gray-500 uppercase tracking-widest ml-1">
-                                        {t.form.motivation} <span className="text-red-500">*</span>
-                                    </label>
-                                    <textarea rows={4} required className="w-full px-5 py-3.5 bg-gray-50 border border-gray-200 rounded-xl focus:border-[#D92D20] focus:ring-2 focus:ring-[#D92D20]/20 focus:bg-white outline-none font-bold text-gray-800 transition-all resize-none text-base placeholder:text-gray-400 placeholder:font-medium" placeholder={t.form.placeMotivation}></textarea>
-                                </div>
-                                <div className="pt-4">
-                                    <button type="submit" disabled={isSubmitting} className="w-full bg-[#101828] text-white py-4 rounded-xl font-bold text-base shadow-lg hover:shadow-xl hover:bg-black hover:-translate-y-0.5 transition-all disabled:opacity-70 flex items-center justify-center gap-2">
-                                        {isSubmitting && <Zap className="w-5 h-5 animate-pulse" />}
-                                        <span>{isSubmitting ? t.form.submitting : t.form.submit}</span>
+                        {isSuccess ? (
+                            <div className="text-center py-10">
+                                <motion.div initial={{ scale: 0.8, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} transition={{ duration: 0.5 }} className="w-24 h-24 bg-green-50 rounded-full flex items-center justify-center mx-auto mb-8 relative">
+                                    <div className="absolute inset-0 rounded-full bg-green-100 animate-ping opacity-50"></div>
+                                    <svg className="w-12 h-12 text-green-600 relative z-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+                                        <motion.path variants={checkVariants} initial="hidden" animate="visible" d="M20 6L9 17l-5-5" />
+                                    </svg>
+                                </motion.div>
+                                <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3 }}>
+                                    <h2 className="text-3xl font-extrabold text-[#101828] mb-4">{t.success.title}</h2>
+                                    <p className="text-gray-500 text-base font-medium mb-10 leading-relaxed max-w-sm mx-auto">{t.success.desc}</p>
+                                </motion.div>
+                                <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.5 }}>
+                                    <button onClick={() => push('/')} className="bg-[#101828] text-white px-10 py-4 rounded-xl font-bold text-base shadow-xl hover:bg-black hover:scale-105 active:scale-95 transition-all">
+                                        {t.success.home}
                                     </button>
+                                </motion.div>
+                            </div>
+                        ) : (
+                            <div className="w-full py-4">
+                                <div className="mb-10">
+                                    <h2 className="text-3xl md:text-4xl font-extrabold text-[#101828] mb-2 tracking-tight">{t.form.title}</h2>
+                                    <p className="text-gray-500 font-bold text-base">{t.form.subtitle}</p>
                                 </div>
-                            </form>
-                        </div>
-                    )}
+
+                                <form onSubmit={handleSubmit} className="space-y-6">
+                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                        <InputField label={t.form.name} type="text" required placeholder={t.form.placeName} />
+                                        <InputField label={t.form.email} type="email" required placeholder={t.form.placeEmail} />
+                                    </div>
+                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                        <InputField label={t.form.phone} type="tel" required placeholder={t.form.placePhone} />
+                                        <InputField label={t.form.linkedin} type="url" placeholder={t.form.placeLinkedin} />
+                                    </div>
+                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                        <SelectField label={t.form.curriculum} required placeholder={t.form.placeCurriculum} options={CURRICULUMS} />
+                                        <SelectField label={t.form.subject} required placeholder={t.form.placeSubject} options={currentSubjects} />
+                                    </div>
+                                    <div className="space-y-2">
+                                        <label className="block text-[10px] font-extrabold text-gray-500 uppercase tracking-widest ml-1">
+                                            {t.form.motivation} <span className="text-red-500">*</span>
+                                        </label>
+                                        <textarea rows={4} required className="w-full px-5 py-3.5 bg-gray-50 border border-gray-200 rounded-xl focus:border-[#D92D20] focus:ring-2 focus:ring-[#D92D20]/20 focus:bg-white outline-none font-bold text-gray-800 transition-all resize-none text-base placeholder:text-gray-400 placeholder:font-medium" placeholder={t.form.placeMotivation}></textarea>
+                                    </div>
+                                    <div className="pt-4">
+                                        <button type="submit" disabled={isSubmitting} className="w-full bg-[#101828] text-white py-4 rounded-xl font-bold text-base shadow-lg hover:shadow-xl hover:bg-black hover:-translate-y-0.5 transition-all disabled:opacity-70 flex items-center justify-center gap-2">
+                                            {isSubmitting && <Zap className="w-5 h-5 animate-pulse" />}
+                                            <span>{isSubmitting ? t.form.submitting : t.form.submit}</span>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        )}
+
+                    </div>
                 </div>
             </div>
         </div>
