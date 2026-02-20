@@ -6,9 +6,8 @@ import { LanguageProvider } from "@/context/LanguageContext";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-// Optimize Fonts
 const nunito = Nunito({
-  subsets: ["latin", "cyrillic"], // Added Cyrillic for Uzbek
+  subsets: ["latin", "cyrillic"],
   variable: "--font-nunito",
   weight: ["400", "500", "600", "700", "800"],
   display: "swap",
@@ -20,7 +19,6 @@ const jakarta = Plus_Jakarta_Sans({
   display: "swap",
 });
 
-// Professional SEO Metadata
 export const metadata: Metadata = {
   title: "Knowly | Become a Teacher",
   description: "Apply to become a verified Knowly educator and help bring world-class Cambridge & Pearson education to every student in Uzbekistan.",
@@ -49,7 +47,6 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    // FIX: suppressHydrationWarning prevents errors from browser extensions & dynamic attributes
     <html lang="uz" className="scroll-smooth" suppressHydrationWarning>
       <body
         className={`${nunito.variable} ${jakarta.variable} antialiased bg-[#F2F4F7] text-[#101828] font-nunito selection:bg-[#D92D20] selection:text-white`}
@@ -65,4 +62,3 @@ export default function RootLayout({
     </html>
   );
 }
-

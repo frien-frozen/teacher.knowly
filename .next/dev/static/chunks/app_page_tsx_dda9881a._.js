@@ -230,7 +230,7 @@ function TeacherLanding() {
                                 className: "flex flex-col sm:flex-row items-center justify-center gap-4",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                        onClick: ()=>push('/apply'),
+                                        onClick: ()=>window.open('/apply', '_blank', 'noopener,noreferrer'),
                                         className: "flex items-center gap-2 bg-[#101828] text-white px-8 py-4 rounded-2xl font-bold text-lg shadow-xl hover:scale-105 transition-all",
                                         children: [
                                             t.hero.cta,
@@ -710,7 +710,7 @@ function TeacherLanding() {
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "mt-16",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                            onClick: ()=>push('/apply'),
+                            onClick: ()=>window.open('/apply', '_blank', 'noopener,noreferrer'),
                             className: "bg-[#FDB022] text-[#7B2D08] px-10 py-4 rounded-2xl font-extrabold text-lg shadow-lg hover:shadow-xl transition-all border-b-4 border-[#B54708] active:border-b-0 active:translate-y-1",
                             children: t.hero.cta
                         }, void 0, false, {

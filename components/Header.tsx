@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import { usePathname } from 'next/navigation';
 import { useLangRouter } from '@/hooks/useLangRouter';
 import { useLanguage } from '@/context/LanguageContext';
 import { LogIn, ArrowRight } from 'lucide-react';
@@ -25,6 +26,9 @@ const NAV_TEXT = {
 };
 
 export default function Header() {
+    const pathname = usePathname();
+    if (pathname && pathname.includes('/apply')) return null;
+
     const { push, lang } = useLangRouter();
     const { toggleLanguage } = useLanguage();
     const t = NAV_TEXT[lang as 'en' | 'uz'] || NAV_TEXT.uz;
@@ -67,7 +71,7 @@ export default function Header() {
                         <span>{t.login}</span>
                     </button>
 
-                    <button onClick={() => push('/apply')} className="bg-[#FDB022] text-[#7B2D08] px-8 py-3 rounded-2xl font-extrabold text-sm hover:bg-[#F59E0B] transition-all border-b-4 border-[#D97706] active:border-b-0 active:translate-y-1 active:mt-1 flex items-center gap-2">
+                    <button onClick={() => window.open('/apply', '_blank', 'noopener,noreferrer')} className="bg-[#FDB022] text-[#7B2D08] px-8 py-3 rounded-2xl font-extrabold text-sm hover:bg-[#F59E0B] transition-all border-b-4 border-[#D97706] active:border-b-0 active:translate-y-1 active:mt-1 flex items-center gap-2">
                         <span>{t.apply}</span>
                         <ArrowRight className="w-4 h-4" />
                     </button>

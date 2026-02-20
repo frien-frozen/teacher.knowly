@@ -108,10 +108,10 @@ export default function ApplyPage() {
     };
 
     return (
-        <div className="fixed inset-0 z-[100] bg-white flex min-h-screen font-nunito">
+        <div className="fixed inset-0 z-[9999] w-screen h-screen bg-white flex font-nunito overflow-hidden">
 
-            {/* LEFT — Brand Panel */}
-            <div className="hidden lg:flex w-5/12 bg-[#101828] relative overflow-hidden flex-col justify-between p-12 xl:p-16 text-white shadow-[20px_0_40px_rgba(0,0,0,0.1)] z-10">
+            {/* 1. LEFT SIDE — Fixed, No Scroll */}
+            <div className="hidden lg:flex w-5/12 h-full bg-[#101828] relative overflow-hidden flex-col justify-between p-12 xl:p-16 text-white shadow-[20px_0_40px_rgba(0,0,0,0.1)] z-10">
                 <div className="absolute inset-0 pointer-events-none">
                     <div className="absolute top-[-20%] left-[-20%] w-[600px] h-[600px] bg-[#D92D20] rounded-full blur-[150px] opacity-20"></div>
                     <div className="absolute bottom-[-20%] right-[-20%] w-[600px] h-[600px] bg-[#FDB022] rounded-full blur-[150px] opacity-20"></div>
@@ -140,8 +140,10 @@ export default function ApplyPage() {
                 <div className="relative z-10 text-xs text-gray-500 font-bold uppercase tracking-wider">© 2026 Knowly Inc.</div>
             </div>
 
-            {/* RIGHT — Form / Success */}
-            <div className="w-full lg:w-7/12 bg-white relative flex flex-col items-center overflow-y-auto">
+            {/* 2. RIGHT SIDE — Independently Scrollable */}
+            <div className="w-full lg:w-7/12 h-full bg-white relative flex flex-col items-center overflow-y-auto">
+
+                {/* Back Button */}
                 <div className="absolute top-6 left-6 md:top-8 md:left-8 w-full z-20">
                     <button onClick={() => push('/')} className="flex items-center gap-3 text-gray-400 font-bold text-sm hover:text-[#101828] transition-colors w-fit">
                         <ArrowLeft className="w-5 h-5" />
@@ -149,7 +151,8 @@ export default function ApplyPage() {
                     </button>
                 </div>
 
-                <div className="w-full max-w-[520px] mx-auto py-24 px-6 my-auto flex flex-col justify-center min-h-screen lg:min-h-full">
+                {/* Inner Centered Container */}
+                <div className="w-full max-w-[520px] mx-auto py-24 px-6 mt-auto mb-auto flex flex-col justify-center min-h-full">
 
                     {isSuccess ? (
                         <div className="text-center">
@@ -177,41 +180,30 @@ export default function ApplyPage() {
                             </div>
 
                             <form onSubmit={handleSubmit} className="space-y-6">
-
-                                {/* Row 1: Name & Email */}
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                     <InputField label={t.form.name} type="text" required placeholder={t.form.placeName} />
                                     <InputField label={t.form.email} type="email" required placeholder={t.form.placeEmail} />
                                 </div>
-
-                                {/* Row 2: Phone & LinkedIn */}
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                     <InputField label={t.form.phone} type="tel" required placeholder={t.form.placePhone} />
                                     <InputField label={t.form.linkedin} type="url" placeholder={t.form.placeLinkedin} />
                                 </div>
-
-                                {/* Row 3: Curriculum & Subject dropdowns */}
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                     <SelectField label={t.form.curriculum} required placeholder={t.form.placeCurriculum} options={CURRICULUMS} />
                                     <SelectField label={t.form.subject} required placeholder={t.form.placeSubject} options={currentSubjects} />
                                 </div>
-
-                                {/* Row 4: Motivation */}
                                 <div className="space-y-2">
-                                    <label className="block text-xs font-extrabold text-gray-600 uppercase tracking-wide ml-1">
+                                    <label className="block text-[10px] font-extrabold text-gray-500 uppercase tracking-widest ml-1">
                                         {t.form.motivation} <span className="text-red-500">*</span>
                                     </label>
                                     <textarea rows={4} required className="w-full px-5 py-3.5 bg-gray-50 border border-gray-200 rounded-xl focus:border-[#D92D20] focus:ring-2 focus:ring-[#D92D20]/20 focus:bg-white outline-none font-bold text-gray-800 transition-all resize-none text-base placeholder:text-gray-400 placeholder:font-medium" placeholder={t.form.placeMotivation}></textarea>
                                 </div>
-
-                                {/* Submit */}
                                 <div className="pt-4">
                                     <button type="submit" disabled={isSubmitting} className="w-full bg-[#101828] text-white py-4 rounded-xl font-bold text-base shadow-lg hover:shadow-xl hover:bg-black hover:-translate-y-0.5 transition-all disabled:opacity-70 flex items-center justify-center gap-2">
                                         {isSubmitting && <Zap className="w-5 h-5 animate-pulse" />}
                                         <span>{isSubmitting ? t.form.submitting : t.form.submit}</span>
                                     </button>
                                 </div>
-
                             </form>
                         </div>
                     )}
@@ -229,7 +221,7 @@ function InputField({ label, type, required, placeholder }: {
 }) {
     return (
         <div className="space-y-2">
-            <label className="block text-xs font-extrabold text-gray-600 uppercase tracking-wide ml-1">
+            <label className="block text-[10px] font-extrabold text-gray-500 uppercase tracking-widest ml-1">
                 {label} {required && <span className="text-red-500">*</span>}
             </label>
             <input
@@ -250,7 +242,7 @@ function SelectField({ label, required, placeholder, options }: {
 }) {
     return (
         <div className="space-y-2">
-            <label className="block text-xs font-extrabold text-gray-600 uppercase tracking-wide ml-1">
+            <label className="block text-[10px] font-extrabold text-gray-500 uppercase tracking-widest ml-1">
                 {label} {required && <span className="text-red-500">*</span>}
             </label>
             <div className="relative">

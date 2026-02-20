@@ -104,7 +104,7 @@ export default function TeacherLanding() {
             {t.hero.subtitle}
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <button onClick={() => push('/apply')} className="flex items-center gap-2 bg-[#101828] text-white px-8 py-4 rounded-2xl font-bold text-lg shadow-xl hover:scale-105 transition-all">
+            <button onClick={() => window.open('/apply', '_blank', 'noopener,noreferrer')} className="flex items-center gap-2 bg-[#101828] text-white px-8 py-4 rounded-2xl font-bold text-lg shadow-xl hover:scale-105 transition-all">
               {t.hero.cta} <ArrowRight className="w-5 h-5" />
             </button>
             <button onClick={() => scrollTo('curriculums')} className="flex items-center gap-2 bg-white text-gray-600 border border-gray-200 px-8 py-4 rounded-2xl font-bold text-lg hover:bg-gray-50 transition-all shadow-sm">
@@ -193,7 +193,7 @@ export default function TeacherLanding() {
           ))}
         </div>
         <div className="mt-16">
-          <button onClick={() => push('/apply')} className="bg-[#FDB022] text-[#7B2D08] px-10 py-4 rounded-2xl font-extrabold text-lg shadow-lg hover:shadow-xl transition-all border-b-4 border-[#B54708] active:border-b-0 active:translate-y-1">
+          <button onClick={() => window.open('/apply', '_blank', 'noopener,noreferrer')} className="bg-[#FDB022] text-[#7B2D08] px-10 py-4 rounded-2xl font-extrabold text-lg shadow-lg hover:shadow-xl transition-all border-b-4 border-[#B54708] active:border-b-0 active:translate-y-1">
             {t.hero.cta}
           </button>
         </div>

@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import { usePathname } from 'next/navigation';
 import { useLangRouter } from '@/hooks/useLangRouter';
 import { Mail, Phone, MapPin, Instagram, Send, Youtube, Facebook } from 'lucide-react';
 
@@ -40,6 +41,9 @@ const FOOTER_TEXT = {
 };
 
 export default function Footer() {
+    const pathname = usePathname();
+    if (pathname && pathname.includes('/apply')) return null;
+
     const { lang, push } = useLangRouter();
     const t = FOOTER_TEXT[lang as 'en' | 'uz'] || FOOTER_TEXT.uz;
 

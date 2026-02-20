@@ -145,10 +145,10 @@ function ApplyPage() {
         }, 1500);
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "fixed inset-0 z-[100] bg-white flex min-h-screen font-nunito",
+        className: "fixed inset-0 z-[9999] w-screen h-screen bg-white flex font-nunito overflow-hidden",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "hidden lg:flex w-5/12 bg-[#101828] relative overflow-hidden flex-col justify-between p-12 xl:p-16 text-white shadow-[20px_0_40px_rgba(0,0,0,0.1)] z-10",
+                className: "hidden lg:flex w-5/12 h-full bg-[#101828] relative overflow-hidden flex-col justify-between p-12 xl:p-16 text-white shadow-[20px_0_40px_rgba(0,0,0,0.1)] z-10",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "absolute inset-0 pointer-events-none",
@@ -319,7 +319,7 @@ function ApplyPage() {
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "w-full lg:w-7/12 bg-white relative flex flex-col items-center overflow-y-auto",
+                className: "w-full lg:w-7/12 h-full bg-white relative flex flex-col items-center overflow-y-auto",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "absolute top-6 left-6 md:top-8 md:left-8 w-full z-20",
@@ -331,23 +331,23 @@ function ApplyPage() {
                                     className: "w-5 h-5"
                                 }, void 0, false, {
                                     fileName: "[project]/app/apply/page.tsx",
-                                    lineNumber: 147,
+                                    lineNumber: 149,
                                     columnNumber: 25
                                 }, this),
                                 t.back
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/apply/page.tsx",
-                            lineNumber: 146,
+                            lineNumber: 148,
                             columnNumber: 21
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/apply/page.tsx",
-                        lineNumber: 145,
+                        lineNumber: 147,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "w-full max-w-[520px] mx-auto py-24 px-6 my-auto flex flex-col justify-center min-h-screen lg:min-h-full",
+                        className: "w-full max-w-[520px] mx-auto py-24 px-6 mt-auto mb-auto flex flex-col justify-center min-h-full",
                         children: isSuccess ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "text-center",
                             children: [
@@ -369,7 +369,7 @@ function ApplyPage() {
                                             className: "absolute inset-0 rounded-full bg-green-100 animate-ping opacity-50"
                                         }, void 0, false, {
                                             fileName: "[project]/app/apply/page.tsx",
-                                            lineNumber: 157,
+                                            lineNumber: 160,
                                             columnNumber: 33
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
@@ -387,18 +387,18 @@ function ApplyPage() {
                                                 d: "M20 6L9 17l-5-5"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/apply/page.tsx",
-                                                lineNumber: 159,
+                                                lineNumber: 162,
                                                 columnNumber: 37
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/app/apply/page.tsx",
-                                            lineNumber: 158,
+                                            lineNumber: 161,
                                             columnNumber: 33
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/apply/page.tsx",
-                                    lineNumber: 156,
+                                    lineNumber: 159,
                                     columnNumber: 29
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -419,7 +419,7 @@ function ApplyPage() {
                                             children: t.success.title
                                         }, void 0, false, {
                                             fileName: "[project]/app/apply/page.tsx",
-                                            lineNumber: 163,
+                                            lineNumber: 166,
                                             columnNumber: 33
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -427,13 +427,13 @@ function ApplyPage() {
                                             children: t.success.desc
                                         }, void 0, false, {
                                             fileName: "[project]/app/apply/page.tsx",
-                                            lineNumber: 164,
+                                            lineNumber: 167,
                                             columnNumber: 33
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/apply/page.tsx",
-                                    lineNumber: 162,
+                                    lineNumber: 165,
                                     columnNumber: 29
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -454,18 +454,18 @@ function ApplyPage() {
                                         children: t.success.home
                                     }, void 0, false, {
                                         fileName: "[project]/app/apply/page.tsx",
-                                        lineNumber: 167,
+                                        lineNumber: 170,
                                         columnNumber: 33
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/app/apply/page.tsx",
-                                    lineNumber: 166,
+                                    lineNumber: 169,
                                     columnNumber: 29
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/apply/page.tsx",
-                            lineNumber: 155,
+                            lineNumber: 158,
                             columnNumber: 25
                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "w-full",
@@ -478,7 +478,7 @@ function ApplyPage() {
                                             children: t.form.title
                                         }, void 0, false, {
                                             fileName: "[project]/app/apply/page.tsx",
-                                            lineNumber: 175,
+                                            lineNumber: 178,
                                             columnNumber: 33
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -486,13 +486,13 @@ function ApplyPage() {
                                             children: t.form.subtitle
                                         }, void 0, false, {
                                             fileName: "[project]/app/apply/page.tsx",
-                                            lineNumber: 176,
+                                            lineNumber: 179,
                                             columnNumber: 33
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/apply/page.tsx",
-                                    lineNumber: 174,
+                                    lineNumber: 177,
                                     columnNumber: 29
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
@@ -509,7 +509,7 @@ function ApplyPage() {
                                                     placeholder: t.form.placeName
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/apply/page.tsx",
-                                                    lineNumber: 183,
+                                                    lineNumber: 184,
                                                     columnNumber: 37
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(InputField, {
@@ -519,13 +519,13 @@ function ApplyPage() {
                                                     placeholder: t.form.placeEmail
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/apply/page.tsx",
-                                                    lineNumber: 184,
+                                                    lineNumber: 185,
                                                     columnNumber: 37
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/apply/page.tsx",
-                                            lineNumber: 182,
+                                            lineNumber: 183,
                                             columnNumber: 33
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -538,7 +538,7 @@ function ApplyPage() {
                                                     placeholder: t.form.placePhone
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/apply/page.tsx",
-                                                    lineNumber: 189,
+                                                    lineNumber: 188,
                                                     columnNumber: 37
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(InputField, {
@@ -547,13 +547,13 @@ function ApplyPage() {
                                                     placeholder: t.form.placeLinkedin
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/apply/page.tsx",
-                                                    lineNumber: 190,
+                                                    lineNumber: 189,
                                                     columnNumber: 37
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/apply/page.tsx",
-                                            lineNumber: 188,
+                                            lineNumber: 187,
                                             columnNumber: 33
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -566,7 +566,7 @@ function ApplyPage() {
                                                     options: CURRICULUMS
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/apply/page.tsx",
-                                                    lineNumber: 195,
+                                                    lineNumber: 192,
                                                     columnNumber: 37
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(SelectField, {
@@ -576,20 +576,20 @@ function ApplyPage() {
                                                     options: currentSubjects
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/apply/page.tsx",
-                                                    lineNumber: 196,
+                                                    lineNumber: 193,
                                                     columnNumber: 37
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/apply/page.tsx",
-                                            lineNumber: 194,
+                                            lineNumber: 191,
                                             columnNumber: 33
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "space-y-2",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                                    className: "block text-xs font-extrabold text-gray-600 uppercase tracking-wide ml-1",
+                                                    className: "block text-[10px] font-extrabold text-gray-500 uppercase tracking-widest ml-1",
                                                     children: [
                                                         t.form.motivation,
                                                         " ",
@@ -598,13 +598,13 @@ function ApplyPage() {
                                                             children: "*"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/apply/page.tsx",
-                                                            lineNumber: 202,
+                                                            lineNumber: 197,
                                                             columnNumber: 61
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/apply/page.tsx",
-                                                    lineNumber: 201,
+                                                    lineNumber: 196,
                                                     columnNumber: 37
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("textarea", {
@@ -614,13 +614,13 @@ function ApplyPage() {
                                                     placeholder: t.form.placeMotivation
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/apply/page.tsx",
-                                                    lineNumber: 204,
+                                                    lineNumber: 199,
                                                     columnNumber: 37
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/apply/page.tsx",
-                                            lineNumber: 200,
+                                            lineNumber: 195,
                                             columnNumber: 33
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -634,42 +634,42 @@ function ApplyPage() {
                                                         className: "w-5 h-5 animate-pulse"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/apply/page.tsx",
-                                                        lineNumber: 210,
+                                                        lineNumber: 203,
                                                         columnNumber: 58
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                         children: isSubmitting ? t.form.submitting : t.form.submit
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/apply/page.tsx",
-                                                        lineNumber: 211,
+                                                        lineNumber: 204,
                                                         columnNumber: 41
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/apply/page.tsx",
-                                                lineNumber: 209,
+                                                lineNumber: 202,
                                                 columnNumber: 37
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/app/apply/page.tsx",
-                                            lineNumber: 208,
+                                            lineNumber: 201,
                                             columnNumber: 33
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/apply/page.tsx",
-                                    lineNumber: 179,
+                                    lineNumber: 182,
                                     columnNumber: 29
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/apply/page.tsx",
-                            lineNumber: 173,
+                            lineNumber: 176,
                             columnNumber: 25
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/apply/page.tsx",
-                        lineNumber: 152,
+                        lineNumber: 155,
                         columnNumber: 17
                     }, this)
                 ]
@@ -696,7 +696,7 @@ function InputField({ label, type, required, placeholder }) {
         className: "space-y-2",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                className: "block text-xs font-extrabold text-gray-600 uppercase tracking-wide ml-1",
+                className: "block text-[10px] font-extrabold text-gray-500 uppercase tracking-widest ml-1",
                 children: [
                     label,
                     " ",
@@ -705,13 +705,13 @@ function InputField({ label, type, required, placeholder }) {
                         children: "*"
                     }, void 0, false, {
                         fileName: "[project]/app/apply/page.tsx",
-                        lineNumber: 233,
+                        lineNumber: 225,
                         columnNumber: 38
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/apply/page.tsx",
-                lineNumber: 232,
+                lineNumber: 224,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -721,13 +721,13 @@ function InputField({ label, type, required, placeholder }) {
                 className: "w-full px-5 py-3.5 bg-gray-50 border border-gray-200 rounded-xl focus:border-[#D92D20] focus:ring-2 focus:ring-[#D92D20]/20 focus:bg-white outline-none font-bold text-gray-800 transition-all text-base placeholder:text-gray-400 placeholder:font-medium"
             }, void 0, false, {
                 fileName: "[project]/app/apply/page.tsx",
-                lineNumber: 235,
+                lineNumber: 227,
                 columnNumber: 13
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/apply/page.tsx",
-        lineNumber: 231,
+        lineNumber: 223,
         columnNumber: 9
     }, this);
 }
@@ -737,7 +737,7 @@ function SelectField({ label, required, placeholder, options }) {
         className: "space-y-2",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                className: "block text-xs font-extrabold text-gray-600 uppercase tracking-wide ml-1",
+                className: "block text-[10px] font-extrabold text-gray-500 uppercase tracking-widest ml-1",
                 children: [
                     label,
                     " ",
@@ -746,13 +746,13 @@ function SelectField({ label, required, placeholder, options }) {
                         children: "*"
                     }, void 0, false, {
                         fileName: "[project]/app/apply/page.tsx",
-                        lineNumber: 254,
+                        lineNumber: 246,
                         columnNumber: 38
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/apply/page.tsx",
-                lineNumber: 253,
+                lineNumber: 245,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -770,7 +770,7 @@ function SelectField({ label, required, placeholder, options }) {
                                 children: placeholder
                             }, void 0, false, {
                                 fileName: "[project]/app/apply/page.tsx",
-                                lineNumber: 262,
+                                lineNumber: 254,
                                 columnNumber: 21
                             }, this),
                             options.map((opt)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -779,32 +779,32 @@ function SelectField({ label, required, placeholder, options }) {
                                     children: opt
                                 }, opt, false, {
                                     fileName: "[project]/app/apply/page.tsx",
-                                    lineNumber: 264,
+                                    lineNumber: 256,
                                     columnNumber: 25
                                 }, this))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/apply/page.tsx",
-                        lineNumber: 257,
+                        lineNumber: 249,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$down$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronDown$3e$__["ChevronDown"], {
                         className: "absolute right-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400 pointer-events-none"
                     }, void 0, false, {
                         fileName: "[project]/app/apply/page.tsx",
-                        lineNumber: 267,
+                        lineNumber: 259,
                         columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/apply/page.tsx",
-                lineNumber: 256,
+                lineNumber: 248,
                 columnNumber: 13
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/apply/page.tsx",
-        lineNumber: 252,
+        lineNumber: 244,
         columnNumber: 9
     }, this);
 }

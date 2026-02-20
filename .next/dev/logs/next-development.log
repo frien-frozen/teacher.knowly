@@ -1,76 +1,7 @@
-[00:00:00.859] Server  LOG     ✓ Ready in 630ms
-[00:37:06.877] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:39:44.607] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:39:46.013] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:42:08.102] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:42:09.094] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:42:15.130] Server  LOG     ✓ Compiled in 54ms
-[00:54:39.090] Server  LOG     ✓ Compiled in 34ms
-[00:55:24.602] Server  LOG     ✓ Compiled in 137ms
-[00:55:24.923] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:55:26.579] Server  LOG     ✓ Compiled in 30ms
-[01:00:09.266] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:00:10.852] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:00:11.768] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:00:12.328] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:00:14.301] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[01:00:16.178] Server  LOG     ✓ Compiled in 23ms
-[01:00:18.192] Server  LOG     ✓ Compiled in 14ms
-[01:01:11.315] Server  LOG     ✓ Compiled in 61ms
-[01:01:13.315] Server  LOG     ✓ Compiled in 30ms
-[01:02:20.963] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:02:21.671] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:02:22.264] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:02:22.478] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:02:22.626] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:03:22.460] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:05:52.411] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[01:06:27.731] Server  LOG     ✓ Compiled in 45ms
-[01:06:27.865] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:06:29.841] Server  LOG     ✓ Compiled in 74ms
-[01:09:35.581] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:09:36.327] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:17:19.360] Server  LOG     ✓ Compiled in 31ms
-[01:17:19.493] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:17:21.775] Server  LOG     ✓ Compiled in 88ms
-[01:25:33.723] Server  LOG     ✓ Compiled in 0ms
-[01:25:33.807] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:25:40.573] Server  LOG     ✓ Compiled in 19ms
-[05:33:48.456] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[05:33:49.435] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[05:34:27.727] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[05:34:30.288] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[05:34:31.140] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[05:34:52.732] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[06:51:29.864] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[06:51:59.746] Server  LOG     ✓ Compiled in 161ms
-[06:52:00.015] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[06:52:31.164] Server  LOG     ✓ Compiled in 27ms
-[06:52:33.273] Server  LOG     ✓ Compiled in 66ms
-[06:56:31.634] Server  LOG     ✓ Compiled in 128ms
-[06:56:31.839] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[06:56:31.941] Server  LOG     ✓ Compiled in 15ms
-[06:56:33.516] Server  LOG     ✓ Compiled in 20ms
-[06:57:56.408] Server  LOG     ✓ Compiled in 59ms
-[06:57:56.535] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[06:57:58.315] Server  LOG     ✓ Compiled in 15ms
-[08:35:39.503] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[08:35:51.100] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[08:38:33.180] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[20:14:43.756] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[20:18:32.654] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[20:18:53.536] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[20:18:54.573] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[20:18:57.874] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[20:19:10.207] Server  LOG     ✓ Compiled in 106ms
-[20:19:10.412] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[20:19:13.951] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[20:19:23.734] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[20:19:24.645] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[20:31:40.786] Server  LOG     ✓ Compiled in 93ms
-[20:31:40.955] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[20:31:42.864] Server  LOG     ✓ Compiled in 71ms
-[20:33:01.164] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+[00:00:01.289] Server  WARN    ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+[00:00:01.402] Server  LOG     ✓ Ready in 1152ms
+[00:00:02.598] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:02.707] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
@@ -80,813 +11,917 @@
 
 It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
 
-https://react.dev/link/hydration-mismatch
+%s%s https://react.dev/link/hydration-mismatch 
 
   ...
-    <RenderFromTemplateContext>
-      <ScrollAndFocusHandler segmentPath={[...]}>
-        <InnerScrollAndFocusHandler segmentPath={[...]} focusAndScrollRef={{apply:false, ...}}>
-          <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
-            <LoadingBoundary name="/" loading={null}>
-              <HTTPAccessFallbackBoundary notFound={<SegmentViewNode>} forbidden={undefined} unauthorized={undefined}>
-                <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<SegmentViewNode>} forbidden={undefined} ...>
-                  <RedirectBoundary>
-                    <RedirectErrorBoundary router={{...}}>
-                      <InnerLayoutRouter url="/#benefits..." tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} ...>
-                        <SegmentViewNode type="page" pagePath="page.tsx">
-                          <SegmentTrieNode>
-                          <ClientPageRoot Component={function TeacherLanding} serverProvidedParams={{...}}>
-                            <TeacherLanding params={Promise} searchParams={Promise}>
-                              <main
-+                               className="min-h-screen bg-[#F9FAFB] font-nunito pt-32 pb-0 overflow-x-hidden"
--                               className="min-h-screen bg-[#F9FAFB] font-nunito pt-32 pb-20 px-6"
-                              >
-                                <section
-+                                 className="container mx-auto px-6 max-w-6xl mb-32 relative text-center"
--                                 className="container mx-auto max-w-6xl text-center mb-20"
-                                >
-                                  <div
-+                                   className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h..."
--                                   className={null}
--                                   style={{opacity:"0",transform:"translateY..."}}
-                                  >
--                                   <div
--                                     className="inline-block px-3 py-1 rounded-full bg-red-50 text-[#D92D20] text-[10..."
--                                   >
--                                   <h1
--                                     className="text-5xl md:text-7xl font-extrabold text-[#101828] mb-6 tracking-tigh..."
--                                   >
--                                   <p className="text-lg text-gray-500 font-bold max-w-2xl mx-auto mb-10">
--                                   <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                                  ...
-                                ...
-                        ...
-                      ...
-          ...
-
-[20:33:21.572] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[20:33:28.513] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[20:33:29.379] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[20:34:25.117] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[20:34:26.213] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[20:34:34.109] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[20:35:12.207] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[20:37:28.230] Server  LOG     ✓ Compiled in 112ms
-[20:37:28.366] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[20:40:29.725] Server  LOG     ✓ Compiled in 18ms
-[20:45:19.007] Server  LOG     ✓ Compiled in 54ms
-[20:48:41.740] Server  LOG     ✓ Compiled in 39ms
-[20:48:55.872] Server  ERROR   ⨯ ./app/layout.tsx:6:1
-Module not found: Can't resolve '@/components/Header'
-  4 | import "./globals.css";
-  5 | import { LanguageProvider } from "@/context/LanguageContext";
-> 6 | import Header from "@/components/Header";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  7 | import Footer from "@/components/Footer";
-  8 |
-  9 | // Optimize Fonts
-
-Import map: aliased to relative './components/Header' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[20:48:55.890] Server  ERROR   ⨯ ./app/layout.tsx:6:1
-Module not found: Can't resolve '@/components/Header'
-  4 | import "./globals.css";
-  5 | import { LanguageProvider } from "@/context/LanguageContext";
-> 6 | import Header from "@/components/Header";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  7 | import Footer from "@/components/Footer";
-  8 |
-  9 | // Optimize Fonts
-
-Import map: aliased to relative './components/Header' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[20:48:55.902] Server  ERROR   ⨯ ./app/layout.tsx:6:1
-Module not found: Can't resolve '@/components/Header'
-  4 | import "./globals.css";
-  5 | import { LanguageProvider } from "@/context/LanguageContext";
-> 6 | import Header from "@/components/Header";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  7 | import Footer from "@/components/Footer";
-  8 |
-  9 | // Optimize Fonts
-
-Import map: aliased to relative './components/Header' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[20:48:55.902] Server  ERROR   ⨯ ./app/layout.tsx:6:1
-Module not found: Can't resolve '@/components/Header'
-  4 | import "./globals.css";
-  5 | import { LanguageProvider } from "@/context/LanguageContext";
-> 6 | import Header from "@/components/Header";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  7 | import Footer from "@/components/Footer";
-  8 |
-  9 | // Optimize Fonts
-
-Import map: aliased to relative './components/Header' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[20:48:55.909] Server  ERROR   ⨯ ./app/layout.tsx:6:1
-Module not found: Can't resolve '@/components/Header'
-  4 | import "./globals.css";
-  5 | import { LanguageProvider } from "@/context/LanguageContext";
-> 6 | import Header from "@/components/Header";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  7 | import Footer from "@/components/Footer";
-  8 |
-  9 | // Optimize Fonts
-
-Import map: aliased to relative './components/Header' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[20:48:55.910] Server  ERROR   ⨯ ./app/layout.tsx:6:1
-Module not found: Can't resolve '@/components/Header'
-  4 | import "./globals.css";
-  5 | import { LanguageProvider } from "@/context/LanguageContext";
-> 6 | import Header from "@/components/Header";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  7 | import Footer from "@/components/Footer";
-  8 |
-  9 | // Optimize Fonts
-
-Import map: aliased to relative './components/Header' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[20:48:55.958] Server  ERROR   ⨯ ./app/layout.tsx:6:1
-Module not found: Can't resolve '@/components/Header'
-  4 | import "./globals.css";
-  5 | import { LanguageProvider } from "@/context/LanguageContext";
-> 6 | import Header from "@/components/Header";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  7 | import Footer from "@/components/Footer";
-  8 |
-  9 | // Optimize Fonts
-
-Import map: aliased to relative './components/Header' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[20:48:55.959] Server  ERROR   ⨯ ./app/layout.tsx:6:1
-Module not found: Can't resolve '@/components/Header'
-  4 | import "./globals.css";
-  5 | import { LanguageProvider } from "@/context/LanguageContext";
-> 6 | import Header from "@/components/Header";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  7 | import Footer from "@/components/Footer";
-  8 |
-  9 | // Optimize Fonts
-
-Import map: aliased to relative './components/Header' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[20:48:55.960] Server  ERROR   ⨯ ./app/layout.tsx:6:1
-Module not found: Can't resolve '@/components/Header'
-  4 | import "./globals.css";
-  5 | import { LanguageProvider } from "@/context/LanguageContext";
-> 6 | import Header from "@/components/Header";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  7 | import Footer from "@/components/Footer";
-  8 |
-  9 | // Optimize Fonts
-
-Import map: aliased to relative './components/Header' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[20:48:55.960] Server  ERROR   ⨯ ./app/layout.tsx:6:1
-Module not found: Can't resolve '@/components/Header'
-  4 | import "./globals.css";
-  5 | import { LanguageProvider } from "@/context/LanguageContext";
-> 6 | import Header from "@/components/Header";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  7 | import Footer from "@/components/Footer";
-  8 |
-  9 | // Optimize Fonts
-
-Import map: aliased to relative './components/Header' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[20:48:55.961] Server  ERROR   ⨯ ./app/layout.tsx:6:1
-Module not found: Can't resolve '@/components/Header'
-  4 | import "./globals.css";
-  5 | import { LanguageProvider } from "@/context/LanguageContext";
-> 6 | import Header from "@/components/Header";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  7 | import Footer from "@/components/Footer";
-  8 |
-  9 | // Optimize Fonts
-
-Import map: aliased to relative './components/Header' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[20:48:55.961] Server  ERROR   ⨯ ./app/layout.tsx:6:1
-Module not found: Can't resolve '@/components/Header'
-  4 | import "./globals.css";
-  5 | import { LanguageProvider } from "@/context/LanguageContext";
-> 6 | import Header from "@/components/Header";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  7 | import Footer from "@/components/Footer";
-  8 |
-  9 | // Optimize Fonts
-
-Import map: aliased to relative './components/Header' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[20:48:55.963] Server  ERROR   ⨯ ./app/layout.tsx:6:1
-Module not found: Can't resolve '@/components/Header'
-  4 | import "./globals.css";
-  5 | import { LanguageProvider } from "@/context/LanguageContext";
-> 6 | import Header from "@/components/Header";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  7 | import Footer from "@/components/Footer";
-  8 |
-  9 | // Optimize Fonts
-
-Import map: aliased to relative './components/Header' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[20:48:55.965] Server  ERROR   ⨯ ./app/layout.tsx:6:1
-Module not found: Can't resolve '@/components/Header'
-  4 | import "./globals.css";
-  5 | import { LanguageProvider } from "@/context/LanguageContext";
-> 6 | import Header from "@/components/Header";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  7 | import Footer from "@/components/Footer";
-  8 |
-  9 | // Optimize Fonts
-
-Import map: aliased to relative './components/Header' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[20:48:55.967] Server  ERROR   ⨯ ./app/layout.tsx:6:1
-Module not found: Can't resolve '@/components/Header'
-  4 | import "./globals.css";
-  5 | import { LanguageProvider } from "@/context/LanguageContext";
-> 6 | import Header from "@/components/Header";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  7 | import Footer from "@/components/Footer";
-  8 |
-  9 | // Optimize Fonts
-
-Import map: aliased to relative './components/Header' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[20:48:55.968] Server  ERROR   ⨯ ./app/layout.tsx:6:1
-Module not found: Can't resolve '@/components/Header'
-  4 | import "./globals.css";
-  5 | import { LanguageProvider } from "@/context/LanguageContext";
-> 6 | import Header from "@/components/Header";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  7 | import Footer from "@/components/Footer";
-  8 |
-  9 | // Optimize Fonts
-
-Import map: aliased to relative './components/Header' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[20:48:55.968] Server  ERROR   ⨯ ./app/layout.tsx:6:1
-Module not found: Can't resolve '@/components/Header'
-  4 | import "./globals.css";
-  5 | import { LanguageProvider } from "@/context/LanguageContext";
-> 6 | import Header from "@/components/Header";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  7 | import Footer from "@/components/Footer";
-  8 |
-  9 | // Optimize Fonts
-
-Import map: aliased to relative './components/Header' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[20:48:55.969] Server  ERROR   ⨯ ./app/layout.tsx:6:1
-Module not found: Can't resolve '@/components/Header'
-  4 | import "./globals.css";
-  5 | import { LanguageProvider } from "@/context/LanguageContext";
-> 6 | import Header from "@/components/Header";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  7 | import Footer from "@/components/Footer";
-  8 |
-  9 | // Optimize Fonts
-
-Import map: aliased to relative './components/Header' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[20:48:55.990] Server  LOG     ✓ Compiled in 190ms
-[20:48:57.011] Browser ERROR   ./app/layout.tsx:6:1
-Module not found: Can't resolve '@/components/Header'
-  4 | import "./globals.css";
-  5 | import { LanguageProvider } from "@/context/LanguageContext";
-> 6 | import Header from "@/components/Header";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  7 | import Footer from "@/components/Footer";
-  8 |
-  9 | // Optimize Fonts
-
-Import map: aliased to relative './components/Header' inside of [project]/
-
-https://nextjs.org/docs/messages/module-not-found
-[20:56:30.792] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[20:56:31.781] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[21:00:37.349] Server  LOG     ✓ Compiled in 93ms
-[21:00:59.589] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[21:01:01.602] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[21:01:12.822] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[21:01:13.797] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[21:12:41.511] Server  LOG     ✓ Compiled in 42ms
-[21:12:43.601] Server  LOG     ✓ Compiled in 36ms
-[21:13:34.290] Server  LOG     ✓ Compiled in 30ms
-[21:14:08.517] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[21:14:10.410] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[21:14:11.618] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[21:14:14.678] Server  LOG     ✓ Compiled in 48ms
-[21:16:02.776] Server  LOG     ✓ Compiled in 25ms
-[21:16:35.642] Server  LOG     ✓ Compiled in 17ms
-[21:17:41.313] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[21:17:45.404] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[21:19:39.346] Server  LOG     ✓ Compiled in 47ms
-[21:26:28.823] Server  LOG     ✓ Compiled in 121ms
-[21:30:30.856] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[21:31:46.352] Server  LOG     ✓ Compiled in 126ms
-[21:35:33.428] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[21:35:41.339] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[21:43:26.695] Server  LOG     ✓ Compiled in 147ms
-[21:47:42.332] Server  LOG     ✓ Compiled in 116ms
-[21:47:42.538] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[21:47:44.712] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[21:48:54.529] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[21:48:55.137] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[21:48:55.455] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[21:48:55.605] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[21:49:46.337] Server  ERROR   ⨯ Error: The default export is not a React Component in "/apply/page"
-[21:49:46.779] Server  ERROR   ⨯ Error: The default export is not a React Component in "/apply/page"
-[21:49:47.333] Server  LOG     ✓ Compiled in 518ms
-[21:49:47.898] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[21:50:32.385] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[21:54:52.429] Server  LOG     ✓ Compiled in 70ms
-[21:59:25.653] Server  LOG     ✓ Compiled in 27ms
-[21:59:46.327] Server  LOG     ✓ Compiled in 33ms
-[23:41:20.209] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[23:42:52.904] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[23:43:21.443] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[23:44:43.233] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[23:44:48.070] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[23:45:24.529] Server  LOG     ✓ Compiled in 83ms
-[23:45:53.450] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[23:45:57.690] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[23:53:00.453] Server  LOG     ✓ Compiled in 68ms
-[23:55:01.341] Server  LOG     ✓ Compiled in 34ms
-[24:00:27.399] Server  LOG     ✓ Compiled in 119ms
-[24:04:00.108] Server  LOG     ✓ Compiled in 94ms
-[24:12:01.083] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[24:12:03.492] Server  LOG     ✓ Compiled in 107ms
-[24:12:14.114] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[24:14:03.744] Server  LOG     ✓ Compiled in 27ms
-[24:14:55.614] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[24:15:02.776] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[24:15:40.496] Server  LOG     ✓ Compiled in 22ms
-[24:16:47.456] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[24:16:47.975] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[24:19:55.661] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[24:22:14.714] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[24:22:30.833] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[24:22:42.283] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[24:22:44.044] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[24:22:44.710] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[24:22:45.149] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[24:23:52.701] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[24:23:54.211] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[24:24:09.599] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[24:25:03.143] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[24:25:21.884] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[24:25:22.636] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[24:25:35.298] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[24:31:17.195] Server  LOG     ✓ Compiled in 22ms
-[24:31:19.778] Server  LOG     ✓ Compiled in 23ms
-[24:32:06.618] Server  LOG     ✓ Compiled in 24ms
-[24:38:13.335] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[28:19:39.478] Server  LOG     ✓ Compiled in 111ms
-[28:23:43.527] Server  LOG     ✓ Compiled in 43ms
-[28:23:44.675] Server  LOG     ✓ Compiled in 51ms
-[28:27:42.129] Server  LOG     ✓ Compiled in 55ms
-[28:28:20.821] Server  LOG     ✓ Compiled in 19ms
-[29:55:20.342] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[29:55:21.367] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[29:55:22.131] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[29:56:41.245] Server  LOG     ✓ Compiled in 50ms
-[29:57:41.269] Server  LOG     ✓ Compiled in 51ms
-[29:58:16.745] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[30:03:19.588] Server  LOG     ✓ Compiled in 49ms
-[30:05:33.370] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[30:09:58.460] Server  LOG     ✓ Compiled in 94ms
-[30:09:58.616] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[30:13:48.019] Server  LOG     ✓ Compiled in 104ms
-[30:13:48.155] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[30:15:17.775] Server  ERROR   ⨯ ./app/layout.tsx:7:1
-Module not found: Can't resolve '@/components/Footer'
-   5 | import { LanguageProvider } from "@/context/LanguageContext";
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="uz" className="scroll-smooth" suppressHydrationWarning={true}>
+                          <body
+                            className="nunito_6e00613f-module__QE8djG__variable plus_jakarta_sans_6cbc0d5f-module__dx4..."
+-                           __processed_526f0735-8a1a-4a01-90f8-7fa0c4dfab39__="true"
+                          >
+                  ...
+
+[00:01:09.475] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:02:20.070] Server  LOG     ✓ Compiled in 122ms
+[00:02:41.373] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:02:41.485] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/apply" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="uz" className="scroll-smooth" suppressHydrationWarning={true}>
+                          <body
+                            className="nunito_6e00613f-module__QE8djG__variable plus_jakarta_sans_6cbc0d5f-module__dx4..."
+-                           __processed_cfafb95a-4a76-4b35-a4e1-00fe3874b18d__="true"
+                          >
+                  ...
+
+[00:03:40.485] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:04:58.034] Server  ERROR   ⨯ ./app/layout.tsx:8:1
+Module not found: Can't resolve '@/components/NavWrapper'
    6 | import Header from "@/components/Header";
->  7 | import Footer from "@/components/Footer";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   8 |
-   9 | // Optimize Fonts
-  10 | const nunito = Nunito({
+   7 | import Footer from "@/components/Footer";
+>  8 | import NavWrapper from "@/components/NavWrapper";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 |
+  10 | // Optimize Fonts
+  11 | const nunito = Nunito({
 
-Import map: aliased to relative './components/Footer' inside of [project]/
+Import map: aliased to relative './components/NavWrapper' inside of [project]/
 
 
 https://nextjs.org/docs/messages/module-not-found
 
 
-[30:15:17.782] Server  ERROR   ⨯ ./app/layout.tsx:7:1
-Module not found: Can't resolve '@/components/Footer'
-   5 | import { LanguageProvider } from "@/context/LanguageContext";
+[00:04:58.035] Server  ERROR   ⨯ ./app/layout.tsx:8:1
+Module not found: Can't resolve '@/components/NavWrapper'
    6 | import Header from "@/components/Header";
->  7 | import Footer from "@/components/Footer";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   8 |
-   9 | // Optimize Fonts
-  10 | const nunito = Nunito({
+   7 | import Footer from "@/components/Footer";
+>  8 | import NavWrapper from "@/components/NavWrapper";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 |
+  10 | // Optimize Fonts
+  11 | const nunito = Nunito({
 
-Import map: aliased to relative './components/Footer' inside of [project]/
+Import map: aliased to relative './components/NavWrapper' inside of [project]/
 
 
 https://nextjs.org/docs/messages/module-not-found
 
 
-[30:15:17.812] Server  ERROR   ⨯ ./app/layout.tsx:7:1
-Module not found: Can't resolve '@/components/Footer'
-   5 | import { LanguageProvider } from "@/context/LanguageContext";
+[00:04:58.036] Server  ERROR   ⨯ ./app/layout.tsx:8:1
+Module not found: Can't resolve '@/components/NavWrapper'
    6 | import Header from "@/components/Header";
->  7 | import Footer from "@/components/Footer";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   8 |
-   9 | // Optimize Fonts
-  10 | const nunito = Nunito({
+   7 | import Footer from "@/components/Footer";
+>  8 | import NavWrapper from "@/components/NavWrapper";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 |
+  10 | // Optimize Fonts
+  11 | const nunito = Nunito({
 
-Import map: aliased to relative './components/Footer' inside of [project]/
+Import map: aliased to relative './components/NavWrapper' inside of [project]/
 
 
 https://nextjs.org/docs/messages/module-not-found
 
 
-[30:15:17.815] Server  ERROR   ⨯ ./app/layout.tsx:7:1
-Module not found: Can't resolve '@/components/Footer'
-   5 | import { LanguageProvider } from "@/context/LanguageContext";
+[00:04:58.037] Server  ERROR   ⨯ ./app/layout.tsx:8:1
+Module not found: Can't resolve '@/components/NavWrapper'
    6 | import Header from "@/components/Header";
->  7 | import Footer from "@/components/Footer";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   8 |
-   9 | // Optimize Fonts
-  10 | const nunito = Nunito({
+   7 | import Footer from "@/components/Footer";
+>  8 | import NavWrapper from "@/components/NavWrapper";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 |
+  10 | // Optimize Fonts
+  11 | const nunito = Nunito({
 
-Import map: aliased to relative './components/Footer' inside of [project]/
+Import map: aliased to relative './components/NavWrapper' inside of [project]/
 
 
 https://nextjs.org/docs/messages/module-not-found
 
 
-[30:15:17.822] Server  ERROR   ⨯ ./app/layout.tsx:7:1
-Module not found: Can't resolve '@/components/Footer'
-   5 | import { LanguageProvider } from "@/context/LanguageContext";
+[00:04:58.038] Server  ERROR   ⨯ ./app/layout.tsx:8:1
+Module not found: Can't resolve '@/components/NavWrapper'
    6 | import Header from "@/components/Header";
->  7 | import Footer from "@/components/Footer";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   8 |
-   9 | // Optimize Fonts
-  10 | const nunito = Nunito({
+   7 | import Footer from "@/components/Footer";
+>  8 | import NavWrapper from "@/components/NavWrapper";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 |
+  10 | // Optimize Fonts
+  11 | const nunito = Nunito({
 
-Import map: aliased to relative './components/Footer' inside of [project]/
+Import map: aliased to relative './components/NavWrapper' inside of [project]/
 
 
 https://nextjs.org/docs/messages/module-not-found
 
 
-[30:15:17.822] Server  ERROR   ⨯ ./app/layout.tsx:7:1
-Module not found: Can't resolve '@/components/Footer'
-   5 | import { LanguageProvider } from "@/context/LanguageContext";
+[00:04:58.039] Server  ERROR   ⨯ ./app/layout.tsx:8:1
+Module not found: Can't resolve '@/components/NavWrapper'
    6 | import Header from "@/components/Header";
->  7 | import Footer from "@/components/Footer";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   8 |
-   9 | // Optimize Fonts
-  10 | const nunito = Nunito({
+   7 | import Footer from "@/components/Footer";
+>  8 | import NavWrapper from "@/components/NavWrapper";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 |
+  10 | // Optimize Fonts
+  11 | const nunito = Nunito({
 
-Import map: aliased to relative './components/Footer' inside of [project]/
+Import map: aliased to relative './components/NavWrapper' inside of [project]/
 
 
 https://nextjs.org/docs/messages/module-not-found
 
 
-[30:15:17.836] Server  ERROR   ⨯ ./app/layout.tsx:7:1
-Module not found: Can't resolve '@/components/Footer'
-   5 | import { LanguageProvider } from "@/context/LanguageContext";
+[00:04:58.039] Server  ERROR   ⨯ ./app/layout.tsx:8:1
+Module not found: Can't resolve '@/components/NavWrapper'
    6 | import Header from "@/components/Header";
->  7 | import Footer from "@/components/Footer";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   8 |
-   9 | // Optimize Fonts
-  10 | const nunito = Nunito({
+   7 | import Footer from "@/components/Footer";
+>  8 | import NavWrapper from "@/components/NavWrapper";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 |
+  10 | // Optimize Fonts
+  11 | const nunito = Nunito({
 
-Import map: aliased to relative './components/Footer' inside of [project]/
+Import map: aliased to relative './components/NavWrapper' inside of [project]/
 
 
 https://nextjs.org/docs/messages/module-not-found
 
 
-[30:15:17.837] Server  ERROR   ⨯ ./app/layout.tsx:7:1
-Module not found: Can't resolve '@/components/Footer'
-   5 | import { LanguageProvider } from "@/context/LanguageContext";
+[00:04:58.042] Server  ERROR   ⨯ ./app/layout.tsx:8:1
+Module not found: Can't resolve '@/components/NavWrapper'
    6 | import Header from "@/components/Header";
->  7 | import Footer from "@/components/Footer";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   8 |
-   9 | // Optimize Fonts
-  10 | const nunito = Nunito({
+   7 | import Footer from "@/components/Footer";
+>  8 | import NavWrapper from "@/components/NavWrapper";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 |
+  10 | // Optimize Fonts
+  11 | const nunito = Nunito({
 
-Import map: aliased to relative './components/Footer' inside of [project]/
+Import map: aliased to relative './components/NavWrapper' inside of [project]/
 
 
 https://nextjs.org/docs/messages/module-not-found
 
 
-[30:15:17.942] Server  ERROR   ⨯ ./app/layout.tsx:7:1
-Module not found: Can't resolve '@/components/Footer'
-   5 | import { LanguageProvider } from "@/context/LanguageContext";
+[00:04:58.043] Server  ERROR   ⨯ ./app/layout.tsx:8:1
+Module not found: Can't resolve '@/components/NavWrapper'
    6 | import Header from "@/components/Header";
->  7 | import Footer from "@/components/Footer";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   8 |
-   9 | // Optimize Fonts
-  10 | const nunito = Nunito({
+   7 | import Footer from "@/components/Footer";
+>  8 | import NavWrapper from "@/components/NavWrapper";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 |
+  10 | // Optimize Fonts
+  11 | const nunito = Nunito({
 
-Import map: aliased to relative './components/Footer' inside of [project]/
+Import map: aliased to relative './components/NavWrapper' inside of [project]/
 
 
 https://nextjs.org/docs/messages/module-not-found
 
 
-[30:15:17.942] Server  ERROR   ⨯ ./app/layout.tsx:7:1
-Module not found: Can't resolve '@/components/Footer'
-   5 | import { LanguageProvider } from "@/context/LanguageContext";
+[00:04:58.043] Server  ERROR   ⨯ ./app/layout.tsx:8:1
+Module not found: Can't resolve '@/components/NavWrapper'
    6 | import Header from "@/components/Header";
->  7 | import Footer from "@/components/Footer";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   8 |
-   9 | // Optimize Fonts
-  10 | const nunito = Nunito({
+   7 | import Footer from "@/components/Footer";
+>  8 | import NavWrapper from "@/components/NavWrapper";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 |
+  10 | // Optimize Fonts
+  11 | const nunito = Nunito({
 
-Import map: aliased to relative './components/Footer' inside of [project]/
+Import map: aliased to relative './components/NavWrapper' inside of [project]/
 
 
 https://nextjs.org/docs/messages/module-not-found
 
 
-[30:15:17.942] Server  ERROR   ⨯ ./app/layout.tsx:7:1
-Module not found: Can't resolve '@/components/Footer'
-   5 | import { LanguageProvider } from "@/context/LanguageContext";
+[00:04:58.044] Server  ERROR   ⨯ ./app/layout.tsx:8:1
+Module not found: Can't resolve '@/components/NavWrapper'
    6 | import Header from "@/components/Header";
->  7 | import Footer from "@/components/Footer";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   8 |
-   9 | // Optimize Fonts
-  10 | const nunito = Nunito({
+   7 | import Footer from "@/components/Footer";
+>  8 | import NavWrapper from "@/components/NavWrapper";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 |
+  10 | // Optimize Fonts
+  11 | const nunito = Nunito({
 
-Import map: aliased to relative './components/Footer' inside of [project]/
+Import map: aliased to relative './components/NavWrapper' inside of [project]/
 
 
 https://nextjs.org/docs/messages/module-not-found
 
 
-[30:15:17.943] Server  ERROR   ⨯ ./app/layout.tsx:7:1
-Module not found: Can't resolve '@/components/Footer'
-   5 | import { LanguageProvider } from "@/context/LanguageContext";
+[00:04:58.044] Server  ERROR   ⨯ ./app/layout.tsx:8:1
+Module not found: Can't resolve '@/components/NavWrapper'
    6 | import Header from "@/components/Header";
->  7 | import Footer from "@/components/Footer";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   8 |
-   9 | // Optimize Fonts
-  10 | const nunito = Nunito({
+   7 | import Footer from "@/components/Footer";
+>  8 | import NavWrapper from "@/components/NavWrapper";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 |
+  10 | // Optimize Fonts
+  11 | const nunito = Nunito({
 
-Import map: aliased to relative './components/Footer' inside of [project]/
+Import map: aliased to relative './components/NavWrapper' inside of [project]/
 
 
 https://nextjs.org/docs/messages/module-not-found
 
 
-[30:15:17.943] Server  ERROR   ⨯ ./app/layout.tsx:7:1
-Module not found: Can't resolve '@/components/Footer'
-   5 | import { LanguageProvider } from "@/context/LanguageContext";
+[00:04:58.045] Server  ERROR   ⨯ ./app/layout.tsx:8:1
+Module not found: Can't resolve '@/components/NavWrapper'
    6 | import Header from "@/components/Header";
->  7 | import Footer from "@/components/Footer";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   8 |
-   9 | // Optimize Fonts
-  10 | const nunito = Nunito({
+   7 | import Footer from "@/components/Footer";
+>  8 | import NavWrapper from "@/components/NavWrapper";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 |
+  10 | // Optimize Fonts
+  11 | const nunito = Nunito({
 
-Import map: aliased to relative './components/Footer' inside of [project]/
+Import map: aliased to relative './components/NavWrapper' inside of [project]/
 
 
 https://nextjs.org/docs/messages/module-not-found
 
 
-[30:15:17.944] Server  ERROR   ⨯ ./app/layout.tsx:7:1
-Module not found: Can't resolve '@/components/Footer'
-   5 | import { LanguageProvider } from "@/context/LanguageContext";
+[00:04:58.046] Server  ERROR   ⨯ ./app/layout.tsx:8:1
+Module not found: Can't resolve '@/components/NavWrapper'
    6 | import Header from "@/components/Header";
->  7 | import Footer from "@/components/Footer";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   8 |
-   9 | // Optimize Fonts
-  10 | const nunito = Nunito({
+   7 | import Footer from "@/components/Footer";
+>  8 | import NavWrapper from "@/components/NavWrapper";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 |
+  10 | // Optimize Fonts
+  11 | const nunito = Nunito({
 
-Import map: aliased to relative './components/Footer' inside of [project]/
+Import map: aliased to relative './components/NavWrapper' inside of [project]/
 
 
 https://nextjs.org/docs/messages/module-not-found
 
 
-[30:15:17.944] Server  ERROR   ⨯ ./app/layout.tsx:7:1
-Module not found: Can't resolve '@/components/Footer'
-   5 | import { LanguageProvider } from "@/context/LanguageContext";
+[00:04:58.047] Server  ERROR   ⨯ ./app/layout.tsx:8:1
+Module not found: Can't resolve '@/components/NavWrapper'
    6 | import Header from "@/components/Header";
->  7 | import Footer from "@/components/Footer";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   8 |
-   9 | // Optimize Fonts
-  10 | const nunito = Nunito({
+   7 | import Footer from "@/components/Footer";
+>  8 | import NavWrapper from "@/components/NavWrapper";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 |
+  10 | // Optimize Fonts
+  11 | const nunito = Nunito({
 
-Import map: aliased to relative './components/Footer' inside of [project]/
+Import map: aliased to relative './components/NavWrapper' inside of [project]/
 
 
 https://nextjs.org/docs/messages/module-not-found
 
 
-[30:15:17.945] Server  ERROR   ⨯ ./app/layout.tsx:7:1
-Module not found: Can't resolve '@/components/Footer'
-   5 | import { LanguageProvider } from "@/context/LanguageContext";
+[00:04:58.048] Server  ERROR   ⨯ ./app/layout.tsx:8:1
+Module not found: Can't resolve '@/components/NavWrapper'
    6 | import Header from "@/components/Header";
->  7 | import Footer from "@/components/Footer";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   8 |
-   9 | // Optimize Fonts
-  10 | const nunito = Nunito({
+   7 | import Footer from "@/components/Footer";
+>  8 | import NavWrapper from "@/components/NavWrapper";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 |
+  10 | // Optimize Fonts
+  11 | const nunito = Nunito({
 
-Import map: aliased to relative './components/Footer' inside of [project]/
+Import map: aliased to relative './components/NavWrapper' inside of [project]/
 
 
 https://nextjs.org/docs/messages/module-not-found
 
 
-[30:15:17.945] Server  ERROR   ⨯ ./app/layout.tsx:7:1
-Module not found: Can't resolve '@/components/Footer'
-   5 | import { LanguageProvider } from "@/context/LanguageContext";
+[00:04:58.048] Server  ERROR   ⨯ ./app/layout.tsx:8:1
+Module not found: Can't resolve '@/components/NavWrapper'
    6 | import Header from "@/components/Header";
->  7 | import Footer from "@/components/Footer";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   8 |
-   9 | // Optimize Fonts
-  10 | const nunito = Nunito({
+   7 | import Footer from "@/components/Footer";
+>  8 | import NavWrapper from "@/components/NavWrapper";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 |
+  10 | // Optimize Fonts
+  11 | const nunito = Nunito({
 
-Import map: aliased to relative './components/Footer' inside of [project]/
+Import map: aliased to relative './components/NavWrapper' inside of [project]/
 
 
 https://nextjs.org/docs/messages/module-not-found
 
 
-[30:15:17.946] Server  ERROR   ⨯ ./app/layout.tsx:7:1
-Module not found: Can't resolve '@/components/Footer'
-   5 | import { LanguageProvider } from "@/context/LanguageContext";
+[00:04:58.049] Server  ERROR   ⨯ ./app/layout.tsx:8:1
+Module not found: Can't resolve '@/components/NavWrapper'
    6 | import Header from "@/components/Header";
->  7 | import Footer from "@/components/Footer";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   8 |
-   9 | // Optimize Fonts
-  10 | const nunito = Nunito({
+   7 | import Footer from "@/components/Footer";
+>  8 | import NavWrapper from "@/components/NavWrapper";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 |
+  10 | // Optimize Fonts
+  11 | const nunito = Nunito({
 
-Import map: aliased to relative './components/Footer' inside of [project]/
+Import map: aliased to relative './components/NavWrapper' inside of [project]/
 
 
 https://nextjs.org/docs/messages/module-not-found
 
 
-[30:15:17.946] Server  ERROR   ⨯ ./app/layout.tsx:7:1
-Module not found: Can't resolve '@/components/Footer'
-   5 | import { LanguageProvider } from "@/context/LanguageContext";
+[00:04:58.049] Server  ERROR   ⨯ ./app/layout.tsx:8:1
+Module not found: Can't resolve '@/components/NavWrapper'
    6 | import Header from "@/components/Header";
->  7 | import Footer from "@/components/Footer";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   8 |
-   9 | // Optimize Fonts
-  10 | const nunito = Nunito({
+   7 | import Footer from "@/components/Footer";
+>  8 | import NavWrapper from "@/components/NavWrapper";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 |
+  10 | // Optimize Fonts
+  11 | const nunito = Nunito({
 
-Import map: aliased to relative './components/Footer' inside of [project]/
+Import map: aliased to relative './components/NavWrapper' inside of [project]/
 
 
 https://nextjs.org/docs/messages/module-not-found
 
 
-[30:15:17.947] Server  ERROR   ⨯ ./app/layout.tsx:7:1
-Module not found: Can't resolve '@/components/Footer'
-   5 | import { LanguageProvider } from "@/context/LanguageContext";
+[00:04:58.049] Server  ERROR   ⨯ ./app/layout.tsx:8:1
+Module not found: Can't resolve '@/components/NavWrapper'
    6 | import Header from "@/components/Header";
->  7 | import Footer from "@/components/Footer";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   8 |
-   9 | // Optimize Fonts
-  10 | const nunito = Nunito({
+   7 | import Footer from "@/components/Footer";
+>  8 | import NavWrapper from "@/components/NavWrapper";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 |
+  10 | // Optimize Fonts
+  11 | const nunito = Nunito({
 
-Import map: aliased to relative './components/Footer' inside of [project]/
+Import map: aliased to relative './components/NavWrapper' inside of [project]/
 
 
 https://nextjs.org/docs/messages/module-not-found
 
 
-[30:15:17.973] Server  LOG     ✓ Compiled in 245ms
-[30:15:18.078] Browser ERROR   ./app/layout.tsx:7:1
-Module not found: Can't resolve '@/components/Footer'
-   5 | import { LanguageProvider } from "@/context/LanguageContext";
+[00:04:58.050] Server  ERROR   ⨯ ./app/layout.tsx:8:1
+Module not found: Can't resolve '@/components/NavWrapper'
    6 | import Header from "@/components/Header";
->  7 | import Footer from "@/components/Footer";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   8 |
-   9 | // Optimize Fonts
-  10 | const nunito = Nunito({
+   7 | import Footer from "@/components/Footer";
+>  8 | import NavWrapper from "@/components/NavWrapper";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 |
+  10 | // Optimize Fonts
+  11 | const nunito = Nunito({
 
-Import map: aliased to relative './components/Footer' inside of [project]/
+Import map: aliased to relative './components/NavWrapper' inside of [project]/
+
 
 https://nextjs.org/docs/messages/module-not-found
-[30:17:08.062] Server  LOG     ✓ Compiled in 79ms
-[30:19:21.253] Server  LOG     ✓ Compiled in 29ms
-[30:19:37.979] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[30:21:50.005] Server  LOG     ✓ Compiled in 18ms
-[30:24:46.794] Server  LOG     ✓ Compiled in 19ms
-[30:30:52.961] Server  LOG     ✓ Compiled in 75ms
-[30:31:35.988] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[30:31:38.083] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[30:37:15.236] Server  LOG     ✓ Compiled in 38ms
-[30:38:00.543] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[30:38:10.364] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[30:38:15.413] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[30:38:55.347] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[30:45:44.121] Server  LOG     ✓ Compiled in 29ms
-[30:46:44.021] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[30:47:07.398] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[30:47:56.637] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[30:49:07.830] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[30:49:10.538] Server  LOG     ✓ Compiled in 39ms
-[30:49:26.790] Server  LOG     ✓ Compiled in 43ms
-[30:49:26.872] Browser ERROR   A component is changing an uncontrolled input to be controlled. This is likely caused by the value changing from undefined to a defined value, which should not happen. Decide between using a controlled or uncontrolled input element for the lifetime of the component. More info: https://react.dev/link/controlled-components
-[30:56:22.822] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+
+
+[00:04:58.051] Server  ERROR   ⨯ ./app/layout.tsx:8:1
+Module not found: Can't resolve '@/components/NavWrapper'
+   6 | import Header from "@/components/Header";
+   7 | import Footer from "@/components/Footer";
+>  8 | import NavWrapper from "@/components/NavWrapper";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 |
+  10 | // Optimize Fonts
+  11 | const nunito = Nunito({
+
+Import map: aliased to relative './components/NavWrapper' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:58.052] Server  ERROR   ⨯ ./app/layout.tsx:8:1
+Module not found: Can't resolve '@/components/NavWrapper'
+   6 | import Header from "@/components/Header";
+   7 | import Footer from "@/components/Footer";
+>  8 | import NavWrapper from "@/components/NavWrapper";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 |
+  10 | // Optimize Fonts
+  11 | const nunito = Nunito({
+
+Import map: aliased to relative './components/NavWrapper' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:58.053] Server  ERROR   ⨯ ./app/layout.tsx:8:1
+Module not found: Can't resolve '@/components/NavWrapper'
+   6 | import Header from "@/components/Header";
+   7 | import Footer from "@/components/Footer";
+>  8 | import NavWrapper from "@/components/NavWrapper";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 |
+  10 | // Optimize Fonts
+  11 | const nunito = Nunito({
+
+Import map: aliased to relative './components/NavWrapper' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:58.054] Server  ERROR   ⨯ ./app/layout.tsx:8:1
+Module not found: Can't resolve '@/components/NavWrapper'
+   6 | import Header from "@/components/Header";
+   7 | import Footer from "@/components/Footer";
+>  8 | import NavWrapper from "@/components/NavWrapper";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 |
+  10 | // Optimize Fonts
+  11 | const nunito = Nunito({
+
+Import map: aliased to relative './components/NavWrapper' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:58.054] Server  ERROR   ⨯ ./app/layout.tsx:8:1
+Module not found: Can't resolve '@/components/NavWrapper'
+   6 | import Header from "@/components/Header";
+   7 | import Footer from "@/components/Footer";
+>  8 | import NavWrapper from "@/components/NavWrapper";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 |
+  10 | // Optimize Fonts
+  11 | const nunito = Nunito({
+
+Import map: aliased to relative './components/NavWrapper' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:58.055] Server  ERROR   ⨯ ./app/layout.tsx:8:1
+Module not found: Can't resolve '@/components/NavWrapper'
+   6 | import Header from "@/components/Header";
+   7 | import Footer from "@/components/Footer";
+>  8 | import NavWrapper from "@/components/NavWrapper";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 |
+  10 | // Optimize Fonts
+  11 | const nunito = Nunito({
+
+Import map: aliased to relative './components/NavWrapper' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:58.055] Server  ERROR   ⨯ ./app/layout.tsx:8:1
+Module not found: Can't resolve '@/components/NavWrapper'
+   6 | import Header from "@/components/Header";
+   7 | import Footer from "@/components/Footer";
+>  8 | import NavWrapper from "@/components/NavWrapper";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 |
+  10 | // Optimize Fonts
+  11 | const nunito = Nunito({
+
+Import map: aliased to relative './components/NavWrapper' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:58.056] Server  ERROR   ⨯ ./app/layout.tsx:8:1
+Module not found: Can't resolve '@/components/NavWrapper'
+   6 | import Header from "@/components/Header";
+   7 | import Footer from "@/components/Footer";
+>  8 | import NavWrapper from "@/components/NavWrapper";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 |
+  10 | // Optimize Fonts
+  11 | const nunito = Nunito({
+
+Import map: aliased to relative './components/NavWrapper' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:58.056] Server  ERROR   ⨯ ./app/layout.tsx:8:1
+Module not found: Can't resolve '@/components/NavWrapper'
+   6 | import Header from "@/components/Header";
+   7 | import Footer from "@/components/Footer";
+>  8 | import NavWrapper from "@/components/NavWrapper";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 |
+  10 | // Optimize Fonts
+  11 | const nunito = Nunito({
+
+Import map: aliased to relative './components/NavWrapper' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:58.057] Server  ERROR   ⨯ ./app/layout.tsx:8:1
+Module not found: Can't resolve '@/components/NavWrapper'
+   6 | import Header from "@/components/Header";
+   7 | import Footer from "@/components/Footer";
+>  8 | import NavWrapper from "@/components/NavWrapper";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 |
+  10 | // Optimize Fonts
+  11 | const nunito = Nunito({
+
+Import map: aliased to relative './components/NavWrapper' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:58.057] Server  ERROR   ⨯ ./app/layout.tsx:8:1
+Module not found: Can't resolve '@/components/NavWrapper'
+   6 | import Header from "@/components/Header";
+   7 | import Footer from "@/components/Footer";
+>  8 | import NavWrapper from "@/components/NavWrapper";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 |
+  10 | // Optimize Fonts
+  11 | const nunito = Nunito({
+
+Import map: aliased to relative './components/NavWrapper' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:58.172] Browser ERROR   ./app/layout.tsx:8:1
+Module not found: Can't resolve '@/components/NavWrapper'
+   6 | import Header from "@/components/Header";
+   7 | import Footer from "@/components/Footer";
+>  8 | import NavWrapper from "@/components/NavWrapper";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 |
+  10 | // Optimize Fonts
+  11 | const nunito = Nunito({
+
+Import map: aliased to relative './components/NavWrapper' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:04:59.733] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:04:59.733] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/apply" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="uz" className="scroll-smooth" suppressHydrationWarning={true}>
+                          <body
+                            className="nunito_6e00613f-module__QE8djG__variable plus_jakarta_sans_6cbc0d5f-module__dx4..."
+-                           __processed_37b61387-9f72-42a9-9230-0324712c2d61__="true"
+                          >
+                  ...
+
+[00:05:10.781] Server  LOG     ✓ Compiled in 20ms
+[00:05:11.639] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:05:11.639] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/apply" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="uz" className="scroll-smooth" suppressHydrationWarning={true}>
+                          <body
+                            className="nunito_6e00613f-module__QE8djG__variable plus_jakarta_sans_6cbc0d5f-module__dx4..."
+-                           __processed_377b4f9a-0e00-4056-ab5b-d88bb084e7b6__="true"
+                          >
+                  ...
+
+[00:05:45.392] Server  ERROR   ⨯ The file "./proxy.ts" must export a function, either as a default export or as a named "proxy" export.
+This function is what Next.js runs for every request handled by this proxy (previously called middleware).
+
+Why this happens:
+- You are migrating from `middleware` to `proxy`, but haven't updated the exported function.
+- The file exists but doesn't export a function.
+- The export is not a function (e.g., an object or constant).
+- There's a syntax error preventing the export from being recognized.
+
+To fix it:
+- Ensure this file has either a default or "proxy" function export.
+
+Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+[00:05:45.590] Server  LOG     ✓ Compiled in 180ms
+[00:05:46.149] Server  ERROR   ⨯ Error: The Proxy file "/proxy" must export a function named `proxy` or a default function.
+[00:05:46.491] Browser ERROR   uncaughtError: Error: ./proxy.ts
+Proxy is missing expected function export name
+This function is what Next.js runs for every request handled by this proxy (previously called middleware).
+
+Why this happens:
+- You are migrating from `middleware` to `proxy`, but haven't updated the exported function.
+- The file exists but doesn't export a function.
+- The export is not a function (e.g., an object or constant).
+- There's a syntax error preventing the export from being recognized.
+
+To fix it:
+- Ensure this file has either a default or "proxy" function export.
+
+Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+
+
+[00:05:46.660] Browser ERROR   ./proxy.ts
+Proxy is missing expected function export name
+This function is what Next.js runs for every request handled by this proxy (previously called middleware).
+
+Why this happens:
+- You are migrating from `middleware` to `proxy`, but haven't updated the exported function.
+- The file exists but doesn't export a function.
+- The export is not a function (e.g., an object or constant).
+- There's a syntax error preventing the export from being recognized.
+
+To fix it:
+- Ensure this file has either a default or "proxy" function export.
+
+Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+[00:05:46.660] Browser ERROR   ./proxy.ts
+Proxy is missing expected function export name
+This function is what Next.js runs for every request handled by this proxy (previously called middleware).
+
+Why this happens:
+- You are migrating from `middleware` to `proxy`, but haven't updated the exported function.
+- The file exists but doesn't export a function.
+- The export is not a function (e.g., an object or constant).
+- There's a syntax error preventing the export from being recognized.
+
+To fix it:
+- Ensure this file has either a default or "proxy" function export.
+
+Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+[00:06:01.970] Server  LOG     ✓ Compiled in 28ms
+[00:06:02.200] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:06:02.308] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="uz" className="scroll-smooth" suppressHydrationWarning={true}>
+                          <body
+                            className="nunito_6e00613f-module__QE8djG__variable plus_jakarta_sans_6cbc0d5f-module__dx4..."
+-                           __processed_908edaa0-22a2-40c4-8944-64f93c03572b__="true"
+                          >
+                  ...
+
+[00:06:04.180] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:06:04.289] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/apply" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="uz" className="scroll-smooth" suppressHydrationWarning={true}>
+                          <body
+                            className="nunito_6e00613f-module__QE8djG__variable plus_jakarta_sans_6cbc0d5f-module__dx4..."
+-                           __processed_8b619124-655c-4d6c-8e5b-8365c1d0f947__="true"
+                          >
+                  ...
+
+[00:06:28.490] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:06:28.490] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/apply" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="uz" className="scroll-smooth" suppressHydrationWarning={true}>
+                          <body
+                            className="nunito_6e00613f-module__QE8djG__variable plus_jakarta_sans_6cbc0d5f-module__dx4..."
+-                           __processed_f5311477-470a-4d52-b70a-ca118c9effdb__="true"
+                          >
+                  ...
+
+[00:06:29.070] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:06:29.070] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/apply" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="uz" className="scroll-smooth" suppressHydrationWarning={true}>
+                          <body
+                            className="nunito_6e00613f-module__QE8djG__variable plus_jakarta_sans_6cbc0d5f-module__dx4..."
+-                           __processed_df8d34d4-b650-4866-88d4-a486360c0ff2__="true"
+                          >
+                  ...
+
+[00:06:29.174] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:06:29.174] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/apply" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="uz" className="scroll-smooth" suppressHydrationWarning={true}>
+                          <body
+                            className="nunito_6e00613f-module__QE8djG__variable plus_jakarta_sans_6cbc0d5f-module__dx4..."
+-                           __processed_e86de600-5343-47a5-bf0f-49ddf8ed240c__="true"
+                          >
+                  ...
+
+[00:07:49.918] Server  LOG     ✓ Compiled in 109ms
+[00:11:06.812] Server  LOG     ✓ Compiled in 198ms
+[00:14:40.829] Server  LOG     ✓ Compiled in 15ms
