@@ -27,7 +27,7 @@ const NAV_TEXT = {
 
 export default function Header() {
     const pathname = usePathname();
-    if (pathname && pathname.includes('/apply')) return null;
+    if (pathname && (pathname.includes('/apply') || pathname.startsWith('/dashboard') || pathname.startsWith('/admin') || pathname.startsWith('/activate') || pathname.startsWith('/forgot-password') || pathname.startsWith('/reset-password'))) return null;
 
     const { push, lang } = useLangRouter();
     const { toggleLanguage } = useLanguage();

@@ -1,927 +1,206 @@
-[00:00:01.289] Server  WARN    ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
-[00:00:01.402] Server  LOG     ✓ Ready in 1152ms
-[00:00:02.598] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:02.707] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
-      <AppDevOverlayErrorBoundary globalError={[...]}>
-        <ReplaySsrOnlyErrors>
-        <DevRootHTTPAccessFallbackBoundary>
-          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
-              <RedirectBoundary>
-                <RedirectErrorBoundary router={{...}}>
-                  <Head>
-                  <__next_root_layout_boundary__>
-                    <SegmentViewNode type="layout" pagePath="layout.tsx">
-                      <SegmentTrieNode>
-                      <link>
-                      <script>
-                      <script>
-                      <RootLayout>
-                        <html lang="uz" className="scroll-smooth" suppressHydrationWarning={true}>
-                          <body
-                            className="nunito_6e00613f-module__QE8djG__variable plus_jakarta_sans_6cbc0d5f-module__dx4..."
--                           __processed_526f0735-8a1a-4a01-90f8-7fa0c4dfab39__="true"
-                          >
-                  ...
-
-[00:01:09.475] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[00:02:20.070] Server  LOG     ✓ Compiled in 122ms
-[00:02:41.373] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:02:41.485] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
-      <AppDevOverlayErrorBoundary globalError={[...]}>
-        <ReplaySsrOnlyErrors>
-        <DevRootHTTPAccessFallbackBoundary>
-          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/apply" notFound={<NotAllowedRootHTTPFallbackError>} ...>
-              <RedirectBoundary>
-                <RedirectErrorBoundary router={{...}}>
-                  <Head>
-                  <__next_root_layout_boundary__>
-                    <SegmentViewNode type="layout" pagePath="layout.tsx">
-                      <SegmentTrieNode>
-                      <link>
-                      <script>
-                      <script>
-                      <RootLayout>
-                        <html lang="uz" className="scroll-smooth" suppressHydrationWarning={true}>
-                          <body
-                            className="nunito_6e00613f-module__QE8djG__variable plus_jakarta_sans_6cbc0d5f-module__dx4..."
--                           __processed_cfafb95a-4a76-4b35-a4e1-00fe3874b18d__="true"
-                          >
-                  ...
-
-[00:03:40.485] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[00:04:58.034] Server  ERROR   ⨯ ./app/layout.tsx:8:1
-Module not found: Can't resolve '@/components/NavWrapper'
-   6 | import Header from "@/components/Header";
-   7 | import Footer from "@/components/Footer";
->  8 | import NavWrapper from "@/components/NavWrapper";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 |
-  10 | // Optimize Fonts
-  11 | const nunito = Nunito({
-
-Import map: aliased to relative './components/NavWrapper' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:04:58.035] Server  ERROR   ⨯ ./app/layout.tsx:8:1
-Module not found: Can't resolve '@/components/NavWrapper'
-   6 | import Header from "@/components/Header";
-   7 | import Footer from "@/components/Footer";
->  8 | import NavWrapper from "@/components/NavWrapper";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 |
-  10 | // Optimize Fonts
-  11 | const nunito = Nunito({
-
-Import map: aliased to relative './components/NavWrapper' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:04:58.036] Server  ERROR   ⨯ ./app/layout.tsx:8:1
-Module not found: Can't resolve '@/components/NavWrapper'
-   6 | import Header from "@/components/Header";
-   7 | import Footer from "@/components/Footer";
->  8 | import NavWrapper from "@/components/NavWrapper";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 |
-  10 | // Optimize Fonts
-  11 | const nunito = Nunito({
-
-Import map: aliased to relative './components/NavWrapper' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:04:58.037] Server  ERROR   ⨯ ./app/layout.tsx:8:1
-Module not found: Can't resolve '@/components/NavWrapper'
-   6 | import Header from "@/components/Header";
-   7 | import Footer from "@/components/Footer";
->  8 | import NavWrapper from "@/components/NavWrapper";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 |
-  10 | // Optimize Fonts
-  11 | const nunito = Nunito({
-
-Import map: aliased to relative './components/NavWrapper' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:04:58.038] Server  ERROR   ⨯ ./app/layout.tsx:8:1
-Module not found: Can't resolve '@/components/NavWrapper'
-   6 | import Header from "@/components/Header";
-   7 | import Footer from "@/components/Footer";
->  8 | import NavWrapper from "@/components/NavWrapper";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 |
-  10 | // Optimize Fonts
-  11 | const nunito = Nunito({
-
-Import map: aliased to relative './components/NavWrapper' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:04:58.039] Server  ERROR   ⨯ ./app/layout.tsx:8:1
-Module not found: Can't resolve '@/components/NavWrapper'
-   6 | import Header from "@/components/Header";
-   7 | import Footer from "@/components/Footer";
->  8 | import NavWrapper from "@/components/NavWrapper";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 |
-  10 | // Optimize Fonts
-  11 | const nunito = Nunito({
-
-Import map: aliased to relative './components/NavWrapper' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:04:58.039] Server  ERROR   ⨯ ./app/layout.tsx:8:1
-Module not found: Can't resolve '@/components/NavWrapper'
-   6 | import Header from "@/components/Header";
-   7 | import Footer from "@/components/Footer";
->  8 | import NavWrapper from "@/components/NavWrapper";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 |
-  10 | // Optimize Fonts
-  11 | const nunito = Nunito({
-
-Import map: aliased to relative './components/NavWrapper' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:04:58.042] Server  ERROR   ⨯ ./app/layout.tsx:8:1
-Module not found: Can't resolve '@/components/NavWrapper'
-   6 | import Header from "@/components/Header";
-   7 | import Footer from "@/components/Footer";
->  8 | import NavWrapper from "@/components/NavWrapper";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 |
-  10 | // Optimize Fonts
-  11 | const nunito = Nunito({
-
-Import map: aliased to relative './components/NavWrapper' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:04:58.043] Server  ERROR   ⨯ ./app/layout.tsx:8:1
-Module not found: Can't resolve '@/components/NavWrapper'
-   6 | import Header from "@/components/Header";
-   7 | import Footer from "@/components/Footer";
->  8 | import NavWrapper from "@/components/NavWrapper";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 |
-  10 | // Optimize Fonts
-  11 | const nunito = Nunito({
-
-Import map: aliased to relative './components/NavWrapper' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:04:58.043] Server  ERROR   ⨯ ./app/layout.tsx:8:1
-Module not found: Can't resolve '@/components/NavWrapper'
-   6 | import Header from "@/components/Header";
-   7 | import Footer from "@/components/Footer";
->  8 | import NavWrapper from "@/components/NavWrapper";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 |
-  10 | // Optimize Fonts
-  11 | const nunito = Nunito({
-
-Import map: aliased to relative './components/NavWrapper' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:04:58.044] Server  ERROR   ⨯ ./app/layout.tsx:8:1
-Module not found: Can't resolve '@/components/NavWrapper'
-   6 | import Header from "@/components/Header";
-   7 | import Footer from "@/components/Footer";
->  8 | import NavWrapper from "@/components/NavWrapper";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 |
-  10 | // Optimize Fonts
-  11 | const nunito = Nunito({
-
-Import map: aliased to relative './components/NavWrapper' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:04:58.044] Server  ERROR   ⨯ ./app/layout.tsx:8:1
-Module not found: Can't resolve '@/components/NavWrapper'
-   6 | import Header from "@/components/Header";
-   7 | import Footer from "@/components/Footer";
->  8 | import NavWrapper from "@/components/NavWrapper";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 |
-  10 | // Optimize Fonts
-  11 | const nunito = Nunito({
-
-Import map: aliased to relative './components/NavWrapper' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:04:58.045] Server  ERROR   ⨯ ./app/layout.tsx:8:1
-Module not found: Can't resolve '@/components/NavWrapper'
-   6 | import Header from "@/components/Header";
-   7 | import Footer from "@/components/Footer";
->  8 | import NavWrapper from "@/components/NavWrapper";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 |
-  10 | // Optimize Fonts
-  11 | const nunito = Nunito({
-
-Import map: aliased to relative './components/NavWrapper' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:04:58.046] Server  ERROR   ⨯ ./app/layout.tsx:8:1
-Module not found: Can't resolve '@/components/NavWrapper'
-   6 | import Header from "@/components/Header";
-   7 | import Footer from "@/components/Footer";
->  8 | import NavWrapper from "@/components/NavWrapper";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 |
-  10 | // Optimize Fonts
-  11 | const nunito = Nunito({
-
-Import map: aliased to relative './components/NavWrapper' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:04:58.047] Server  ERROR   ⨯ ./app/layout.tsx:8:1
-Module not found: Can't resolve '@/components/NavWrapper'
-   6 | import Header from "@/components/Header";
-   7 | import Footer from "@/components/Footer";
->  8 | import NavWrapper from "@/components/NavWrapper";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 |
-  10 | // Optimize Fonts
-  11 | const nunito = Nunito({
-
-Import map: aliased to relative './components/NavWrapper' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:04:58.048] Server  ERROR   ⨯ ./app/layout.tsx:8:1
-Module not found: Can't resolve '@/components/NavWrapper'
-   6 | import Header from "@/components/Header";
-   7 | import Footer from "@/components/Footer";
->  8 | import NavWrapper from "@/components/NavWrapper";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 |
-  10 | // Optimize Fonts
-  11 | const nunito = Nunito({
-
-Import map: aliased to relative './components/NavWrapper' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:04:58.048] Server  ERROR   ⨯ ./app/layout.tsx:8:1
-Module not found: Can't resolve '@/components/NavWrapper'
-   6 | import Header from "@/components/Header";
-   7 | import Footer from "@/components/Footer";
->  8 | import NavWrapper from "@/components/NavWrapper";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 |
-  10 | // Optimize Fonts
-  11 | const nunito = Nunito({
-
-Import map: aliased to relative './components/NavWrapper' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:04:58.049] Server  ERROR   ⨯ ./app/layout.tsx:8:1
-Module not found: Can't resolve '@/components/NavWrapper'
-   6 | import Header from "@/components/Header";
-   7 | import Footer from "@/components/Footer";
->  8 | import NavWrapper from "@/components/NavWrapper";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 |
-  10 | // Optimize Fonts
-  11 | const nunito = Nunito({
-
-Import map: aliased to relative './components/NavWrapper' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:04:58.049] Server  ERROR   ⨯ ./app/layout.tsx:8:1
-Module not found: Can't resolve '@/components/NavWrapper'
-   6 | import Header from "@/components/Header";
-   7 | import Footer from "@/components/Footer";
->  8 | import NavWrapper from "@/components/NavWrapper";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 |
-  10 | // Optimize Fonts
-  11 | const nunito = Nunito({
-
-Import map: aliased to relative './components/NavWrapper' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:04:58.049] Server  ERROR   ⨯ ./app/layout.tsx:8:1
-Module not found: Can't resolve '@/components/NavWrapper'
-   6 | import Header from "@/components/Header";
-   7 | import Footer from "@/components/Footer";
->  8 | import NavWrapper from "@/components/NavWrapper";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 |
-  10 | // Optimize Fonts
-  11 | const nunito = Nunito({
-
-Import map: aliased to relative './components/NavWrapper' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:04:58.050] Server  ERROR   ⨯ ./app/layout.tsx:8:1
-Module not found: Can't resolve '@/components/NavWrapper'
-   6 | import Header from "@/components/Header";
-   7 | import Footer from "@/components/Footer";
->  8 | import NavWrapper from "@/components/NavWrapper";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 |
-  10 | // Optimize Fonts
-  11 | const nunito = Nunito({
-
-Import map: aliased to relative './components/NavWrapper' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:04:58.051] Server  ERROR   ⨯ ./app/layout.tsx:8:1
-Module not found: Can't resolve '@/components/NavWrapper'
-   6 | import Header from "@/components/Header";
-   7 | import Footer from "@/components/Footer";
->  8 | import NavWrapper from "@/components/NavWrapper";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 |
-  10 | // Optimize Fonts
-  11 | const nunito = Nunito({
-
-Import map: aliased to relative './components/NavWrapper' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:04:58.052] Server  ERROR   ⨯ ./app/layout.tsx:8:1
-Module not found: Can't resolve '@/components/NavWrapper'
-   6 | import Header from "@/components/Header";
-   7 | import Footer from "@/components/Footer";
->  8 | import NavWrapper from "@/components/NavWrapper";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 |
-  10 | // Optimize Fonts
-  11 | const nunito = Nunito({
-
-Import map: aliased to relative './components/NavWrapper' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:04:58.053] Server  ERROR   ⨯ ./app/layout.tsx:8:1
-Module not found: Can't resolve '@/components/NavWrapper'
-   6 | import Header from "@/components/Header";
-   7 | import Footer from "@/components/Footer";
->  8 | import NavWrapper from "@/components/NavWrapper";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 |
-  10 | // Optimize Fonts
-  11 | const nunito = Nunito({
-
-Import map: aliased to relative './components/NavWrapper' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:04:58.054] Server  ERROR   ⨯ ./app/layout.tsx:8:1
-Module not found: Can't resolve '@/components/NavWrapper'
-   6 | import Header from "@/components/Header";
-   7 | import Footer from "@/components/Footer";
->  8 | import NavWrapper from "@/components/NavWrapper";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 |
-  10 | // Optimize Fonts
-  11 | const nunito = Nunito({
-
-Import map: aliased to relative './components/NavWrapper' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:04:58.054] Server  ERROR   ⨯ ./app/layout.tsx:8:1
-Module not found: Can't resolve '@/components/NavWrapper'
-   6 | import Header from "@/components/Header";
-   7 | import Footer from "@/components/Footer";
->  8 | import NavWrapper from "@/components/NavWrapper";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 |
-  10 | // Optimize Fonts
-  11 | const nunito = Nunito({
-
-Import map: aliased to relative './components/NavWrapper' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:04:58.055] Server  ERROR   ⨯ ./app/layout.tsx:8:1
-Module not found: Can't resolve '@/components/NavWrapper'
-   6 | import Header from "@/components/Header";
-   7 | import Footer from "@/components/Footer";
->  8 | import NavWrapper from "@/components/NavWrapper";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 |
-  10 | // Optimize Fonts
-  11 | const nunito = Nunito({
-
-Import map: aliased to relative './components/NavWrapper' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:04:58.055] Server  ERROR   ⨯ ./app/layout.tsx:8:1
-Module not found: Can't resolve '@/components/NavWrapper'
-   6 | import Header from "@/components/Header";
-   7 | import Footer from "@/components/Footer";
->  8 | import NavWrapper from "@/components/NavWrapper";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 |
-  10 | // Optimize Fonts
-  11 | const nunito = Nunito({
-
-Import map: aliased to relative './components/NavWrapper' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:04:58.056] Server  ERROR   ⨯ ./app/layout.tsx:8:1
-Module not found: Can't resolve '@/components/NavWrapper'
-   6 | import Header from "@/components/Header";
-   7 | import Footer from "@/components/Footer";
->  8 | import NavWrapper from "@/components/NavWrapper";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 |
-  10 | // Optimize Fonts
-  11 | const nunito = Nunito({
-
-Import map: aliased to relative './components/NavWrapper' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:04:58.056] Server  ERROR   ⨯ ./app/layout.tsx:8:1
-Module not found: Can't resolve '@/components/NavWrapper'
-   6 | import Header from "@/components/Header";
-   7 | import Footer from "@/components/Footer";
->  8 | import NavWrapper from "@/components/NavWrapper";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 |
-  10 | // Optimize Fonts
-  11 | const nunito = Nunito({
-
-Import map: aliased to relative './components/NavWrapper' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:04:58.057] Server  ERROR   ⨯ ./app/layout.tsx:8:1
-Module not found: Can't resolve '@/components/NavWrapper'
-   6 | import Header from "@/components/Header";
-   7 | import Footer from "@/components/Footer";
->  8 | import NavWrapper from "@/components/NavWrapper";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 |
-  10 | // Optimize Fonts
-  11 | const nunito = Nunito({
-
-Import map: aliased to relative './components/NavWrapper' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:04:58.057] Server  ERROR   ⨯ ./app/layout.tsx:8:1
-Module not found: Can't resolve '@/components/NavWrapper'
-   6 | import Header from "@/components/Header";
-   7 | import Footer from "@/components/Footer";
->  8 | import NavWrapper from "@/components/NavWrapper";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 |
-  10 | // Optimize Fonts
-  11 | const nunito = Nunito({
-
-Import map: aliased to relative './components/NavWrapper' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:04:58.172] Browser ERROR   ./app/layout.tsx:8:1
-Module not found: Can't resolve '@/components/NavWrapper'
-   6 | import Header from "@/components/Header";
-   7 | import Footer from "@/components/Footer";
->  8 | import NavWrapper from "@/components/NavWrapper";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 |
-  10 | // Optimize Fonts
-  11 | const nunito = Nunito({
-
-Import map: aliased to relative './components/NavWrapper' inside of [project]/
-
-https://nextjs.org/docs/messages/module-not-found
-[00:04:59.733] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:04:59.733] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
-      <AppDevOverlayErrorBoundary globalError={[...]}>
-        <ReplaySsrOnlyErrors>
-        <DevRootHTTPAccessFallbackBoundary>
-          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/apply" notFound={<NotAllowedRootHTTPFallbackError>} ...>
-              <RedirectBoundary>
-                <RedirectErrorBoundary router={{...}}>
-                  <Head>
-                  <__next_root_layout_boundary__>
-                    <SegmentViewNode type="layout" pagePath="layout.tsx">
-                      <SegmentTrieNode>
-                      <link>
-                      <script>
-                      <script>
-                      <RootLayout>
-                        <html lang="uz" className="scroll-smooth" suppressHydrationWarning={true}>
-                          <body
-                            className="nunito_6e00613f-module__QE8djG__variable plus_jakarta_sans_6cbc0d5f-module__dx4..."
--                           __processed_37b61387-9f72-42a9-9230-0324712c2d61__="true"
-                          >
-                  ...
-
-[00:05:10.781] Server  LOG     ✓ Compiled in 20ms
-[00:05:11.639] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:05:11.639] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
-      <AppDevOverlayErrorBoundary globalError={[...]}>
-        <ReplaySsrOnlyErrors>
-        <DevRootHTTPAccessFallbackBoundary>
-          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/apply" notFound={<NotAllowedRootHTTPFallbackError>} ...>
-              <RedirectBoundary>
-                <RedirectErrorBoundary router={{...}}>
-                  <Head>
-                  <__next_root_layout_boundary__>
-                    <SegmentViewNode type="layout" pagePath="layout.tsx">
-                      <SegmentTrieNode>
-                      <link>
-                      <script>
-                      <script>
-                      <RootLayout>
-                        <html lang="uz" className="scroll-smooth" suppressHydrationWarning={true}>
-                          <body
-                            className="nunito_6e00613f-module__QE8djG__variable plus_jakarta_sans_6cbc0d5f-module__dx4..."
--                           __processed_377b4f9a-0e00-4056-ab5b-d88bb084e7b6__="true"
-                          >
-                  ...
-
-[00:05:45.392] Server  ERROR   ⨯ The file "./proxy.ts" must export a function, either as a default export or as a named "proxy" export.
-This function is what Next.js runs for every request handled by this proxy (previously called middleware).
-
-Why this happens:
-- You are migrating from `middleware` to `proxy`, but haven't updated the exported function.
-- The file exists but doesn't export a function.
-- The export is not a function (e.g., an object or constant).
-- There's a syntax error preventing the export from being recognized.
-
-To fix it:
-- Ensure this file has either a default or "proxy" function export.
-
-Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
-[00:05:45.590] Server  LOG     ✓ Compiled in 180ms
-[00:05:46.149] Server  ERROR   ⨯ Error: The Proxy file "/proxy" must export a function named `proxy` or a default function.
-[00:05:46.491] Browser ERROR   uncaughtError: Error: ./proxy.ts
-Proxy is missing expected function export name
-This function is what Next.js runs for every request handled by this proxy (previously called middleware).
-
-Why this happens:
-- You are migrating from `middleware` to `proxy`, but haven't updated the exported function.
-- The file exists but doesn't export a function.
-- The export is not a function (e.g., an object or constant).
-- There's a syntax error preventing the export from being recognized.
-
-To fix it:
-- Ensure this file has either a default or "proxy" function export.
-
-Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
-
-
-[00:05:46.660] Browser ERROR   ./proxy.ts
-Proxy is missing expected function export name
-This function is what Next.js runs for every request handled by this proxy (previously called middleware).
-
-Why this happens:
-- You are migrating from `middleware` to `proxy`, but haven't updated the exported function.
-- The file exists but doesn't export a function.
-- The export is not a function (e.g., an object or constant).
-- There's a syntax error preventing the export from being recognized.
-
-To fix it:
-- Ensure this file has either a default or "proxy" function export.
-
-Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
-[00:05:46.660] Browser ERROR   ./proxy.ts
-Proxy is missing expected function export name
-This function is what Next.js runs for every request handled by this proxy (previously called middleware).
-
-Why this happens:
-- You are migrating from `middleware` to `proxy`, but haven't updated the exported function.
-- The file exists but doesn't export a function.
-- The export is not a function (e.g., an object or constant).
-- There's a syntax error preventing the export from being recognized.
-
-To fix it:
-- Ensure this file has either a default or "proxy" function export.
-
-Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
-[00:06:01.970] Server  LOG     ✓ Compiled in 28ms
-[00:06:02.200] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:06:02.308] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
-      <AppDevOverlayErrorBoundary globalError={[...]}>
-        <ReplaySsrOnlyErrors>
-        <DevRootHTTPAccessFallbackBoundary>
-          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
-              <RedirectBoundary>
-                <RedirectErrorBoundary router={{...}}>
-                  <Head>
-                  <__next_root_layout_boundary__>
-                    <SegmentViewNode type="layout" pagePath="layout.tsx">
-                      <SegmentTrieNode>
-                      <link>
-                      <script>
-                      <script>
-                      <RootLayout>
-                        <html lang="uz" className="scroll-smooth" suppressHydrationWarning={true}>
-                          <body
-                            className="nunito_6e00613f-module__QE8djG__variable plus_jakarta_sans_6cbc0d5f-module__dx4..."
--                           __processed_908edaa0-22a2-40c4-8944-64f93c03572b__="true"
-                          >
-                  ...
-
-[00:06:04.180] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:06:04.289] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
-      <AppDevOverlayErrorBoundary globalError={[...]}>
-        <ReplaySsrOnlyErrors>
-        <DevRootHTTPAccessFallbackBoundary>
-          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/apply" notFound={<NotAllowedRootHTTPFallbackError>} ...>
-              <RedirectBoundary>
-                <RedirectErrorBoundary router={{...}}>
-                  <Head>
-                  <__next_root_layout_boundary__>
-                    <SegmentViewNode type="layout" pagePath="layout.tsx">
-                      <SegmentTrieNode>
-                      <link>
-                      <script>
-                      <script>
-                      <RootLayout>
-                        <html lang="uz" className="scroll-smooth" suppressHydrationWarning={true}>
-                          <body
-                            className="nunito_6e00613f-module__QE8djG__variable plus_jakarta_sans_6cbc0d5f-module__dx4..."
--                           __processed_8b619124-655c-4d6c-8e5b-8365c1d0f947__="true"
-                          >
-                  ...
-
-[00:06:28.490] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:06:28.490] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
-      <AppDevOverlayErrorBoundary globalError={[...]}>
-        <ReplaySsrOnlyErrors>
-        <DevRootHTTPAccessFallbackBoundary>
-          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/apply" notFound={<NotAllowedRootHTTPFallbackError>} ...>
-              <RedirectBoundary>
-                <RedirectErrorBoundary router={{...}}>
-                  <Head>
-                  <__next_root_layout_boundary__>
-                    <SegmentViewNode type="layout" pagePath="layout.tsx">
-                      <SegmentTrieNode>
-                      <link>
-                      <script>
-                      <script>
-                      <RootLayout>
-                        <html lang="uz" className="scroll-smooth" suppressHydrationWarning={true}>
-                          <body
-                            className="nunito_6e00613f-module__QE8djG__variable plus_jakarta_sans_6cbc0d5f-module__dx4..."
--                           __processed_f5311477-470a-4d52-b70a-ca118c9effdb__="true"
-                          >
-                  ...
-
-[00:06:29.070] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:06:29.070] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
-      <AppDevOverlayErrorBoundary globalError={[...]}>
-        <ReplaySsrOnlyErrors>
-        <DevRootHTTPAccessFallbackBoundary>
-          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/apply" notFound={<NotAllowedRootHTTPFallbackError>} ...>
-              <RedirectBoundary>
-                <RedirectErrorBoundary router={{...}}>
-                  <Head>
-                  <__next_root_layout_boundary__>
-                    <SegmentViewNode type="layout" pagePath="layout.tsx">
-                      <SegmentTrieNode>
-                      <link>
-                      <script>
-                      <script>
-                      <RootLayout>
-                        <html lang="uz" className="scroll-smooth" suppressHydrationWarning={true}>
-                          <body
-                            className="nunito_6e00613f-module__QE8djG__variable plus_jakarta_sans_6cbc0d5f-module__dx4..."
--                           __processed_df8d34d4-b650-4866-88d4-a486360c0ff2__="true"
-                          >
-                  ...
-
-[00:06:29.174] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:06:29.174] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
-      <AppDevOverlayErrorBoundary globalError={[...]}>
-        <ReplaySsrOnlyErrors>
-        <DevRootHTTPAccessFallbackBoundary>
-          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/apply" notFound={<NotAllowedRootHTTPFallbackError>} ...>
-              <RedirectBoundary>
-                <RedirectErrorBoundary router={{...}}>
-                  <Head>
-                  <__next_root_layout_boundary__>
-                    <SegmentViewNode type="layout" pagePath="layout.tsx">
-                      <SegmentTrieNode>
-                      <link>
-                      <script>
-                      <script>
-                      <RootLayout>
-                        <html lang="uz" className="scroll-smooth" suppressHydrationWarning={true}>
-                          <body
-                            className="nunito_6e00613f-module__QE8djG__variable plus_jakarta_sans_6cbc0d5f-module__dx4..."
--                           __processed_e86de600-5343-47a5-bf0f-49ddf8ed240c__="true"
-                          >
-                  ...
-
-[00:07:49.918] Server  LOG     ✓ Compiled in 109ms
-[00:11:06.812] Server  LOG     ✓ Compiled in 198ms
-[00:14:40.829] Server  LOG     ✓ Compiled in 15ms
+[00:00:01.849] Server  LOG     ✓ Ready in 1619ms
+[00:22:46.872] Server  ERROR   ⨯ ./lib/mail.ts:66:38
+Parsing ecmascript source code failed
+  64 |     </div>
+  65 |     <div class="body">
+> 66 |       <p class="salutation">${name ? \`Hello, ${name}\` : 'Hello'}</p>
+     |                                      ^
+  67 |       <p>We received a request to verify your identity on Knowly. Use the code below to complete your verification. Do <strong>not</strong> share this code with anyone.</p>
+  68 |       <div class="otp-box">
+  69 |         <p class="otp-label">Your verification code</p>
+
+Expected unicode escape
+
+Import trace:
+  Server Component:
+    ./lib/mail.ts
+    ./app/actions/auth.ts
+
+
+[00:22:47.006] Browser ERROR   ./lib/mail.ts:66:38
+Parsing ecmascript source code failed
+  64 |     </div>
+  65 |     <div class="body">
+> 66 |       <p class="salutation">${name ? \`Hello, ${name}\` : 'Hello'}</p>
+     |                                      ^
+  67 |       <p>We received a request to verify your identity on Knowly. Use the code below to complete your verification. Do <strong>not</strong> share this code with anyone.</p>
+  68 |       <div class="otp-box">
+  69 |         <p class="otp-label">Your verification code</p>
+
+Expected unicode escape
+
+Import trace:
+  Server Component:
+    ./lib/mail.ts
+    ./app/actions/auth.ts
+[00:22:47.463] Browser ERROR   ./lib/mail.ts:66:38
+Parsing ecmascript source code failed
+  64 |     </div>
+  65 |     <div class="body">
+> 66 |       <p class="salutation">${name ? \`Hello, ${name}\` : 'Hello'}</p>
+     |                                      ^
+  67 |       <p>We received a request to verify your identity on Knowly. Use the code below to complete your verification. Do <strong>not</strong> share this code with anyone.</p>
+  68 |       <div class="otp-box">
+  69 |         <p class="otp-label">Your verification code</p>
+
+Expected unicode escape
+
+Import trace:
+  Server Component:
+    ./lib/mail.ts
+    ./app/actions/auth.ts
+[00:22:47.463] Browser ERROR   ./lib/mail.ts:66:38
+Parsing ecmascript source code failed
+  64 |     </div>
+  65 |     <div class="body">
+> 66 |       <p class="salutation">${name ? \`Hello, ${name}\` : 'Hello'}</p>
+     |                                      ^
+  67 |       <p>We received a request to verify your identity on Knowly. Use the code below to complete your verification. Do <strong>not</strong> share this code with anyone.</p>
+  68 |       <div class="otp-box">
+  69 |         <p class="otp-label">Your verification code</p>
+
+Expected unicode escape
+
+Import trace:
+  Server Component:
+    ./lib/mail.ts
+    ./app/actions/auth.ts
+[00:22:47.611] Browser ERROR   ./lib/mail.ts:66:38
+Parsing ecmascript source code failed
+  64 |     </div>
+  65 |     <div class="body">
+> 66 |       <p class="salutation">${name ? \`Hello, ${name}\` : 'Hello'}</p>
+     |                                      ^
+  67 |       <p>We received a request to verify your identity on Knowly. Use the code below to complete your verification. Do <strong>not</strong> share this code with anyone.</p>
+  68 |       <div class="otp-box">
+  69 |         <p class="otp-label">Your verification code</p>
+
+Expected unicode escape
+
+Import trace:
+  Server Component:
+    ./lib/mail.ts
+    ./app/actions/auth.ts
+[00:22:47.617] Server  ERROR   ⨯ ./lib/mail.ts:66:38
+Parsing ecmascript source code failed
+  64 |     </div>
+  65 |     <div class="body">
+> 66 |       <p class="salutation">${name ? \`Hello, ${name}\` : 'Hello'}</p>
+     |                                      ^
+  67 |       <p>We received a request to verify your identity on Knowly. Use the code below to complete your verification. Do <strong>not</strong> share this code with anyone.</p>
+  68 |       <div class="otp-box">
+  69 |         <p class="otp-label">Your verification code</p>
+
+Expected unicode escape
+
+Import trace:
+  Server Component:
+    ./lib/mail.ts
+    ./app/actions/auth.ts
+
+
+[00:22:47.753] Browser ERROR   ./lib/mail.ts:66:38
+Parsing ecmascript source code failed
+  64 |     </div>
+  65 |     <div class="body">
+> 66 |       <p class="salutation">${name ? \`Hello, ${name}\` : 'Hello'}</p>
+     |                                      ^
+  67 |       <p>We received a request to verify your identity on Knowly. Use the code below to complete your verification. Do <strong>not</strong> share this code with anyone.</p>
+  68 |       <div class="otp-box">
+  69 |         <p class="otp-label">Your verification code</p>
+
+Expected unicode escape
+
+Import trace:
+  Server Component:
+    ./lib/mail.ts
+    ./app/actions/auth.ts
+[00:22:48.006] Browser ERROR   uncaughtError: Error: ./lib/mail.ts:66:38
+Parsing ecmascript source code failed
+  64 |     </div>
+  65 |     <div class="body">
+> 66 |       <p class="salutation">${name ? \`Hello, ${name}\` : 'Hello'}</p>
+     |                                      ^
+  67 |       <p>We received a request to verify your identity on Knowly. Use the code below to complete your verification. Do <strong>not</strong> share this code with anyone.</p>
+  68 |       <div class="otp-box">
+  69 |         <p class="otp-label">Your verification code</p>
+
+Expected unicode escape
+
+Import trace:
+  Server Component:
+    ./lib/mail.ts
+    ./app/actions/auth.ts
+
+
+[00:22:48.160] Browser ERROR   ./lib/mail.ts:66:38
+Parsing ecmascript source code failed
+  64 |     </div>
+  65 |     <div class="body">
+> 66 |       <p class="salutation">${name ? \`Hello, ${name}\` : 'Hello'}</p>
+     |                                      ^
+  67 |       <p>We received a request to verify your identity on Knowly. Use the code below to complete your verification. Do <strong>not</strong> share this code with anyone.</p>
+  68 |       <div class="otp-box">
+  69 |         <p class="otp-label">Your verification code</p>
+
+Expected unicode escape
+
+Import trace:
+  Server Component:
+    ./lib/mail.ts
+    ./app/actions/auth.ts
+[00:22:48.160] Browser ERROR   ./lib/mail.ts:66:38
+Parsing ecmascript source code failed
+  64 |     </div>
+  65 |     <div class="body">
+> 66 |       <p class="salutation">${name ? \`Hello, ${name}\` : 'Hello'}</p>
+     |                                      ^
+  67 |       <p>We received a request to verify your identity on Knowly. Use the code below to complete your verification. Do <strong>not</strong> share this code with anyone.</p>
+  68 |       <div class="otp-box">
+  69 |         <p class="otp-label">Your verification code</p>
+
+Expected unicode escape
+
+Import trace:
+  Server Component:
+    ./lib/mail.ts
+    ./app/actions/auth.ts
+[00:24:30.005] Server  LOG     ✓ Compiled in 178ms
+[00:25:38.897] Server  LOG     --> Secure login attempt for: "ismatullohbakh2010@gmail.com"
+[00:25:38.958] Server  ERROR   (node:68373) Warning: SECURITY WARNING: The SSL modes 'prefer', 'require', and 'verify-ca' are treated as aliases for 'verify-full'.
+In the next major version (pg-connection-string v3.0.0 and pg v9.0.0), these modes will adopt standard libpq semantics, which have weaker security guarantees.
+
+To prepare for this change:
+- If you want the current behavior, explicitly use 'sslmode=verify-full'
+- If you want libpq compatibility now, use 'uselibpqcompat=true&sslmode=require'
+
+See https://www.postgresql.org/docs/current/libpq-ssl.html for libpq SSL mode definitions.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[00:26:03.066] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:46:21.346] Server  LOG     ✓ Compiled in 26ms
+[00:48:56.045] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:49:19.068] Server  LOG     Attempting reset for: ismatullohbakh2010@gmail.com with token: p5pimc989nbxeqqwr3hb9m
+[00:49:20.476] Server  LOG     Token verified. Hashing new password...
+[00:49:20.585] Server  LOG     Saving to database...
+[00:49:20.796] Server  LOG     ✅ Password successfully updated in DB!
+[00:49:23.499] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:49:33.591] Server  LOG     --> Secure login attempt for: "ismatullohbakh2010@gmail.com"
+[00:51:44.736] Server  LOG     ✓ Compiled in 75ms
+[00:51:47.195] Server  LOG     ✓ Compiled in 23ms
+[00:51:53.359] Server  LOG     ✓ Compiled in 26ms
+[00:51:59.611] Server  LOG     ✓ Compiled in 18ms
+[00:52:04.833] Server  LOG     ✓ Compiled in 24ms
+[00:52:11.855] Server  LOG     ✓ Compiled in 32ms
+[00:52:16.547] Server  LOG     ✓ Compiled in 38ms
+[00:52:25.440] Server  LOG     ✓ Compiled in 25ms
+[00:52:29.766] Server  LOG     ✓ Compiled in 34ms
+[00:53:42.759] Server  LOG     ✓ Compiled in 35ms
+[00:54:00.071] Server  LOG     ✓ Compiled in 40ms
+[00:54:14.897] Server  LOG     ✓ Compiled in 31ms
+[00:54:29.834] Server  LOG     ✓ Compiled in 39ms
+[00:55:22.457] Server  LOG     ✓ Compiled in 171ms
+[00:58:18.334] Server  LOG     ✓ Compiled in 109ms
+[00:58:52.754] Server  LOG     ✓ Compiled in 90ms
+[01:07:04.787] Server  LOG     ✓ Compiled in 110ms
+[01:07:30.138] Server  LOG     ✓ Compiled in 59ms
+[01:07:48.395] Server  LOG     ✓ Compiled in 32ms

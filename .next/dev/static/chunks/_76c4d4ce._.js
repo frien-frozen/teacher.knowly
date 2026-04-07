@@ -166,7 +166,7 @@ const NAV_TEXT = {
 function Header() {
     _s();
     const pathname = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["usePathname"])();
-    if (pathname && pathname.includes('/apply')) return null;
+    if (pathname && (pathname.includes('/apply') || pathname.startsWith('/dashboard') || pathname.startsWith('/admin') || pathname.startsWith('/activate') || pathname.startsWith('/forgot-password') || pathname.startsWith('/reset-password'))) return null;
     const { push, lang } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$hooks$2f$useLangRouter$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useLangRouter"])();
     const { toggleLanguage } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$context$2f$LanguageContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useLanguage"])();
     const t = NAV_TEXT[lang] || NAV_TEXT.uz;
@@ -396,7 +396,7 @@ const FOOTER_TEXT = {
 function Footer() {
     _s();
     const pathname = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["usePathname"])();
-    if (pathname && pathname.includes('/apply')) return null;
+    if (pathname && (pathname.includes('/apply') || pathname.startsWith('/dashboard') || pathname.startsWith('/admin') || pathname.startsWith('/activate') || pathname.startsWith('/forgot-password') || pathname.startsWith('/reset-password'))) return null;
     const { lang, push } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$hooks$2f$useLangRouter$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useLangRouter"])();
     const t = FOOTER_TEXT[lang] || FOOTER_TEXT.uz;
     const scrollTo = (id)=>{

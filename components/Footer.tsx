@@ -42,7 +42,7 @@ const FOOTER_TEXT = {
 
 export default function Footer() {
     const pathname = usePathname();
-    if (pathname && pathname.includes('/apply')) return null;
+    if (pathname && (pathname.includes('/apply') || pathname.startsWith('/dashboard') || pathname.startsWith('/admin') || pathname.startsWith('/activate') || pathname.startsWith('/forgot-password') || pathname.startsWith('/reset-password'))) return null;
 
     const { lang, push } = useLangRouter();
     const t = FOOTER_TEXT[lang as 'en' | 'uz'] || FOOTER_TEXT.uz;

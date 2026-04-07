@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import { useLangRouter } from '@/hooks/useLangRouter';
 import { motion } from 'framer-motion';
+import { initiateLogin, verifyOTP } from '@/app/actions/auth';
 
 const CONTENT = {
     en: {
@@ -31,32 +32,58 @@ const CONTENT = {
     }
 };
 
-// Mock known accounts — replace with real API call later
-const KNOWN_ACCOUNTS: Record<string, string> = {
-    "admin@knowly.uz": "knowly2026",
-    "teacher@knowly.uz": "teach123",
-};
-
 export default function LoginPage() {
     const { lang, push } = useLangRouter();
     const t = CONTENT[lang as 'en' | 'uz'] || CONTENT.uz;
+    
+    const [step, setStep] = useState<'EMAIL' | 'OTP'>('EMAIL');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [otp, setOtp] = useState('');
     const [isLoading, setIsLoading] = useState(false);
     const [error, setError] = useState('');
 
-    const handleLogin = (e: React.FormEvent) => {
+    const handleSendOTP = async (e: React.FormEvent) => {
         e.preventDefault();
-        setError('');
         setIsLoading(true);
-        setTimeout(() => {
-            setIsLoading(false);
-            if (KNOWN_ACCOUNTS[email] === password) {
-                push('/dashboard');
+        setError('');
+        try {
+            const res = await initiateLogin(email, password);
+            if (res.success) {
+                setStep('OTP');
+                setError('');
             } else {
-                setError(t.error);
+                setError(res.message || 'An error occurred.');
             }
-        }, 1200);
+        } catch (err: any) {
+            setError(err.message || "FATAL 500: Check your VS Code Terminal for the real error.");
+        } finally {
+            setIsLoading(false);
+        }
+    };
+
+    const handleVerify = async (e: React.FormEvent) => {
+        e.preventDefault();
+        setIsLoading(true);
+        setError('');
+        try {
+            const res = await verifyOTP(email, otp);
+            if (res.success) {
+                localStorage.setItem('knowly_role', res.user?.role || '');
+                localStorage.setItem('knowly_email', email);
+                if (res.user?.role === 'ADMIN') {
+                    push('/admin');
+                } else {
+                    push('/dashboard');
+                }
+            } else {
+                setError(res.message || 'An error occurred.');
+            }
+        } catch (err) {
+            setError("An unexpected frontend error occurred.");
+        } finally {
+            setIsLoading(false);
+        }
     };
 
     return (
@@ -89,14 +116,14 @@ export default function LoginPage() {
                 transition={{ delay: 0.1 }}
                 className="w-full max-w-sm bg-white p-8 rounded-[2rem] shadow-xl shadow-gray-200/60 border border-gray-100 relative z-10"
             >
-                <form onSubmit={handleLogin} className="space-y-5">
+                <form onSubmit={step === 'EMAIL' ? handleSendOTP : handleVerify} className="space-y-5">
 
                     {/* Email */}
-                    <div className="space-y-1.5">
+                    <div className="space-y-1.5" style={{ display: step === 'EMAIL' ? 'block' : 'none' }}>
                         <label className="text-xs font-bold text-gray-700 ml-1">{t.email}</label>
                         <input
                             type="email"
-                            required
+                            required={step === 'EMAIL'}
                             value={email}
                             onChange={e => { setEmail(e.target.value); setError(''); }}
                             className="w-full px-4 py-2.5 bg-gray-50 border border-gray-300 rounded-xl focus:ring-4 focus:ring-[#D92D20]/10 focus:border-[#D92D20] outline-none font-bold text-[#101828] text-sm transition-all"
@@ -104,19 +131,38 @@ export default function LoginPage() {
                     </div>
 
                     {/* Password */}
-                    <div className="space-y-1.5">
+                    <div className="space-y-1.5" style={{ display: step === 'EMAIL' ? 'block' : 'none' }}>
                         <div className="flex justify-between items-center ml-1">
                             <label className="text-xs font-bold text-gray-700">{t.password}</label>
-                            <a href="#" className="text-xs font-bold text-[#D92D20] hover:underline">{t.forgot}</a>
+                            <a href="/forgot-password" className="text-xs font-bold text-[#D92D20] hover:underline">{t.forgot}</a>
                         </div>
                         <input
                             type="password"
-                            required
+                            required={step === 'EMAIL'}
                             value={password}
                             onChange={e => { setPassword(e.target.value); setError(''); }}
                             className="w-full px-4 py-2.5 bg-gray-50 border border-gray-300 rounded-xl focus:ring-4 focus:ring-[#D92D20]/10 focus:border-[#D92D20] outline-none font-bold text-[#101828] text-sm transition-all"
                         />
                     </div>
+
+                    {/* OTP */}
+                    {step === 'OTP' && (
+                        <div className="space-y-1.5">
+                            <label className="text-xs font-bold text-gray-700 ml-1">Security Code (OTP)</label>
+                            <input
+                                type="text"
+                                required
+                                maxLength={6}
+                                value={otp}
+                                onChange={(e) => { setOtp(e.target.value); setError(''); }}
+                                placeholder="000000"
+                                className="w-full py-3.5 bg-gray-50 border border-gray-200 rounded-xl focus:border-[#D92D20] focus:ring-2 focus:ring-[#D92D20]/20 outline-none font-bold text-[#101828] text-2xl tracking-[0.75em] text-center transition-all"
+                            />
+                            <p className="text-gray-500 text-sm mt-2 font-medium text-center">
+                                We sent a secure code to <span className="font-bold text-[#101828]">{email}</span>
+                            </p>
+                        </div>
+                    )}
 
                     {/* Error banner */}
                     {error && (
@@ -136,8 +182,20 @@ export default function LoginPage() {
                         disabled={isLoading}
                         className="w-full bg-[#101828] text-white py-3 rounded-xl font-extrabold text-sm shadow-lg hover:bg-black transition-all flex items-center justify-center gap-2 mt-2 disabled:opacity-70"
                     >
-                        {isLoading ? t.loading : t.btn}
+                        {isLoading ? t.loading : (step === 'EMAIL' ? t.btn : 'Verify Code')}
                     </button>
+
+                    {/* Resend / Change Email (only on OTP step) */}
+                    {step === 'OTP' && (
+                        <div className="flex items-center justify-between mt-4">
+                            <button type="button" onClick={handleSendOTP} className="text-sm font-bold text-gray-500 hover:text-[#101828] transition-colors">
+                                Resend Code
+                            </button>
+                            <button type="button" onClick={() => setStep('EMAIL')} className="text-sm font-bold text-gray-500 hover:text-[#101828] transition-colors">
+                                Change Email
+                            </button>
+                        </div>
+                    )}
 
                 </form>
 

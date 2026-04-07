@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import { useLangRouter } from '@/hooks/useLangRouter';
 import { ArrowLeft, Globe, Star, Zap, ChevronDown } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { submitApplication } from '@/app/actions/application';
 
 const CONTENT = {
     en: {
@@ -97,14 +98,31 @@ export default function ApplyPage() {
 
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [isSuccess, setIsSuccess] = useState(false);
+    const [formError, setFormError] = useState('');
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const [fullName, setFullName] = useState('');
+    const [email, setEmail] = useState('');
+    const [phone, setPhone] = useState('');
+    const [curriculum, setCurriculum] = useState('');
+    const [subject, setSubject] = useState('');
+    const [experience, setExperience] = useState('');
+
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         setIsSubmitting(true);
-        setTimeout(() => {
+        setFormError('');
+        try {
+            const res = await submitApplication({ fullName, email, phone, subject, experience });
+            if (res.success) {
+                setIsSuccess(true);
+            } else {
+                setFormError(res.message || 'Submission failed.');
+            }
+        } catch (err) {
+            setFormError('An unexpected error occurred.');
+        } finally {
             setIsSubmitting(false);
-            setIsSuccess(true);
-        }, 1500);
+        }
     };
 
     return (
@@ -182,23 +200,28 @@ export default function ApplyPage() {
 
                                 <form onSubmit={handleSubmit} className="space-y-6">
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                        <InputField label={t.form.name} type="text" required placeholder={t.form.placeName} />
-                                        <InputField label={t.form.email} type="email" required placeholder={t.form.placeEmail} />
+                                        <InputField label={t.form.name} type="text" required placeholder={t.form.placeName} value={fullName} onChange={setFullName} />
+                                        <InputField label={t.form.email} type="email" required placeholder={t.form.placeEmail} value={email} onChange={setEmail} />
                                     </div>
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                        <InputField label={t.form.phone} type="tel" required placeholder={t.form.placePhone} />
+                                        <InputField label={t.form.phone} type="tel" required placeholder={t.form.placePhone} value={phone} onChange={setPhone} />
                                         <InputField label={t.form.linkedin} type="url" placeholder={t.form.placeLinkedin} />
                                     </div>
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                        <SelectField label={t.form.curriculum} required placeholder={t.form.placeCurriculum} options={CURRICULUMS} />
-                                        <SelectField label={t.form.subject} required placeholder={t.form.placeSubject} options={currentSubjects} />
+                                        <SelectField label={t.form.curriculum} required placeholder={t.form.placeCurriculum} options={CURRICULUMS} value={curriculum} onChange={setCurriculum} />
+                                        <SelectField label={t.form.subject} required placeholder={t.form.placeSubject} options={currentSubjects} value={subject} onChange={setSubject} />
                                     </div>
                                     <div className="space-y-2">
                                         <label className="block text-[10px] font-extrabold text-gray-500 uppercase tracking-widest ml-1">
                                             {t.form.motivation} <span className="text-red-500">*</span>
                                         </label>
-                                        <textarea rows={4} required className="w-full px-5 py-3.5 bg-gray-50 border border-gray-200 rounded-xl focus:border-[#D92D20] focus:ring-2 focus:ring-[#D92D20]/20 focus:bg-white outline-none font-bold text-gray-800 transition-all resize-none text-base placeholder:text-gray-400 placeholder:font-medium" placeholder={t.form.placeMotivation}></textarea>
+                                        <textarea rows={4} required value={experience} onChange={(e) => setExperience(e.target.value)} className="w-full px-5 py-3.5 bg-gray-50 border border-gray-200 rounded-xl focus:border-[#D92D20] focus:ring-2 focus:ring-[#D92D20]/20 focus:bg-white outline-none font-bold text-gray-800 transition-all resize-none text-base placeholder:text-gray-400 placeholder:font-medium" placeholder={t.form.placeMotivation}></textarea>
                                     </div>
+                                    {formError && (
+                                        <div className="px-4 py-3 bg-red-50 border border-red-200 rounded-xl text-[#D92D20] text-sm font-bold">
+                                            ⚠️ {formError}
+                                        </div>
+                                    )}
                                     <div className="pt-4">
                                         <button type="submit" disabled={isSubmitting} className="w-full bg-[#101828] text-white py-4 rounded-xl font-bold text-base shadow-lg hover:shadow-xl hover:bg-black hover:-translate-y-0.5 transition-all disabled:opacity-70 flex items-center justify-center gap-2">
                                             {isSubmitting && <Zap className="w-5 h-5 animate-pulse" />}
@@ -216,11 +239,13 @@ export default function ApplyPage() {
     );
 }
 
-function InputField({ label, type, required, placeholder }: {
+function InputField({ label, type, required, placeholder, value, onChange }: {
     label: string;
     type: string;
     required?: boolean;
     placeholder?: string;
+    value?: string;
+    onChange?: (val: string) => void;
 }) {
     return (
         <div className="space-y-2">
@@ -231,17 +256,21 @@ function InputField({ label, type, required, placeholder }: {
                 type={type}
                 required={required}
                 placeholder={placeholder}
+                value={value}
+                onChange={onChange ? (e) => onChange(e.target.value) : undefined}
                 className="w-full px-5 py-3.5 bg-gray-50 border border-gray-200 rounded-xl focus:border-[#D92D20] focus:ring-2 focus:ring-[#D92D20]/20 focus:bg-white outline-none font-bold text-gray-800 transition-all text-base placeholder:text-gray-400 placeholder:font-medium"
             />
         </div>
     );
 }
 
-function SelectField({ label, required, placeholder, options }: {
+function SelectField({ label, required, placeholder, options, value, onChange }: {
     label: string;
     required?: boolean;
     placeholder: string;
     options: string[];
+    value?: string;
+    onChange?: (val: string) => void;
 }) {
     return (
         <div className="space-y-2">
@@ -251,7 +280,8 @@ function SelectField({ label, required, placeholder, options }: {
             <div className="relative">
                 <select
                     required={required}
-                    defaultValue=""
+                    value={value !== undefined ? value : ''}
+                    onChange={onChange ? (e) => onChange(e.target.value) : undefined}
                     className="w-full px-5 py-3.5 bg-gray-50 border border-gray-200 rounded-xl focus:border-[#D92D20] focus:ring-2 focus:ring-[#D92D20]/20 focus:bg-white outline-none font-bold text-gray-800 transition-all text-base appearance-none cursor-pointer invalid:text-gray-400"
                 >
                     <option value="" disabled hidden>{placeholder}</option>

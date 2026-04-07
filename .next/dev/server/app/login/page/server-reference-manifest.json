@@ -1,4 +1,35 @@
 {
-  "node": {},
+  "node": {
+    "606f4e8732794c0508ea3f773ff34d38df19052b87": {
+      "workers": {
+        "app/login/page": {
+          "moduleId": "[project]/.next-internal/server/app/login/page/actions.js { ACTIONS_MODULE0 => \"[project]/app/actions/auth.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": true,
+          "exportedName": "initiateLogin",
+          "filename": "app/actions/auth.ts"
+        }
+      },
+      "layer": {
+        "app/login/page": "action-browser"
+      },
+      "exportedName": "initiateLogin",
+      "filename": "app/actions/auth.ts"
+    },
+    "60b9ed802127ac33ed9c7704108548e2103660e514": {
+      "workers": {
+        "app/login/page": {
+          "moduleId": "[project]/.next-internal/server/app/login/page/actions.js { ACTIONS_MODULE0 => \"[project]/app/actions/auth.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": true,
+          "exportedName": "verifyOTP",
+          "filename": "app/actions/auth.ts"
+        }
+      },
+      "layer": {
+        "app/login/page": "action-browser"
+      },
+      "exportedName": "verifyOTP",
+      "filename": "app/actions/auth.ts"
+    }
+  },
   "edge": {}
 }

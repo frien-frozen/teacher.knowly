@@ -1,5 +1,10 @@
 {
-  "/_not-found/page": "app/_not-found/page.js",
-  "/apply/page": "app/apply/page.js",
-  "/page": "app/page.js"
+  "/admin/curriculum/page": "app/admin/curriculum/page.js",
+  "/admin/invite/page": "app/admin/invite/page.js",
+  "/admin/page": "app/admin/page.js",
+  "/admin/teachers/page": "app/admin/teachers/page.js",
+  "/forgot-password/page": "app/forgot-password/page.js",
+  "/login/page": "app/login/page.js",
+  "/page": "app/page.js",
+  "/reset-password/page": "app/reset-password/page.js"
 }

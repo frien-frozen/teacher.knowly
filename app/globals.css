@@ -24,8 +24,8 @@ html {
 }
 
 body {
-  background: var(--background-gray);
-  color: var(--text-dark);
+  background-color: #ffffff;
+  color: #101828;
   font-family: 'Nunito', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
