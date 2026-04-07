@@ -20,9 +20,9 @@ export async function getTeacherUnits() {
     });
     
     // Maintain the derived isSaved property for the UI
-    return units.map(unit => ({
+    return units.map((unit: any) => ({
       ...unit,
-      topics: unit.topics.map(topic => ({
+      topics: unit.topics.map((topic: any) => ({
         ...topic,
         isSaved: !!(topic.ytLink && topic.ytLink.trim().length > 0)
       }))
