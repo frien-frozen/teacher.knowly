@@ -77,14 +77,14 @@ export default function CourseManager() {
         <div className="space-y-5">
           {syllabus.map((unit, idx) => (
             <div key={unit.id} className="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
-              <div className="p-5 bg-gray-50/50 border-b border-gray-100 flex items-center justify-between">
+              <div className="p-5 bg-gray-50/50 border-b border-gray-100 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                 <div className="flex items-center gap-3">
-                  <div className="w-8 h-8 bg-purple-100 text-purple-600 rounded-lg flex items-center justify-center font-extrabold text-sm">
+                  <div className="w-8 h-8 bg-purple-100 text-purple-600 rounded-lg flex items-center justify-center font-extrabold text-sm shrink-0">
                     {idx + 1}
                   </div>
-                  <h2 className="font-extrabold text-[#101828]">{unit.title}</h2>
+                  <h2 className="font-extrabold text-[#101828] text-sm md:text-base">{unit.title}</h2>
                 </div>
-                <button onClick={() => handleAddTopic(unit.id)} className="text-sm font-bold text-purple-600 hover:bg-purple-50 px-3 py-1.5 rounded-lg transition-colors flex items-center gap-1">
+                <button onClick={() => handleAddTopic(unit.id)} className="text-sm font-bold text-purple-600 hover:bg-purple-50 px-3 py-1.5 rounded-lg transition-colors flex items-center justify-center gap-1 border border-purple-100 sm:border-transparent">
                   <Plus className="w-4 h-4" /> Add Topic
                 </button>
               </div>
@@ -120,7 +120,7 @@ export default function CourseManager() {
                         {editingTopic === topic.id && (
                           <div className="p-5 bg-white border-t border-gray-100">
                             <label className="text-xs font-bold text-gray-700 ml-1 uppercase tracking-wider block mb-2">Lesson Video URL (YouTube)</label>
-                            <div className="flex gap-3">
+                            <div className="flex flex-col sm:flex-row gap-3">
                               <div className="relative flex-1">
                                 <Link className="w-5 h-5 text-gray-400 absolute left-4 top-1/2 -translate-y-1/2" />
                                 <input 
@@ -128,12 +128,12 @@ export default function CourseManager() {
                                   value={videoInput}
                                   onChange={(e) => setVideoInput(e.target.value)}
                                   placeholder="https://youtube.com/watch?v=..." 
-                                  className="w-full pl-12 pr-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/20 outline-none font-bold text-[#101828] transition-all" 
+                                  className="w-full pl-12 pr-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/20 outline-none font-bold text-[#101828] transition-all text-sm" 
                                 />
                               </div>
                               <button 
                                 onClick={() => handleSaveVideo(topic.id)}
-                                className="bg-[#101828] text-white px-6 py-3 rounded-xl font-bold hover:bg-black transition-colors flex items-center gap-2 shadow-md"
+                                className="bg-[#101828] text-white px-6 py-3 rounded-xl font-bold hover:bg-black transition-colors flex items-center justify-center gap-2 shadow-md w-full sm:w-auto"
                               >
                                 <CheckCircle className="w-4 h-4" /> Save Link
                               </button>

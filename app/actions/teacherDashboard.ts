@@ -82,3 +82,17 @@ export async function updateTopicVideo(email: string, topicId: string, videoUrl:
     return { success: false, message: "Failed to link video." };
   }
 }
+
+// Update teacher profile details
+export async function updateTeacherProfile(email: string, name: string, bio: string) {
+  try {
+    await prisma.teacher.update({
+      where: { email },
+      data: { name, bio }
+    });
+    return { success: true, message: "Profile updated successfully!" };
+  } catch (error) {
+    return { success: false, message: "Failed to update profile." };
+  }
+}
+

@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { Camera, Lock, Save, AlertCircle } from 'lucide-react';
-import { getTeacherProfile } from '@/app/actions/teacherDashboard';
+import { getTeacherProfile, updateTeacherProfile } from '@/app/actions/teacherDashboard';
 
 export default function TeacherProfile() {
   const [isSaving, setIsSaving] = useState(false);
@@ -15,14 +15,26 @@ export default function TeacherProfile() {
 
   const fileInputRef = React.useRef<HTMLInputElement>(null);
   const [isUploading, setIsUploading] = useState(false);
+  const [imgError, setImgError] = useState(false);
 
   const handleImageUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
     if (!file) return;
 
+    console.log("DEBUG: Client-side handleImageUpload started for file:", file.name);
+    
+    // Strict 5MB check before hitting server
+    if (file.size > 5 * 1024 * 1024) {
+      alert("File is too large! Please select an image smaller than 5MB.");
+      if (fileInputRef.current) fileInputRef.current.value = '';
+      return;
+    }
+
     setIsUploading(true);
+    setImgError(false); // Reset error state on new upload
 
     try {
+      console.log("DEBUG: Processing image client-side for WebP conversion...");
       const img = new Image();
       const objectUrl = URL.createObjectURL(file);
 
@@ -56,21 +68,26 @@ export default function TeacherProfile() {
       });
 
       if (!blob) throw new Error("Could not compress image");
+      console.log("DEBUG: Conversion to WebP success. Final blob size:", blob.size);
 
       const formData = new FormData();
       formData.append('file', blob, 'profile.webp');
 
+      console.log("DEBUG: Sending request to uploadProfileImage server action...");
       const { uploadProfileImage } = await import('@/app/actions/profile');
       const res = await uploadProfileImage(formData);
 
       if (res.success && res.url) {
+        console.log("DEBUG: Upload success! Server returned URL:", res.url);
         setTeacherData((prev: any) => ({ ...prev, profilePic: res.url }));
+        alert("Photo updated successfully!");
       } else {
+        console.error("DEBUG: Upload failed with error:", res.message);
         alert(res.message || "Upload failed");
       }
-    } catch (err) {
-      console.error(err);
-      alert("An error occurred during upload.");
+    } catch (err: any) {
+      console.error("DEBUG: Client Exception during upload:", err);
+      alert(`An error occurred during upload: ${err.message || "Unknown error"}`);
     } finally {
       setIsUploading(false);
       if (fileInputRef.current) fileInputRef.current.value = '';
@@ -79,6 +96,8 @@ export default function TeacherProfile() {
 
   useEffect(() => {
     async function loadProfile() {
+      // Reset image error state when profile loads
+      setImgError(false);
       // TODO: Replace with actual session email from auth context/cookies
       const email = localStorage.getItem('knowly_email') || 'ismatullohbakh2010@gmail.com';
       const res = await getTeacherProfile(email);
@@ -93,16 +112,27 @@ export default function TeacherProfile() {
     loadProfile();
   }, []);
 
-  const handleSave = (e: React.FormEvent) => {
+  const handleSave = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSaving(true);
-    setTimeout(() => setIsSaving(false), 1000);
+    
+    // TODO: Get email from session context
+    const email = localStorage.getItem('knowly_email') || 'ismatullohbakh2010@gmail.com';
+    const res = await updateTeacherProfile(email, displayName, bio);
+    
+    if (res.success) {
+      alert("Profile updated successfully!");
+    } else {
+      alert(res.message);
+    }
+    
+    setIsSaving(false);
   };
 
   if (loading) {
     return (
-      <div className="p-8 max-w-4xl mx-auto w-full">
-        <div className="text-center p-10 font-bold text-gray-500">Loading profile...</div>
+      <div className="p-8 max-w-4xl mx-auto w-full flex items-center justify-center min-h-[400px]">
+        <div className="w-12 h-12 border-4 border-gray-200 border-t-blue-600 rounded-full animate-spin"></div>
       </div>
     );
   }
@@ -126,8 +156,13 @@ export default function TeacherProfile() {
           <div className="flex flex-col sm:flex-row items-center gap-8 pb-10 border-b border-gray-100">
             <div className="relative group cursor-pointer" onClick={() => fileInputRef.current?.click()}>
               <div className="w-28 h-28 rounded-full bg-gradient-to-br from-gray-100 to-gray-200 border-4 border-white shadow-lg overflow-hidden flex items-center justify-center">
-                {teacherData?.profilePic ? (
-                  <img src={teacherData.profilePic} alt="Profile" className="w-full h-full object-cover" />
+                {(teacherData?.profilePic && !imgError) ? (
+                  <img 
+                    src={`/api/profile-image?url=${encodeURIComponent(teacherData.profilePic)}`} 
+                    alt="Profile" 
+                    className="w-full h-full object-cover rounded-full"
+                    onError={() => setImgError(true)}
+                  />
                 ) : (
                   <span className="text-4xl font-extrabold text-gray-400">{initials}</span>
                 )}
@@ -195,7 +230,7 @@ export default function TeacherProfile() {
 
           {/* SUBMIT */}
           <div className="pt-4 border-t border-gray-100 flex justify-end">
-            <button type="submit" disabled={isSaving} className="bg-[#101828] text-white px-8 py-3.5 rounded-xl font-bold text-sm shadow-lg hover:shadow-xl hover:bg-black transition-all disabled:opacity-70 flex items-center gap-2">
+            <button type="submit" disabled={isSaving} className="bg-[#101828] text-white w-full md:w-auto px-8 py-3.5 rounded-xl font-bold text-sm shadow-lg hover:shadow-xl hover:bg-black transition-all disabled:opacity-70 flex items-center justify-center gap-2">
               <Save className="w-4 h-4" />
               <span>{isSaving ? "Saving..." : "Save Changes"}</span>
             </button>
