@@ -1,9 +1,23 @@
 import { NextRequest, NextResponse } from 'next/server';
 
 export function proxy(request: NextRequest) {
+    const authCookie = request.cookies.get('knowly_auth');
     const { pathname, searchParams } = request.nextUrl;
 
-    // Only redirect if no lang param is set
+    // 1. Auth Logic
+    if (pathname.startsWith('/dashboard') || pathname.startsWith('/admin')) {
+      if (!authCookie) {
+        return NextResponse.redirect(new URL('/login', request.url));
+      }
+    }
+
+    if (pathname === '/' || pathname === '/login' || pathname === '/apply') {
+      if (authCookie) {
+        return NextResponse.redirect(new URL('/dashboard', request.url));
+      }
+    }
+
+    // 2. Language Logic
     if (!searchParams.has('lang')) {
         const url = request.nextUrl.clone();
         url.searchParams.set('lang', 'en');
@@ -14,6 +28,5 @@ export function proxy(request: NextRequest) {
 }
 
 export const config = {
-    // Run on all routes except Next.js internals and static files
-    matcher: ['/((?!_next|favicon.ico|logos|teachers|.*\\..*).*)'],
+    matcher: ['/((?!api|_next|favicon.ico|logos|teachers|.*\\..*).*)'],
 };

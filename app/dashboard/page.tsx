@@ -13,6 +13,70 @@ export default function TeacherProfile() {
   const [displayEmail, setDisplayEmail] = useState('');
   const [bio, setBio] = useState('');
 
+  const fileInputRef = React.useRef<HTMLInputElement>(null);
+  const [isUploading, setIsUploading] = useState(false);
+
+  const handleImageUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+
+    setIsUploading(true);
+
+    try {
+      const img = new Image();
+      const objectUrl = URL.createObjectURL(file);
+
+      await new Promise((resolve, reject) => {
+        img.onload = resolve;
+        img.onerror = reject;
+        img.src = objectUrl;
+      });
+
+      const canvas = document.createElement('canvas');
+      const ctx = canvas.getContext('2d');
+
+      const MAX_SIZE = 800;
+      let width = img.width;
+      let height = img.height;
+
+      if (width > height && width > MAX_SIZE) {
+        height *= MAX_SIZE / width;
+        width = MAX_SIZE;
+      } else if (height > MAX_SIZE) {
+        width *= MAX_SIZE / height;
+        height = MAX_SIZE;
+      }
+
+      canvas.width = width;
+      canvas.height = height;
+      ctx?.drawImage(img, 0, 0, width, height);
+
+      const blob = await new Promise<Blob | null>((resolve) => {
+        canvas.toBlob(resolve, 'image/webp', 0.8);
+      });
+
+      if (!blob) throw new Error("Could not compress image");
+
+      const formData = new FormData();
+      formData.append('file', blob, 'profile.webp');
+
+      const { uploadProfileImage } = await import('@/app/actions/profile');
+      const res = await uploadProfileImage(formData);
+
+      if (res.success && res.url) {
+        setTeacherData((prev: any) => ({ ...prev, profilePic: res.url }));
+      } else {
+        alert(res.message || "Upload failed");
+      }
+    } catch (err) {
+      console.error(err);
+      alert("An error occurred during upload.");
+    } finally {
+      setIsUploading(false);
+      if (fileInputRef.current) fileInputRef.current.value = '';
+    }
+  };
+
   useEffect(() => {
     async function loadProfile() {
       // TODO: Replace with actual session email from auth context/cookies
@@ -60,9 +124,13 @@ export default function TeacherProfile() {
           
           {/* PROFILE PHOTO SECTION */}
           <div className="flex flex-col sm:flex-row items-center gap-8 pb-10 border-b border-gray-100">
-            <div className="relative group cursor-pointer">
+            <div className="relative group cursor-pointer" onClick={() => fileInputRef.current?.click()}>
               <div className="w-28 h-28 rounded-full bg-gradient-to-br from-gray-100 to-gray-200 border-4 border-white shadow-lg overflow-hidden flex items-center justify-center">
-                <span className="text-4xl font-extrabold text-gray-400">{initials}</span>
+                {teacherData?.profilePic ? (
+                  <img src={teacherData.profilePic} alt="Profile" className="w-full h-full object-cover" />
+                ) : (
+                  <span className="text-4xl font-extrabold text-gray-400">{initials}</span>
+                )}
               </div>
               <div className="absolute inset-0 bg-black/40 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
                 <Camera className="w-8 h-8 text-white" />
@@ -71,8 +139,9 @@ export default function TeacherProfile() {
             <div>
               <h3 className="text-lg font-extrabold text-[#101828]">Profile Picture</h3>
               <p className="text-sm text-gray-500 font-medium mb-4">PNG, JPG up to 5MB. This will be shown to students.</p>
-              <button type="button" className="px-5 py-2 bg-gray-100 text-[#101828] font-bold text-sm rounded-xl hover:bg-gray-200 transition-colors">
-                Upload New Photo
+              <input type="file" accept="image/*" ref={fileInputRef} className="hidden" onChange={handleImageUpload} />
+              <button type="button" onClick={() => fileInputRef.current?.click()} disabled={isUploading} className="px-5 py-2 bg-gray-100 text-[#101828] font-bold text-sm rounded-xl hover:bg-gray-200 transition-colors disabled:opacity-50">
+                {isUploading ? "Uploading..." : "Upload New Photo"}
               </button>
             </div>
           </div>
@@ -84,8 +153,8 @@ export default function TeacherProfile() {
               <input type="text" value={displayName} onChange={(e) => setDisplayName(e.target.value)} className="w-full px-5 py-3.5 bg-gray-50 border border-gray-200 rounded-xl focus:border-[#D92D20] focus:ring-2 focus:ring-[#D92D20]/20 outline-none font-bold text-[#101828] transition-all text-sm" />
             </div>
             <div className="space-y-2">
-              <label className="block text-[10px] font-extrabold text-gray-500 uppercase tracking-widest">Email Address</label>
-              <input type="email" value={displayEmail} onChange={(e) => setDisplayEmail(e.target.value)} className="w-full px-5 py-3.5 bg-gray-50 border border-gray-200 rounded-xl focus:border-[#D92D20] focus:ring-2 focus:ring-[#D92D20]/20 outline-none font-bold text-[#101828] transition-all text-sm" />
+              <label className="block text-[10px] font-extrabold text-gray-500 uppercase tracking-widest flex items-center gap-2">Email Address <Lock className="w-3 h-3 text-gray-400" /></label>
+              <input type="email" value={displayEmail} readOnly disabled className="w-full px-5 py-3.5 bg-gray-100 border border-gray-200 rounded-xl text-gray-500 cursor-not-allowed outline-none font-bold transition-all text-sm" />
             </div>
           </div>
 

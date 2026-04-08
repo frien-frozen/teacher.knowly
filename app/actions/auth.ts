@@ -1,5 +1,6 @@
 'use server'
 import prisma from '@/lib/prisma';
+import { cookies } from 'next/headers';
 import { sendOTPEmail } from '@/lib/mail';
 import bcrypt from 'bcrypt';
 
@@ -84,8 +85,29 @@ export async function verifyOTP(email: string, otp: string) {
       return { success: false, message: "Invalid or expired OTP." };
     }
     await prisma.teacher.update({ where: { email }, data: { otpCode: null, otpExpires: null } });
+    
+    // Set a secure HTTP cookie for middleware to read
+    const cookieStore = await cookies();
+    cookieStore.set('knowly_auth', user.email, {
+      path: '/',
+      httpOnly: true,
+      secure: process.env.NODE_ENV === 'production',
+      sameSite: 'lax',
+      maxAge: 60 * 60 * 24 * 30 // 30 days
+    });
+
     return { success: true, user: { role: user.role } };
   } catch (error) {
     return { success: false, message: "Verification failed." };
+  }
+}
+
+export async function logoutUser() {
+  try {
+    const cookieStore = await cookies();
+    cookieStore.delete('knowly_auth');
+    return { success: true };
+  } catch (err) {
+    return { success: false, message: "Could not log out." };
   }
 }
