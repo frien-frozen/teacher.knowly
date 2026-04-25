@@ -12,10 +12,10 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
-    const role = localStorage.getItem('knowly_role');
-    if (role === 'ADMIN') {
-      push('/admin');
-    }
+    getSession().then(session => {
+      if (!session) push('/login');
+      else if (session.role === 'ADMIN') push('/admin');
+    });
   }, [push]);
 
   const navItems = [

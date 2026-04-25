@@ -3,10 +3,39 @@ import prisma from '@/lib/prisma';
 import { cookies } from 'next/headers';
 import { sendOTPEmail } from '@/lib/mail';
 import bcrypt from 'bcrypt';
+import { createHash, timingSafeEqual } from 'crypto';
 
 const loginRateLimitMap = new Map<string, { count: number, resetTime: number }>();
 const MAX_ATTEMPTS = 5;
 const WINDOW_MS = 15 * 60 * 1000;
+
+function hashOTP(otp: string): string {
+  const secret = process.env.OTP_SECRET || 'knowly-otp-fallback-secret';
+  return createHash('sha256').update(otp + secret).digest('hex');
+}
+
+function safeStringCompare(a: string, b: string): boolean {
+  try {
+    const aBuf = Buffer.from(a);
+    const bBuf = Buffer.from(b);
+    if (aBuf.length !== bBuf.length) return false;
+    return timingSafeEqual(aBuf, bBuf);
+  } catch {
+    return false;
+  }
+}
+
+function setCookies(cookieStore: Awaited<ReturnType<typeof cookies>>, email: string, role: string) {
+  const opts = {
+    path: '/',
+    httpOnly: true,
+    secure: process.env.NODE_ENV === 'production',
+    sameSite: 'lax' as const,
+    maxAge: 60 * 60 * 24 * 30,
+  };
+  cookieStore.set('knowly_auth', email, opts);
+  cookieStore.set('knowly_role', role, opts);
+}
 
 export async function initiateLogin(email: string, password?: string) {
   try {
@@ -18,8 +47,8 @@ export async function initiateLogin(email: string, password?: string) {
     }
 
     const cleanEmail = email.toLowerCase().trim();
-    
-    // Rate Limiting
+
+    // Rate limiting
     const now = Date.now();
     const rateLimit = loginRateLimitMap.get(cleanEmail);
     if (rateLimit) {
@@ -35,45 +64,47 @@ export async function initiateLogin(email: string, password?: string) {
       loginRateLimitMap.set(cleanEmail, { count: 1, resetTime: now + WINDOW_MS });
     }
 
-    console.log("--> Secure login attempt for:", cleanEmail);
-    
-    // 1. GOD ACCOUNT LOGIC
-    if (process.env.ADMIN_EMAIL && cleanEmail === process.env.ADMIN_EMAIL.toLowerCase().trim()) {
-      if (!process.env.ADMIN_PASSWORD || password !== process.env.ADMIN_PASSWORD) return { success: false, message: "Invalid credentials." };
+    // GOD ACCOUNT: create admin in DB on first login only
+    if (process.env.ADMIN_EMAIL && safeStringCompare(cleanEmail, process.env.ADMIN_EMAIL.toLowerCase().trim())) {
       const existing = await prisma.teacher.findUnique({ where: { email: cleanEmail } });
       if (!existing) {
-        const hashedAdmin = await bcrypt.hash(process.env.ADMIN_PASSWORD, 10);
-        await prisma.teacher.create({ data: { name: 'Admin', email: cleanEmail, password: hashedAdmin, role: 'ADMIN', isVerified: true } });
+        const adminPw = process.env.ADMIN_PASSWORD || '';
+        if (!safeStringCompare(password || '', adminPw)) {
+          return { success: false, message: "Invalid credentials." };
+        }
+        const hashedAdmin = await bcrypt.hash(adminPw, 10);
+        await prisma.teacher.create({
+          data: { name: 'Admin', email: cleanEmail, password: hashedAdmin, role: 'ADMIN', isVerified: true }
+        });
       }
-    } else {
-      // 2. REGULAR TEACHER
-      const user = await prisma.teacher.findUnique({ where: { email: cleanEmail } });
-      if (!user || !user.password) return { success: false, message: "Invalid credentials." };
-      
-      // CRITICAL: MUST use bcrypt.compare
-      const isMatch = await bcrypt.compare(password || '', user.password);
-      if (!isMatch) return { success: false, message: "Invalid credentials." };
     }
 
-    // 3. GENERATE OTP
-    const otp = Math.floor(100000 + Math.random() * 900000).toString();
-    const expires = new Date(Date.now() + 10 * 60 * 1000); 
+    // ALL users (including admin after first login) go through bcrypt
+    const user = await prisma.teacher.findUnique({ where: { email: cleanEmail } });
+    if (!user || !user.password) return { success: false, message: "Invalid credentials." };
 
-    const updatedUser = await prisma.teacher.update({ 
-      where: { email: cleanEmail }, 
-      data: { otpCode: otp, otpExpires: expires } 
+    const isMatch = await bcrypt.compare(password || '', user.password);
+    if (!isMatch) return { success: false, message: "Invalid credentials." };
+
+    // Generate OTP — store as hash, never plaintext
+    const otp = Math.floor(100000 + Math.random() * 900000).toString();
+    const expires = new Date(Date.now() + 10 * 60 * 1000);
+
+    await prisma.teacher.update({
+      where: { email: cleanEmail },
+      data: { otpCode: hashOTP(otp), otpExpires: expires }
     });
 
-    // 4. SEND EMAIL & FALLBACK
+    // Send OTP — on failure, do NOT log the OTP
     try {
-      await sendOTPEmail(cleanEmail, otp, updatedUser.name);
-    } catch (emailErr) {
-      console.warn("⚠️ Email failed to send via Resend. FALLBACK OTP IS:", otp);
+      await sendOTPEmail(cleanEmail, otp, user.name);
+    } catch {
+      return { success: false, message: "Failed to send verification email. Please try again." };
     }
 
     return { success: true, message: "Code sent!" };
   } catch (error: any) {
-    console.error("Login Error:", error);
+    console.error("Login Error:", error?.message);
     return { success: false, message: "Database connection failed. Check Prisma." };
   }
 }
@@ -81,20 +112,20 @@ export async function initiateLogin(email: string, password?: string) {
 export async function verifyOTP(email: string, otp: string) {
   try {
     const user = await prisma.teacher.findUnique({ where: { email } });
-    if (!user || user.otpCode !== otp || new Date() > user.otpExpires!) {
+    if (!user || !user.otpCode || !user.otpExpires) {
       return { success: false, message: "Invalid or expired OTP." };
     }
+    if (new Date() > user.otpExpires) {
+      return { success: false, message: "Invalid or expired OTP." };
+    }
+    if (!safeStringCompare(hashOTP(otp), user.otpCode)) {
+      return { success: false, message: "Invalid or expired OTP." };
+    }
+
     await prisma.teacher.update({ where: { email }, data: { otpCode: null, otpExpires: null } });
-    
-    // Set a secure HTTP cookie for middleware to read
+
     const cookieStore = await cookies();
-    cookieStore.set('knowly_auth', user.email, {
-      path: '/',
-      httpOnly: true,
-      secure: process.env.NODE_ENV === 'production',
-      sameSite: 'lax',
-      maxAge: 60 * 60 * 24 * 30 // 30 days
-    });
+    setCookies(cookieStore, user.email, user.role);
 
     return { success: true, user: { role: user.role } };
   } catch (error) {
@@ -106,8 +137,23 @@ export async function logoutUser() {
   try {
     const cookieStore = await cookies();
     cookieStore.delete('knowly_auth');
+    cookieStore.delete('knowly_role');
     return { success: true };
-  } catch (err) {
+  } catch {
     return { success: false, message: "Could not log out." };
+  }
+}
+
+export async function getSession() {
+  try {
+    const cookieStore = await cookies();
+    const email = cookieStore.get('knowly_auth')?.value;
+    if (!email) return null;
+    return await prisma.teacher.findUnique({
+      where: { email },
+      select: { role: true, name: true, email: true }
+    });
+  } catch {
+    return null;
   }
 }

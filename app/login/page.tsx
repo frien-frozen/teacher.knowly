@@ -69,8 +69,6 @@ export default function LoginPage() {
         try {
             const res = await verifyOTP(email, otp);
             if (res.success) {
-                localStorage.setItem('knowly_role', res.user?.role || '');
-                localStorage.setItem('knowly_email', email);
                 if (res.user?.role === 'ADMIN') {
                     push('/admin');
                 } else {

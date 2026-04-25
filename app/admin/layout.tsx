@@ -12,10 +12,10 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
-    const role = localStorage.getItem('knowly_role');
-    if (role === 'TEACHER') {
-      push('/dashboard');
-    }
+    getSession().then(session => {
+      if (!session) push('/login');
+      else if (session.role === 'TEACHER') push('/dashboard');
+    });
   }, [push]);
 
   const navItems = [

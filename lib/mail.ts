@@ -3,9 +3,7 @@ import { Resend } from 'resend';
 export async function sendOTPEmail(to: string, otp: string, name?: string) {
   const appUrl = process.env.NEXT_PUBLIC_APP_URL || "https://teacher.knowly.uz";
   if (!process.env.RESEND_API_KEY) {
-    console.warn("⚠️ RESEND_API_KEY is missing from .env!");
-    console.warn(`⚠️ BYPASS ACTIVE - Your OTP for ${to} is: ${otp}`);
-    return { success: true, bypassed: true }; 
+    throw new Error("RESEND_API_KEY not configured.");
   }
 
   try {
