@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 import { usePathname } from 'next/navigation';
 import { useLangRouter } from '@/hooks/useLangRouter';
 import { Users, FileText, Database, LogOut, ShieldCheck, UserPlus, Menu, X } from 'lucide-react';
-import { logoutUser } from '@/app/actions/auth';
+import { logoutUser, getSession } from '@/app/actions/auth';
 
 export default function AdminLayout({ children }: { children: React.ReactNode }) {
   const { push } = useLangRouter();
