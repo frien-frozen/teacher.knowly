@@ -16,8 +16,8 @@ export function proxy(request: NextRequest) {
         }
     }
 
-    // Already logged in: redirect away from public auth pages
-    if (pathname === '/' || pathname === '/login' || pathname === '/apply') {
+    // Already logged in: redirect away from login page only
+    if (pathname === '/login') {
         if (auth) {
             const dest = role === 'ADMIN' ? '/admin' : '/dashboard';
             return NextResponse.redirect(new URL(dest, request.url));

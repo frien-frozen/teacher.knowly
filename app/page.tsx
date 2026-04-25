@@ -87,20 +87,20 @@ export default function TeacherLanding() {
   };
 
   return (
-    <main className="min-h-screen bg-[#F9FAFB] font-nunito pt-52 pb-0 overflow-x-hidden">
+    <main className="min-h-screen bg-[#F9FAFB] font-nunito pt-24 sm:pt-36 md:pt-52 pb-0 overflow-x-hidden">
 
       {/* HERO SECTION */}
-      <section className="container mx-auto px-6 max-w-6xl mb-20 relative text-center">
+      <section className="container mx-auto px-4 sm:px-6 max-w-6xl mb-12 sm:mb-20 relative text-center">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-blue-100/30 rounded-full blur-[100px] -z-10 pointer-events-none"></div>
         <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-50 border border-blue-100 text-blue-700 text-xs font-extrabold uppercase tracking-widest mb-8">
             <Globe className="w-4 h-4" /> {t.hero.badge}
           </div>
-          <h1 className="text-5xl md:text-7xl font-extrabold text-[#101828] mb-6 tracking-tight leading-[1.1]">
+          <h1 className="text-3xl sm:text-5xl md:text-7xl font-extrabold text-[#101828] mb-4 sm:mb-6 tracking-tight leading-[1.1]">
             {t.hero.title} <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D92D20] to-[#FDB022]">{t.hero.titleHighlight}</span>
           </h1>
-          <p className="text-xl text-gray-500 font-medium max-w-2xl mx-auto mb-12 leading-relaxed">
+          <p className="text-base sm:text-xl text-gray-500 font-medium max-w-2xl mx-auto mb-8 sm:mb-12 leading-relaxed px-2 sm:px-0">
             {t.hero.subtitle}
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
