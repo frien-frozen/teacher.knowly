@@ -17,7 +17,7 @@ model Teacher {
   email       String   @unique
   password    String?  // Hashed password
   role        Role     @default(TEACHER)
-  
+
   // 2FA / OTP Fields
   otpCode     String?
   otpExpires  DateTime?
@@ -25,11 +25,12 @@ model Teacher {
 
   bio         String?  @db.Text
   profilePic  String?
-  
-  subjectId   String?  
+
+  subjectId   String?
   subject     Subject? @relation(fields: [subjectId], references: [id])
   units       Unit[]
-  topics      Topic[]
+  topics      Topic[]                                  // assigned-to topics
+  publishedTopics Topic[] @relation("PublishedTopics") // topics whose video THIS teacher published
   createdAt   DateTime @default(now())
   updatedAt   DateTime @default(now()) @updatedAt
 }
@@ -73,12 +74,16 @@ model Unit {
 }
 
 model Topic {
-  id        String  @id @default(cuid())
-  title     String
-  ytLink    String?
-  order     Int     @default(0)
-  unitId    String
-  unit      Unit    @relation(fields: [unitId], references: [id], onDelete: Cascade)
-  teacherId String
-  teacher   Teacher @relation(fields: [teacherId], references: [id])
+  id            String  @id @default(cuid())
+  title         String
+  ytLink        String?
+  order         Int     @default(0)
+  unitId        String
+  unit          Unit    @relation(fields: [unitId], references: [id], onDelete: Cascade)
+  teacherId     String
+  teacher       Teacher @relation(fields: [teacherId], references: [id])
+  // The teacher who actually published the video (null until video is added)
+  publishedById String?
+  publishedBy   Teacher? @relation("PublishedTopics", fields: [publishedById], references: [id])
+  publishedAt   DateTime?
 }

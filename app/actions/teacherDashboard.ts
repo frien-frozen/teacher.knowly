@@ -71,10 +71,14 @@ export async function updateTopicVideo(email: string, topicId: string, videoUrl:
       return { success: false, message: "You do not have permission to edit this topic." };
     }
 
-    // Update ytLink (existing schema field) and credit the teacher
+    // Set the video link and credit THIS teacher as the publisher
     await prisma.topic.update({
       where: { id: topicId },
-      data: { ytLink: videoUrl, teacherId: teacher.id }
+      data: {
+        ytLink: videoUrl,
+        publishedById: teacher.id,
+        publishedAt: new Date(),
+      }
     });
 
     return { success: true, message: "Video linked successfully!" };
