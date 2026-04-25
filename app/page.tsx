@@ -116,59 +116,59 @@ export default function TeacherLanding() {
       </section>
 
       {/* CURRICULUMS */}
-      <section id="curriculums" className="bg-white py-24 border-y border-gray-100">
-        <div className="container mx-auto px-6 max-w-7xl">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-extrabold text-[#101828] mb-4">{t.curriculums.title}</h2>
-            <p className="text-gray-500 text-lg max-w-2xl mx-auto">{t.curriculums.desc}</p>
+      <section id="curriculums" className="bg-white py-14 sm:py-24 border-y border-gray-100">
+        <div className="container mx-auto px-4 sm:px-6 max-w-7xl">
+          <div className="text-center mb-10 sm:mb-16">
+            <h2 className="text-2xl sm:text-4xl font-extrabold text-[#101828] mb-3 sm:mb-4">{t.curriculums.title}</h2>
+            <p className="text-gray-500 text-sm sm:text-lg max-w-2xl mx-auto px-2">{t.curriculums.desc}</p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <a href={`https://learn.knowly.uz/curriculum/lower-secondary?lang=${lang}`} target="_blank" rel="noopener noreferrer" className="bg-[#F9FAFB] p-8 rounded-[2rem] border border-gray-100 hover:border-green-100 hover:shadow-xl hover:shadow-green-50 transition-all group block">
-              <div className="w-14 h-14 bg-green-100 rounded-2xl flex items-center justify-center text-green-600 mb-6 group-hover:scale-110 transition-transform"><BookOpen className="w-7 h-7" /></div>
-              <h3 className="text-xl font-extrabold text-[#101828] mb-3">{t.curriculums.cards.secondary.title}</h3>
-              <p className="text-gray-500 font-medium leading-relaxed text-sm">{t.curriculums.cards.secondary.desc}</p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+            <a href={`https://learn.knowly.uz/curriculum/lower-secondary?lang=${lang}`} target="_blank" rel="noopener noreferrer" className="bg-[#F9FAFB] p-6 sm:p-8 rounded-[1.5rem] sm:rounded-[2rem] border border-gray-100 hover:border-green-100 hover:shadow-xl hover:shadow-green-50 transition-all group block">
+              <div className="w-12 h-12 sm:w-14 sm:h-14 bg-green-100 rounded-2xl flex items-center justify-center text-green-600 mb-4 sm:mb-6 group-hover:scale-110 transition-transform"><BookOpen className="w-6 h-6 sm:w-7 sm:h-7" /></div>
+              <h3 className="text-lg sm:text-xl font-extrabold text-[#101828] mb-2 sm:mb-3">{t.curriculums.cards.secondary.title}</h3>
+              <p className="text-gray-500 font-medium leading-relaxed text-xs sm:text-sm">{t.curriculums.cards.secondary.desc}</p>
             </a>
-            <a href={`https://learn.knowly.uz/curriculum/igcse?lang=${lang}`} target="_blank" rel="noopener noreferrer" className="bg-[#F9FAFB] p-8 rounded-[2rem] border border-gray-100 hover:border-red-100 hover:shadow-xl hover:shadow-red-50 transition-all group block">
-              <div className="w-14 h-14 bg-red-100 rounded-2xl flex items-center justify-center text-[#D92D20] mb-6 group-hover:scale-110 transition-transform"><Award className="w-7 h-7" /></div>
-              <h3 className="text-xl font-extrabold text-[#101828] mb-3">{t.curriculums.cards.igcse.title}</h3>
-              <p className="text-gray-500 font-medium leading-relaxed text-sm">{t.curriculums.cards.igcse.desc}</p>
+            <a href={`https://learn.knowly.uz/curriculum/igcse?lang=${lang}`} target="_blank" rel="noopener noreferrer" className="bg-[#F9FAFB] p-6 sm:p-8 rounded-[1.5rem] sm:rounded-[2rem] border border-gray-100 hover:border-red-100 hover:shadow-xl hover:shadow-red-50 transition-all group block">
+              <div className="w-12 h-12 sm:w-14 sm:h-14 bg-red-100 rounded-2xl flex items-center justify-center text-[#D92D20] mb-4 sm:mb-6 group-hover:scale-110 transition-transform"><Award className="w-6 h-6 sm:w-7 sm:h-7" /></div>
+              <h3 className="text-lg sm:text-xl font-extrabold text-[#101828] mb-2 sm:mb-3">{t.curriculums.cards.igcse.title}</h3>
+              <p className="text-gray-500 font-medium leading-relaxed text-xs sm:text-sm">{t.curriculums.cards.igcse.desc}</p>
             </a>
-            <a href={`https://learn.knowly.uz/curriculum/a-levels?lang=${lang}`} target="_blank" rel="noopener noreferrer" className="bg-[#F9FAFB] p-8 rounded-[2rem] border border-gray-100 hover:border-blue-100 hover:shadow-xl hover:shadow-blue-50 transition-all group block">
-              <div className="w-14 h-14 bg-blue-100 rounded-2xl flex items-center justify-center text-blue-600 mb-6 group-hover:scale-110 transition-transform"><Trophy className="w-7 h-7" /></div>
-              <h3 className="text-xl font-extrabold text-[#101828] mb-3">{t.curriculums.cards.alevel.title}</h3>
-              <p className="text-gray-500 font-medium leading-relaxed text-sm">{t.curriculums.cards.alevel.desc}</p>
+            <a href={`https://learn.knowly.uz/curriculum/a-levels?lang=${lang}`} target="_blank" rel="noopener noreferrer" className="bg-[#F9FAFB] p-6 sm:p-8 rounded-[1.5rem] sm:rounded-[2rem] border border-gray-100 hover:border-blue-100 hover:shadow-xl hover:shadow-blue-50 transition-all group block">
+              <div className="w-12 h-12 sm:w-14 sm:h-14 bg-blue-100 rounded-2xl flex items-center justify-center text-blue-600 mb-4 sm:mb-6 group-hover:scale-110 transition-transform"><Trophy className="w-6 h-6 sm:w-7 sm:h-7" /></div>
+              <h3 className="text-lg sm:text-xl font-extrabold text-[#101828] mb-2 sm:mb-3">{t.curriculums.cards.alevel.title}</h3>
+              <p className="text-gray-500 font-medium leading-relaxed text-xs sm:text-sm">{t.curriculums.cards.alevel.desc}</p>
             </a>
-            <a href={`https://learn.knowly.uz/curriculum/pearson?lang=${lang}`} target="_blank" rel="noopener noreferrer" className="bg-[#F9FAFB] p-8 rounded-[2rem] border border-gray-100 hover:border-yellow-100 hover:shadow-xl hover:shadow-yellow-50 transition-all group block">
-              <div className="w-14 h-14 bg-yellow-100 rounded-2xl flex items-center justify-center text-[#B54708] mb-6 group-hover:scale-110 transition-transform"><Star className="w-7 h-7" /></div>
-              <h3 className="text-xl font-extrabold text-[#101828] mb-3">{t.curriculums.cards.pearson.title}</h3>
-              <p className="text-gray-500 font-medium leading-relaxed text-sm">{t.curriculums.cards.pearson.desc}</p>
+            <a href={`https://learn.knowly.uz/curriculum/pearson?lang=${lang}`} target="_blank" rel="noopener noreferrer" className="bg-[#F9FAFB] p-6 sm:p-8 rounded-[1.5rem] sm:rounded-[2rem] border border-gray-100 hover:border-yellow-100 hover:shadow-xl hover:shadow-yellow-50 transition-all group block">
+              <div className="w-12 h-12 sm:w-14 sm:h-14 bg-yellow-100 rounded-2xl flex items-center justify-center text-[#B54708] mb-4 sm:mb-6 group-hover:scale-110 transition-transform"><Star className="w-6 h-6 sm:w-7 sm:h-7" /></div>
+              <h3 className="text-lg sm:text-xl font-extrabold text-[#101828] mb-2 sm:mb-3">{t.curriculums.cards.pearson.title}</h3>
+              <p className="text-gray-500 font-medium leading-relaxed text-xs sm:text-sm">{t.curriculums.cards.pearson.desc}</p>
             </a>
           </div>
         </div>
       </section>
 
       {/* MISSION SECTION */}
-      <section id="mission" className="container mx-auto px-6 max-w-6xl py-32">
-        <div className="bg-[#101828] rounded-[3rem] p-10 md:p-20 relative overflow-hidden shadow-2xl">
-          <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#D92D20] rounded-full blur-[150px] opacity-20 translate-x-1/2 -translate-y-1/2 pointer-events-none"></div>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center relative z-10">
+      <section id="mission" className="container mx-auto px-4 sm:px-6 max-w-6xl py-16 sm:py-32">
+        <div className="bg-[#101828] rounded-[1.75rem] sm:rounded-[3rem] p-6 sm:p-10 md:p-20 relative overflow-hidden shadow-2xl">
+          <div className="absolute top-0 right-0 w-[400px] sm:w-[600px] h-[400px] sm:h-[600px] bg-[#D92D20] rounded-full blur-[100px] sm:blur-[150px] opacity-20 translate-x-1/2 -translate-y-1/2 pointer-events-none"></div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-16 items-center relative z-10">
             <div>
-              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 text-white border border-white/10 text-xs font-extrabold uppercase tracking-widest mb-6">
-                <Heart className="w-4 h-4 text-[#D92D20]" /> {t.mission.badge}
+              <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-1 sm:py-1.5 rounded-full bg-white/10 text-white border border-white/10 text-[10px] sm:text-xs font-extrabold uppercase tracking-widest mb-4 sm:mb-6">
+                <Heart className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#D92D20]" /> {t.mission.badge}
               </div>
-              <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-6 leading-tight">{t.mission.title}</h2>
-              <p className="text-gray-400 text-xl mb-8 leading-relaxed font-medium">{t.mission.desc}</p>
-              <div className="flex flex-wrap gap-4">
+              <h2 className="text-2xl sm:text-4xl md:text-5xl font-extrabold text-white mb-4 sm:mb-6 leading-tight">{t.mission.title}</h2>
+              <p className="text-gray-400 text-base sm:text-xl mb-6 sm:mb-8 leading-relaxed font-medium">{t.mission.desc}</p>
+              <div className="flex flex-wrap gap-2 sm:gap-4">
                 {t.mission.points.map((p, i) => (
-                  <span key={i} className="px-4 py-2 rounded-xl bg-white/5 border border-white/10 text-white font-bold text-sm">{p}</span>
+                  <span key={i} className="px-3 sm:px-4 py-1.5 sm:py-2 rounded-xl bg-white/5 border border-white/10 text-white font-bold text-xs sm:text-sm">{p}</span>
                 ))}
               </div>
             </div>
-            <div className="h-80 bg-white/5 rounded-3xl border border-white/10 flex items-center justify-center relative overflow-hidden">
-              <Globe className="w-40 h-40 text-white/5 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
+            <div className="h-56 sm:h-80 bg-white/5 rounded-2xl sm:rounded-3xl border border-white/10 flex items-center justify-center relative overflow-hidden">
+              <Globe className="w-28 sm:w-40 h-28 sm:h-40 text-white/5 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
               <div className="absolute inset-0 bg-gradient-to-t from-[#101828] to-transparent"></div>
-              <div className="absolute bottom-6 left-6 right-6 text-center">
-                <p className="text-white font-bold text-lg">{t.mission.quote}</p>
+              <div className="absolute bottom-4 sm:bottom-6 left-4 sm:left-6 right-4 sm:right-6 text-center">
+                <p className="text-white font-bold text-base sm:text-lg">{t.mission.quote}</p>
               </div>
             </div>
           </div>
@@ -176,24 +176,24 @@ export default function TeacherLanding() {
       </section>
 
       {/* TEACHERS COMMUNITY */}
-      <section id="teachers" className="container mx-auto px-6 max-w-6xl mb-24 text-center">
-        <h2 className="text-4xl font-extrabold text-[#101828] mb-6">{t.community.title}</h2>
-        <p className="text-gray-500 text-lg max-w-3xl mx-auto mb-16">{t.community.desc}</p>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+      <section id="teachers" className="container mx-auto px-4 sm:px-6 max-w-6xl mb-16 sm:mb-24 text-center">
+        <h2 className="text-2xl sm:text-4xl font-extrabold text-[#101828] mb-4 sm:mb-6">{t.community.title}</h2>
+        <p className="text-gray-500 text-sm sm:text-lg max-w-3xl mx-auto mb-10 sm:mb-16 px-2">{t.community.desc}</p>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8">
           {TEACHERS.map((teacher, i) => (
-            <div key={i} className="flex flex-col items-center gap-4 group">
-              <div className="w-24 h-24 rounded-full bg-gray-100 overflow-hidden border-4 border-white shadow-lg group-hover:scale-105 transition-transform">
+            <div key={i} className="flex flex-col items-center gap-3 sm:gap-4 group">
+              <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-gray-100 overflow-hidden border-4 border-white shadow-lg group-hover:scale-105 transition-transform">
                 <img src={teacher.img} alt={teacher.name} className="w-full h-full object-cover" />
               </div>
               <div>
-                <h4 className="font-bold text-[#101828] text-sm">{teacher.name}</h4>
-                <p className="text-xs font-bold text-[#D92D20] uppercase tracking-wider">{teacher.subject}</p>
+                <h4 className="font-bold text-[#101828] text-xs sm:text-sm">{teacher.name}</h4>
+                <p className="text-[10px] sm:text-xs font-bold text-[#D92D20] uppercase tracking-wider">{teacher.subject}</p>
               </div>
             </div>
           ))}
         </div>
-        <div className="mt-16">
-          <button onClick={() => window.open('/apply', '_blank', 'noopener,noreferrer')} className="bg-[#FDB022] text-[#7B2D08] px-10 py-4 rounded-2xl font-extrabold text-lg shadow-lg hover:shadow-xl transition-all border-b-4 border-[#B54708] active:border-b-0 active:translate-y-1">
+        <div className="mt-10 sm:mt-16">
+          <button onClick={() => window.open('/apply', '_blank', 'noopener,noreferrer')} className="bg-[#FDB022] text-[#7B2D08] px-8 sm:px-10 py-3 sm:py-4 rounded-2xl font-extrabold text-base sm:text-lg shadow-lg hover:shadow-xl transition-all border-b-4 border-[#B54708] active:border-b-0 active:translate-y-1">
             {t.hero.cta}
           </button>
         </div>

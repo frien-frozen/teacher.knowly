@@ -23,7 +23,8 @@ export async function uploadProfileImage(formData: FormData) {
     }
 
     const blob = await put(`profiles/${email}-${Date.now()}.webp`, file, {
-      access: 'private',
+      access: 'public',
+      addRandomSuffix: true,
     });
 
     await prisma.teacher.update({
