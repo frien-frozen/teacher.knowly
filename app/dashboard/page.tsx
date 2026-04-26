@@ -96,11 +96,8 @@ export default function TeacherProfile() {
 
   useEffect(() => {
     async function loadProfile() {
-      // Reset image error state when profile loads
       setImgError(false);
-      // TODO: Replace with actual session email from auth context/cookies
-      const email = localStorage.getItem('knowly_email') || 'ismatullohbakh2010@gmail.com';
-      const res = await getTeacherProfile(email);
+      const res = await getTeacherProfile();
       if (res.success && res.data) {
         setTeacherData(res.data);
         setDisplayName(res.data.name || '');
@@ -115,17 +112,15 @@ export default function TeacherProfile() {
   const handleSave = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSaving(true);
-    
-    // TODO: Get email from session context
-    const email = localStorage.getItem('knowly_email') || 'ismatullohbakh2010@gmail.com';
-    const res = await updateTeacherProfile(email, displayName, bio);
-    
+
+    const res = await updateTeacherProfile(displayName, bio);
+
     if (res.success) {
       alert("Profile updated successfully!");
     } else {
       alert(res.message);
     }
-    
+
     setIsSaving(false);
   };
 

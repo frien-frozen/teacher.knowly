@@ -1,9 +1,18 @@
 'use server'
 import prisma from '@/lib/prisma';
+import { cookies } from 'next/headers';
+
+async function currentEmail(): Promise<string | null> {
+  const c = await cookies();
+  return c.get('knowly_auth')?.value ?? null;
+}
 
 // Fetch Profile with nested Subject & Curriculum data
-export async function getTeacherProfile(email: string) {
+export async function getTeacherProfile() {
   try {
+    const email = await currentEmail();
+    if (!email) return { success: false, message: "Not authenticated" };
+
     const teacher = await prisma.teacher.findUnique({
       where: { email },
       include: {
@@ -14,54 +23,66 @@ export async function getTeacherProfile(email: string) {
     });
     if (!teacher) return { success: false, message: "Teacher not found" };
     return { success: true, data: teacher };
-  } catch (error) {
+  } catch {
     return { success: false, message: "Database error" };
   }
 }
 
 // Fetch ONLY Units and Topics for this specific teacher's subject
-export async function getTeacherSyllabus(email: string) {
+export async function getTeacherSyllabus() {
   try {
+    const email = await currentEmail();
+    if (!email) return { success: false, message: "Not authenticated" };
+
     const teacher = await prisma.teacher.findUnique({ where: { email } });
     if (!teacher || !teacher.subjectId) return { success: false, message: "No subject assigned." };
 
-    // SCOPED QUERY: Only fetch units belonging to their assigned subject
     const syllabus = await prisma.unit.findMany({
       where: { subjectId: teacher.subjectId },
       include: {
-        topics: { orderBy: { order: 'asc' } } 
+        topics: { orderBy: { order: 'asc' } }
       },
       orderBy: { order: 'asc' }
     });
 
     return { success: true, data: syllabus, subjectId: teacher.subjectId };
-  } catch (error) {
+  } catch {
     return { success: false, message: "Failed to load syllabus" };
   }
 }
 
-// Secure action to add a topic (Requires verifying the teacher owns the subject)
-export async function addTeacherTopic(email: string, unitId: string, title: string) {
+// Add a topic to a unit owned by the current teacher's subject
+export async function addTeacherTopic(unitId: string, title: string) {
   try {
+    const email = await currentEmail();
+    if (!email) return { success: false, message: "Not authenticated" };
+
     const teacher = await prisma.teacher.findUnique({ where: { email } });
-    if (!teacher) throw new Error("Unauthorized");
+    if (!teacher || !teacher.subjectId) return { success: false, message: "Unauthorized" };
+
+    const unit = await prisma.unit.findUnique({ where: { id: unitId } });
+    if (!unit || unit.subjectId !== teacher.subjectId) {
+      return { success: false, message: "You do not own this unit." };
+    }
 
     await prisma.topic.create({
       data: { title, unitId, teacherId: teacher.id }
     });
     return { success: true };
-  } catch (error) {
+  } catch {
     return { success: false };
   }
 }
 
-// Secure action to link a video. Verifies teacher owns the topic's subject.
-export async function updateTopicVideo(email: string, topicId: string, videoUrl: string) {
+// Link a YouTube video to a topic and credit current teacher as publisher
+export async function updateTopicVideo(topicId: string, videoUrl: string) {
   try {
-    const teacher = await prisma.teacher.findUnique({ where: { email } });
-    if (!teacher) throw new Error("Unauthorized");
+    const email = await currentEmail();
+    if (!email) return { success: false, message: "Not authenticated" };
 
-    // Ensure the topic belongs to a unit in their assigned subject
+    const teacher = await prisma.teacher.findUnique({ where: { email } });
+    if (!teacher) return { success: false, message: "Unauthorized" };
+
     const topic = await prisma.topic.findUnique({
       where: { id: topicId },
       include: { unit: true }
@@ -71,7 +92,6 @@ export async function updateTopicVideo(email: string, topicId: string, videoUrl:
       return { success: false, message: "You do not have permission to edit this topic." };
     }
 
-    // Set the video link and credit THIS teacher as the publisher
     await prisma.topic.update({
       where: { id: topicId },
       data: {
@@ -82,21 +102,23 @@ export async function updateTopicVideo(email: string, topicId: string, videoUrl:
     });
 
     return { success: true, message: "Video linked successfully!" };
-  } catch (error) {
+  } catch {
     return { success: false, message: "Failed to link video." };
   }
 }
 
-// Update teacher profile details
-export async function updateTeacherProfile(email: string, name: string, bio: string) {
+// Update current teacher's name and bio
+export async function updateTeacherProfile(name: string, bio: string) {
   try {
+    const email = await currentEmail();
+    if (!email) return { success: false, message: "Not authenticated" };
+
     await prisma.teacher.update({
       where: { email },
       data: { name, bio }
     });
     return { success: true, message: "Profile updated successfully!" };
-  } catch (error) {
+  } catch {
     return { success: false, message: "Failed to update profile." };
   }
 }
-

@@ -10,14 +10,10 @@ export default function CourseManager() {
   const [editingTopic, setEditingTopic] = useState<string | null>(null);
   const [videoInput, setVideoInput] = useState('');
 
-  const getEmail = () => localStorage.getItem('knowly_email') || 'ismatullohbakh2010@gmail.com';
-
   const loadData = async () => {
-    const email = getEmail();
-    
     const [profileRes, syllabusRes] = await Promise.all([
-      getTeacherProfile(email),
-      getTeacherSyllabus(email),
+      getTeacherProfile(),
+      getTeacherSyllabus(),
     ]);
 
     if (profileRes.success) setProfile(profileRes.data);
@@ -30,12 +26,12 @@ export default function CourseManager() {
   const handleAddTopic = async (unitId: string) => {
     const title = prompt("New Topic Title:");
     if (!title) return;
-    await addTeacherTopic(getEmail(), unitId, title.trim());
+    await addTeacherTopic(unitId, title.trim());
     loadData();
   };
 
   const handleSaveVideo = async (topicId: string) => {
-    const res = await updateTopicVideo(getEmail(), topicId, videoInput);
+    const res = await updateTopicVideo(topicId, videoInput);
     if (res.success) {
       setEditingTopic(null);
       loadData();

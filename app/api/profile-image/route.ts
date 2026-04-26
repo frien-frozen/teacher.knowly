@@ -1,28 +1,40 @@
 import { NextResponse } from 'next/server';
-import { cookies } from 'next/headers';
+
+const ALLOWED_ORIGINS = new Set([
+  'https://learn.knowly.uz',
+  'https://teacher.knowly.uz',
+  'http://localhost:3000',
+  'http://localhost:3001',
+]);
+
+function corsHeaders(origin: string | null) {
+  const allowed = origin && ALLOWED_ORIGINS.has(origin) ? origin : 'https://learn.knowly.uz';
+  return {
+    'Access-Control-Allow-Origin': allowed,
+    'Access-Control-Allow-Methods': 'GET, OPTIONS',
+    'Access-Control-Allow-Headers': 'Content-Type',
+  };
+}
+
+export async function OPTIONS(request: Request) {
+  const origin = request.headers.get('origin');
+  return new NextResponse(null, { status: 204, headers: corsHeaders(origin) });
+}
 
 export async function GET(request: Request) {
+  const origin = request.headers.get('origin');
   const { searchParams } = new URL(request.url);
   const imageUrl = searchParams.get('url');
 
   if (!imageUrl) {
-    return new NextResponse('Missing image URL', { status: 400 });
+    return new NextResponse('Missing image URL', { status: 400, headers: corsHeaders(origin) });
   }
 
-  // Security Check: Only allow URLs from our own blob store
   if (!imageUrl.includes('.blob.vercel-storage.com')) {
-    return new NextResponse('Invalid source', { status: 403 });
-  }
-
-  // Auth Check: Ensure the user is logged in
-  const cookieStore = await cookies();
-  const authCookie = cookieStore.get('knowly_auth');
-  if (!authCookie) {
-    return new NextResponse('Unauthorized', { status: 401 });
+    return new NextResponse('Invalid source', { status: 403, headers: corsHeaders(origin) });
   }
 
   try {
-    // Fetch the private blob using our server-side token
     const response = await fetch(imageUrl, {
       headers: {
         'Authorization': `Bearer ${process.env.BLOB_READ_WRITE_TOKEN}`,
@@ -30,20 +42,17 @@ export async function GET(request: Request) {
     });
 
     if (!response.ok) {
-      return new NextResponse('Failed to fetch image from storage', { status: response.status });
+      return new NextResponse('Failed to fetch image', { status: response.status, headers: corsHeaders(origin) });
     }
 
-    const blob = await response.blob();
-    const headers = new Headers();
+    const buffer = await response.arrayBuffer();
+    const headers = new Headers(corsHeaders(origin));
     headers.set('Content-Type', response.headers.get('Content-Type') || 'image/webp');
     headers.set('Cache-Control', 'public, max-age=31536000, immutable');
 
-    return new NextResponse(blob, {
-      status: 200,
-      headers,
-    });
+    return new NextResponse(buffer, { status: 200, headers });
   } catch (error) {
     console.error('Proxy Error:', error);
-    return new NextResponse('Internal Server Error', { status: 500 });
+    return new NextResponse('Internal Server Error', { status: 500, headers: corsHeaders(origin) });
   }
 }
